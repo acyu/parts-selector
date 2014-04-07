@@ -1,0 +1,513 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "C0909A"
+    ],
+    "label": "Series Designation"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "environmental_class": {
+    "data": [
+"-",
+"E",
+"N"
+    ],
+    "description":[
+"Anodized Aluminum",
+"Cadmim/Nickel Plated Aluminum",
+"Nickel Plated Aluminum"
+    ],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Environmental Class"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"8-02": {
+  "shell_size": "8",
+  "environmental_class": "-",
+  "insert": "02"
+  }},
+{"8E02": {
+  "shell_size": "8",
+  "environmental_class": "E",
+  "insert": "02"
+  }},
+{"8N02": {
+  "shell_size": "8",
+  "environmental_class": "N",
+  "insert": "02"
+  }},
+{"8-03": {
+  "shell_size": "8",
+  "environmental_class": "-",
+  "insert": "03"
+  }},
+{"8E03": {
+  "shell_size": "8",
+  "environmental_class": "E",
+  "insert": "03"
+  }},
+{"8N03": {
+  "shell_size": "8",
+  "environmental_class": "N",
+  "insert": "03"
+  }},
+{"10-02": {
+  "shell_size": "10",
+  "environmental_class": "-",
+  "insert": "02"
+  }},
+{"10E02": {
+  "shell_size": "10",
+  "environmental_class": "E",
+  "insert": "02"
+  }},
+{"10N02": {
+  "shell_size": "10",
+  "environmental_class": "N",
+  "insert": "02"
+  }},
+{"10-05": {
+  "shell_size": "10",
+  "environmental_class": "-",
+  "insert": "05"
+  }},
+{"10E05": {
+  "shell_size": "10",
+  "environmental_class": "E",
+  "insert": "05"
+  }},
+{"10N05": {
+  "shell_size": "10",
+  "environmental_class": "N",
+  "insert": "05"
+  }},
+{"10-20": {
+  "shell_size": "10",
+  "environmental_class": "-",
+  "insert": "20"
+  }},
+{"10E20": {
+  "shell_size": "10",
+  "environmental_class": "E",
+  "insert": "20"
+  }},
+{"10N20": {
+  "shell_size": "10",
+  "environmental_class": "N",
+  "insert": "20"
+  }},
+{"12-03": {
+  "shell_size": "12",
+  "environmental_class": "-",
+  "insert": "03"
+  }},
+{"12E03": {
+  "shell_size": "12",
+  "environmental_class": "E",
+  "insert": "03"
+  }},
+{"12N03": {
+  "shell_size": "12",
+  "environmental_class": "N",
+  "insert": "03"
+  }},
+{"12-12": {
+  "shell_size": "12",
+  "environmental_class": "-",
+  "insert": "12"
+  }},
+{"12E12": {
+  "shell_size": "12",
+  "environmental_class": "E",
+  "insert": "12"
+  }},
+{"12N12": {
+  "shell_size": "12",
+  "environmental_class": "N",
+  "insert": "12"
+  }},
+{"14-03": {
+  "shell_size": "14",
+  "environmental_class": "-",
+  "insert": "03"
+  }},
+{"14E03": {
+  "shell_size": "14",
+  "environmental_class": "E",
+  "insert": "03"
+  }},
+{"14N03": {
+  "shell_size": "14",
+  "environmental_class": "N",
+  "insert": "03"
+  }},
+{"14-04": {
+  "shell_size": "14",
+  "environmental_class": "-",
+  "insert": "04"
+  }},
+{"14E04": {
+  "shell_size": "14",
+  "environmental_class": "E",
+  "insert": "04"
+  }},
+{"14N04": {
+  "shell_size": "14",
+  "environmental_class": "N",
+  "insert": "04"
+  }},
+{"14-07": {
+  "shell_size": "14",
+  "environmental_class": "-",
+  "insert": "07"
+  }},
+{"14E07": {
+  "shell_size": "14",
+  "environmental_class": "E",
+  "insert": "07"
+  }},
+{"14N07": {
+  "shell_size": "14",
+  "environmental_class": "N",
+  "insert": "07"
+  }},
+{"14-12": {
+  "shell_size": "14",
+  "environmental_class": "-",
+  "insert": "12"
+  }},
+{"14E12": {
+  "shell_size": "14",
+  "environmental_class": "E",
+  "insert": "12"
+  }},
+{"14N12": {
+  "shell_size": "14",
+  "environmental_class": "N",
+  "insert": "12"
+  }},
+{"14-15": {
+  "shell_size": "14",
+  "environmental_class": "-",
+  "insert": "15"
+  }},
+{"14E15": {
+  "shell_size": "14",
+  "environmental_class": "E",
+  "insert": "15"
+  }},
+{"14N15": {
+  "shell_size": "14",
+  "environmental_class": "N",
+  "insert": "15"
+  }},
+{"16-10": {
+  "shell_size": "16",
+  "environmental_class": "-",
+  "insert": "10"
+  }},
+{"16E10": {
+  "shell_size": "16",
+  "environmental_class": "E",
+  "insert": "10"
+  }},
+{"16N10": {
+  "shell_size": "16",
+  "environmental_class": "N",
+  "insert": "10"
+  }},
+{"16-24": {
+  "shell_size": "16",
+  "environmental_class": "-",
+  "insert": "24"
+  }},
+{"16E24": {
+  "shell_size": "16",
+  "environmental_class": "E",
+  "insert": "24"
+  }},
+{"16N24": {
+  "shell_size": "16",
+  "environmental_class": "N",
+  "insert": "24"
+  }},
+{"18-08": {
+  "shell_size": "18",
+  "environmental_class": "-",
+  "insert": "08"
+  }},
+{"18E08": {
+  "shell_size": "18",
+  "environmental_class": "E",
+  "insert": "08"
+  }},
+{"18N08": {
+  "shell_size": "18",
+  "environmental_class": "N",
+  "insert": "08"
+  }},
+{"18-11": {
+  "shell_size": "18",
+  "environmental_class": "-",
+  "insert": "11"
+  }},
+{"18E11": {
+  "shell_size": "18",
+  "environmental_class": "E",
+  "insert": "11"
+  }},
+{"18N11": {
+  "shell_size": "18",
+  "environmental_class": "N",
+  "insert": "11"
+  }},
+{"20-16": {
+  "shell_size": "20",
+  "environmental_class": "-",
+  "insert": "16"
+  }},
+{"20E16": {
+  "shell_size": "20",
+  "environmental_class": "E",
+  "insert": "16"
+  }},
+{"20N16": {
+  "shell_size": "20",
+  "environmental_class": "N",
+  "insert": "16"
+  }},
+{"20-25": {
+  "shell_size": "20",
+  "environmental_class": "-",
+  "insert": "25"
+  }},
+{"20E25": {
+  "shell_size": "20",
+  "environmental_class": "E",
+  "insert": "25"
+  }},
+{"20N25": {
+  "shell_size": "20",
+  "environmental_class": "N",
+  "insert": "25"
+  }},
+{"20-28": {
+  "shell_size": "20",
+  "environmental_class": "-",
+  "insert": "28"
+  }},
+{"20E28": {
+  "shell_size": "20",
+  "environmental_class": "E",
+  "insert": "28"
+  }},
+{"20N28": {
+  "shell_size": "20",
+  "environmental_class": "N",
+  "insert": "28"
+  }},
+{"20-41": {
+  "shell_size": "20",
+  "environmental_class": "-",
+  "insert": "41"
+  }},
+{"20E41": {
+  "shell_size": "20",
+  "environmental_class": "E",
+  "insert": "41"
+  }},
+{"20N41": {
+  "shell_size": "20",
+  "environmental_class": "N",
+  "insert": "41"
+  }},
+{"22-12": {
+  "shell_size": "22",
+  "environmental_class": "-",
+  "insert": "12"
+  }},
+{"22E12": {
+  "shell_size": "22",
+  "environmental_class": "E",
+  "insert": "12"
+  }},
+{"22N12": {
+  "shell_size": "22",
+  "environmental_class": "N",
+  "insert": "12"
+  }},
+{"22-19": {
+  "shell_size": "22",
+  "environmental_class": "-",
+  "insert": "19"
+  }},
+{"22E19": {
+  "shell_size": "22",
+  "environmental_class": "E",
+  "insert": "19"
+  }},
+{"22N19": {
+  "shell_size": "22",
+  "environmental_class": "N",
+  "insert": "19"
+  }},
+{"22-32": {
+  "shell_size": "22",
+  "environmental_class": "-",
+  "insert": "32"
+  }},
+{"22E32": {
+  "shell_size": "22",
+  "environmental_class": "E",
+  "insert": "32"
+  }},
+{"22N32": {
+  "shell_size": "22",
+  "environmental_class": "N",
+  "insert": "32"
+  }},
+{"22-55": {
+  "shell_size": "22",
+  "environmental_class": "-",
+  "insert": "55"
+  }},
+{"22E55": {
+  "shell_size": "22",
+  "environmental_class": "E",
+  "insert": "55"
+  }},
+{"22N55": {
+  "shell_size": "22",
+  "environmental_class": "N",
+  "insert": "55"
+  }},
+{"24-29": {
+  "shell_size": "24",
+  "environmental_class": "-",
+  "insert": "29"
+  }},
+{"24E29": {
+  "shell_size": "24",
+  "environmental_class": "E",
+  "insert": "29"
+  }},
+{"24N29": {
+  "shell_size": "24",
+  "environmental_class": "N",
+  "insert": "29"
+  }},
+{"24-30": {
+  "shell_size": "24",
+  "environmental_class": "-",
+  "insert": "30"
+  }},
+{"24E30": {
+  "shell_size": "24",
+  "environmental_class": "E",
+  "insert": "30"
+  }},
+{"24N30": {
+  "shell_size": "24",
+  "environmental_class": "N",
+  "insert": "30"
+  }},
+{"24-43": {
+  "shell_size": "24",
+  "environmental_class": "-",
+  "insert": "43"
+  }},
+{"24E43": {
+  "shell_size": "24",
+  "environmental_class": "E",
+  "insert": "43"
+  }},
+{"24N43": {
+  "shell_size": "24",
+  "environmental_class": "N",
+  "insert": "43"
+  }},
+{"24-57": {
+  "shell_size": "24",
+  "environmental_class": "-",
+  "insert": "57"
+  }},
+{"24E57": {
+  "shell_size": "24",
+  "environmental_class": "E",
+  "insert": "57"
+  }},
+{"24N57": {
+  "shell_size": "24",
+  "environmental_class": "N",
+  "insert": "57"
+  }},
+{"24-61": {
+  "shell_size": "24",
+  "environmental_class": "-",
+  "insert": "61"
+  }},
+{"24E61": {
+  "shell_size": "24",
+  "environmental_class": "E",
+  "insert": "61"
+  }},
+{"24N61": {
+  "shell_size": "24",
+  "environmental_class": "N",
+  "insert": "61"
+  }}
+    ],
+    "description": {
+      "dependency": "environmental_class"
+    },
+    "label": "Insert Arrangement"
+  },
+  "contact_style": {
+    "data": [
+      "P",
+      "S"
+    ],
+    "description": [
+      "Pin",
+      "Socket"
+    ],
+    "label": "Contact Style"
+  },
+  "shell_position": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"10"
+    ],
+    "label": "Shell Position"
+  },
+  "order_code": {
+    "data": [
+      "106",
+      "202"
+    ],
+    "description": [
+      "Less Contacts",
+      "With Gold-Plated Contacts"
+    ],
+    "label": "Order Code (Deviations)"
+  }
+}

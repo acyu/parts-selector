@@ -1,0 +1,284 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "8533-"
+    ],
+    "label": "Basic Series"
+  },
+  "shell_type": {
+    "data": [
+"0",
+"3",
+"4",
+"7"
+    ],
+    "description": [
+"Square Flange Receptacle",
+"Plug with RFI Screening Ring",
+"Plug with RFI Screening Ring",
+"Jam Nut Receptacle"
+    ],
+    "label": "Shell Type"
+  },
+  "with_360_teeth": {
+    "data": [
+"S"
+    ],
+    "label":"With 360° Teeth"
+  },
+  "class": {
+    "data": [
+"W",
+"R",
+"A",
+"K",
+"E"
+    ],
+    "description": [
+"175°C Aluminum Olive Drab Cadmium Conductive Plating",
+"200°C Aluminum Nickel Conductive Plating",
+"200°C Aluminum Black Anodized Non Conductive Plating",
+"200°C Stainless Steel",
+"260°C Stainless Steel"
+    ],
+    "label":"Class"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "contact_layout": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Contact Layout"
+  },
+  "insert_arrangement": {
+    "data": [
+{"08-01":{
+  "shell_size": "08",
+  "separator": "-",
+  "contact_layout": "01"
+  }},
+{"08-03":{
+  "shell_size": "08",
+  "separator": "-",
+  "contact_layout": "03"
+  }},
+{"08-98":{
+  "shell_size": "08",
+  "separator": "-",
+  "contact_layout": "98"
+  }},
+{"10-05":{
+  "shell_size": "10",
+  "separator": "-",
+  "contact_layout": "05"
+  }},
+{"10-06":{
+  "shell_size": "10",
+  "separator": "-",
+  "contact_layout": "06"
+  }},
+{"12-03":{
+  "shell_size": "12",
+  "separator": "-",
+  "contact_layout": "03"
+  }},
+{"12-12":{
+  "shell_size": "12",
+  "separator": "-",
+  "contact_layout": "12"
+  }},
+{"14-04":{
+  "shell_size": "14",
+  "separator": "-",
+  "contact_layout": "14"
+  }},
+{"14-07":{
+  "shell_size": "14",
+  "separator": "-",
+  "contact_layout": "07"
+  }},
+{"14-12":{
+  "shell_size": "14",
+  "separator": "-",
+  "contact_layout": "12"
+  }},
+{"14-15":{
+  "shell_size": "14",
+  "separator": "-",
+  "contact_layout": "15"
+  }},
+{"16-10":{
+  "shell_size": "16",
+  "separator": "-",
+  "contact_layout": "10"
+  }},
+{"16-24":{
+  "shell_size": "16",
+  "separator": "-",
+  "contact_layout": "24"
+  }},
+{"18-02":{
+  "shell_size": "18",
+  "separator": "-",
+  "contact_layout": "02"
+  }},
+{"18-08":{
+  "shell_size": "18",
+  "separator": "-",
+  "contact_layout": "08"
+  }},
+{"18-14":{
+  "shell_size": "18",
+  "separator": "-",
+  "contact_layout": "14"
+  }},
+{"18-31":{
+  "shell_size": "18",
+  "separator": "-",
+  "contact_layout": "31"
+  }},
+{"20-04":{
+  "shell_size": "20",
+  "separator": "-",
+  "contact_layout": "04"
+  }},
+{"20-16":{
+  "shell_size": "20",
+  "separator": "-",
+  "contact_layout": "16"
+  }},
+{"20-25":{
+  "shell_size": "20",
+  "separator": "-",
+  "contact_layout": "25"
+  }},
+{"20-28":{
+  "shell_size": "20",
+  "separator": "-",
+  "contact_layout": "28"
+  }},
+{"20-39":{
+  "shell_size": "20",
+  "separator": "-",
+  "contact_layout": "39"
+  }},
+{"20-41":{
+  "shell_size": "20",
+  "separator": "-",
+  "contact_layout": "41"
+  }},
+{"22-12":{
+  "shell_size": "22",
+  "separator": "-",
+  "contact_layout": "12"
+  }},
+{"22-19":{
+  "shell_size": "22",
+  "separator": "-",
+  "contact_layout": "19"
+  }},
+{"22-32":{
+  "shell_size": "22",
+  "separator": "-",
+  "contact_layout": "32"
+  }},
+{"22-39":{
+  "shell_size": "22",
+  "separator": "-",
+  "contact_layout": "39"
+  }},
+{"22-55":{
+  "shell_size": "22",
+  "separator": "-",
+  "contact_layout": "55"
+  }},
+{"24-04":{
+  "shell_size": "24",
+  "separator": "-",
+  "contact_layout": "04"
+  }},
+{"24-30":{
+  "shell_size": "24",
+  "separator": "-",
+  "contact_layout": "30"
+  }},
+{"24-61":{
+  "shell_size": "24",
+  "separator": "-",
+  "contact_layout": "61"
+  }},
+{"28-06":{
+  "shell_size": "28",
+  "separator": "-",
+  "contact_layout": "06"
+  }},
+{"28-42":{
+  "shell_size": "28",
+  "separator": "-",
+  "contact_layout": "42"
+  }}
+    ],
+    "label": "Insert Arrangement"
+  },
+  "contact_type": {
+    "data": [
+"P",
+"S"
+    ],
+    "description": [
+"Pin",
+"Socket"
+    ],
+    "label": "Contact Style"
+  },
+  "orientation": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"Y"
+    ],
+    "exception": {
+      "fields": [
+        "insert_arrangement"
+      ],
+      "actions": {
+        "remove": [
+          "Y"
+        ]
+      },
+      "triggers": [
+"08-01",
+"08-03",
+"08-98"
+      ]
+    },
+    "label": "Orientation  / Clocking"
+  },
+  "specification": {
+    "data": [
+"[blank]",
+"L",
+"08",
+"22",
+"68"
+    ],
+    "description": [
+"Connector Supplied with Standard Contacts",
+"Connector Supplied without Contacts",
+"Connector Supplied with Large Barrel Contacts",
+"Fuel Immersion Version",
+"Connector Supplied with Contacts #20 Large Barrel and Standard Contact #16"
+    ],
+    "label": "Specification"
+  }
+}

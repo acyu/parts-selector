@@ -1,0 +1,310 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "M83723"
+    ],
+    "label": "Connector Type"
+  },
+  "connector_style":
+  {
+    "data":
+    [
+      "/71",
+      "/72",
+      "/73",
+      "/74",
+      "/75",
+      "/76",
+      "/77",
+      "/78",
+      "/82",
+      "/83",
+      "/84",
+      "/85",
+      "/86",
+      "/87",
+      "/91",
+      "/92",
+      "/95",
+      "/96"
+    ],
+    "description": [
+      "Wall Mounting Receptacle with Socket Contacts",
+      "Wall Mounting Receptacle with Pin Contacts",
+      "Jam Nut Receptacle with Socket Contacts",
+      "Jam Nut Receptacle with Pin Contacts",
+      "Standard Straight Plug with Socket Contacts",
+      "Standard Straight Plug with Pin Contacts",
+      "Straight Plug with RFI Grounding, Socket Contacts",
+      "Straight Plug with RFI Grounding, Pin Contacts",
+      "Wall Mounting Receptacle with Socket Contacts",
+      "Wall Mounting Receptacle with Pin Contacts",
+      "Jam Nut Receptacle with Socket Contacts",
+      "Jam Nut Receptacle with Pin Contacts",
+      "Standard Straight Plug with Socket Contacts",
+      "Strandard Straight Plug with Pin Contacts",
+      "Straight Plug with RFI Grounding, Socket Contacts",
+      "Straight Plug with RFI Grounding, Pin Contacts",
+      "Straight Plug with Self-Locking Clutch Plate, Socket Contacts",
+      "Straight Plug with Self-Locking Clutch Plate, Pin Contacts"
+    ],
+    "label": "Connector Style"
+  },
+  "service_class":
+  {
+    "data":
+    [
+    "A",
+    "G",
+    "R",
+    "W"
+    ],
+    "description": [
+"Aluminum Shell, Black Non-Conductive Anodize Finish, Fluid Resistant",
+"Stainless Steel Shell, Passivated, Fluid Resistant",
+"Aluminum Shell, Electroless Nickel Finish, Fluid Resistant",
+"Aluminum Shell, Cadmium Olive Drab Finish, Corrosion/Fluid Resistant"
+    ],
+    "label": "Service Class"
+  },
+  "shell_size":
+  {
+    "data":[],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "insert":
+  {
+    "data":
+    [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement":
+  {
+    "data":
+    [
+      {
+        "0803":
+        {
+          "shell_size": "08",
+          "insert": "03"
+        }
+      },
+      {
+        "0898":
+        {
+          "shell_size": "08",
+          "insert": "98"
+        }
+      },
+      {
+        "1002":
+        {
+          "shell_size": "10",
+          "insert": "02"
+        }
+      },
+      {
+        "1005":
+        {
+          "shell_size": "10",
+          "insert": "05"
+        }
+      },
+      {
+        "1006":
+        {
+          "shell_size": "10",
+          "insert":"06"
+        }
+      },
+      {
+        "1020":
+        {
+          "shell_size": "10",
+          "insert": "20"
+        }
+      },
+      {
+        "1203":
+        {
+          "shell_size": "12",
+          "insert": "03"
+        }
+      },
+      {
+        "1212":
+        {
+          "shell_size": "12",
+          "insert": "12"
+        }
+      },
+      {
+        "1404":
+        {
+          "shell_size": "14",
+          "insert": "04"
+        }
+      },
+      {
+        "1407":
+        {
+          "shell_size": "14",
+          "insert": "07"
+        }
+      },
+      {
+        "1412":
+        {
+          "shell_size": "14",
+          "insert": "12"
+        }
+      },
+      {
+        "1415":
+        {
+          "shell_size": "14",
+          "insert": "15"
+        }
+      },
+      {
+        "1610":
+        {
+          "shell_size": "16",
+          "insert": "10"
+        }
+      },
+      {
+        "1624":
+        {
+          "shell_size": "16",
+          "insert": "24"
+        }
+      },
+      {
+        "1808":
+        {
+          "shell_size": "18",
+          "insert": "08"
+        }
+      },
+      {
+        "1814":
+        {
+          "shell_size": "18",
+          "insert": "14"
+        }
+      },
+      {
+        "1831":
+        {
+          "shell_size": "18",
+          "insert": "31"
+        }
+      },
+      {
+        "2016":
+        {
+          "shell_size": "20",
+          "insert": "16"
+        }
+      },
+      {
+        "2025":
+        {
+          "shell_size": "20",
+          "insert": "25"
+        }
+      },
+      {
+        "2028":
+        {
+          "shell_size": "20",
+          "insert": "28"
+        }
+      },
+      {
+        "2039":
+        {
+          "shell_size": "20",
+          "insert": "39"
+        }
+      },
+      {
+        "2041":
+        {
+          "shell_size": "20",
+          "insert": "41"
+        }
+      },
+      {
+        "2212":
+        {
+          "shell_size": "22",
+          "insert": "12"
+        }
+      },
+      {
+        "2219":
+        {
+          "shell_size": "22",
+          "insert": "19"
+        }
+      },
+      {
+        "2232":
+        {
+          "shell_size": "22",
+          "insert": "32"
+        }
+      },
+      {
+        "2255":
+        {
+          "shell_size": "22",
+          "insert": "55"
+        }
+      },
+      {
+        "2443":
+        {
+          "shell_size": "24",
+          "insert": "43"
+        }
+      },
+      {
+        "2457":
+        {
+          "shell_size": "24",
+          "insert": "57"
+        }
+      },
+      {
+        "2461":
+        {
+          "shell_size": "24",
+          "insert": "61"
+        }
+      }
+    ],
+    "label": "Insert Pattern"
+  },
+  "keyway_position":
+  {
+    "data":
+    [
+      "N",
+      "6",
+      "7",
+      "8",
+      "9",
+      "Y"
+    ],
+    "label": "Alternate Keying /<br/>Alternate Rotation"
+  }
+}

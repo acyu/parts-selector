@@ -1,0 +1,349 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "EN3645"
+    ],
+    "label": "Basic Series"
+  },
+  "plating": {
+    "data": [
+"W",
+"F",
+"J",
+"M",
+"K"
+    ],
+    "description": [
+"Aluminum Olive Drab Cadmium",
+"Aluminum Nickel",
+"Composite Olive Drab Cadmium",
+"Composite Nickel",
+"Stainless Steel Passivated"
+    ],
+    "label": "Plating"
+  },
+  "shell_style": {
+    "data": [
+"0",
+"6",
+"7"
+    ],
+    "description": [
+"Square Flange Receptacle",
+"Plug",
+"Jam Nut Receptacle"
+    ],
+    "label": "Shell Style"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "grounding": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Grounding"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"AN35": {
+  "shell_size": "A",
+  "grounding": "N",
+  "insert": "35"
+  }},
+{"AN98": {
+  "shell_size": "A",
+  "grounding": "N",
+  "insert": "98"
+  }},
+{"BN02": {
+  "shell_size": "B",
+  "grounding": "N",
+  "insert": "02"
+  }},
+{"BN05": {
+  "shell_size": "B",
+  "grounding": "N",
+  "insert": "05"
+  }},
+{"BN35": {
+  "shell_size": "B",
+  "grounding": "N",
+  "insert": "35"
+  }},
+{"BN98": {
+  "shell_size": "B",
+  "grounding": "N",
+  "insert": "98"
+  }},
+{"BN99": {
+  "shell_size": "B",
+  "grounding": "N",
+  "insert": "99"
+  }},
+{"CN04": {
+  "shell_size": "C",
+  "grounding": "N",
+  "insert": "04"
+  }},
+{"CN08": {
+  "shell_size": "C",
+  "grounding": "N",
+  "insert": "08"
+  }},
+{"CN26": {
+  "shell_size": "C",
+  "grounding": "N",
+  "insert": "26"
+  }},
+{"CN35": {
+  "shell_size": "C",
+  "grounding": "N",
+  "insert": "35"
+  }},
+{"CN98": {
+  "shell_size": "C",
+  "grounding": "N",
+  "insert": "98"
+  }},
+{"DN05": {
+  "shell_size": "D",
+  "grounding": "N",
+  "insert": "05"
+  }},
+{"DN15": {
+  "shell_size": "D",
+  "grounding": "N",
+  "insert": "15"
+  }},
+{"DN18": {
+  "shell_size": "D",
+  "grounding": "N",
+  "insert": "18"
+  }},
+{"DN19": {
+  "shell_size": "D",
+  "grounding": "N",
+  "insert": "19"
+  }},
+{"DN35": {
+  "shell_size": "D",
+  "grounding": "N",
+  "insert": "35"
+  }},
+{"DN97": {
+  "shell_size": "D",
+  "grounding": "N",
+  "insert": "97"
+  }},
+{"EN02": {
+  "shell_size": "E",
+  "grounding": "N",
+  "insert": "02"
+  }},
+{"EN06": {
+  "shell_size": "E",
+  "grounding": "N",
+  "insert": "06"
+  }},
+{"EN08": {
+  "shell_size": "E",
+  "grounding": "N",
+  "insert": "08"
+  }},
+{"EN26": {
+  "shell_size": "E",
+  "grounding": "N",
+  "insert": "26"
+  }},
+{"EN35": {
+  "shell_size": "E",
+  "grounding": "N",
+  "insert": "35"
+  }},
+{"EN99": {
+  "shell_size": "E",
+  "grounding": "N",
+  "insert": "99"
+  }},
+{"FN11": {
+  "shell_size": "F",
+  "grounding": "N",
+  "insert": "11"
+  }},
+{"FN32": {
+  "shell_size": "F",
+  "grounding": "N",
+  "insert": "32"
+  }},
+{"FN35": {
+  "shell_size": "F",
+  "grounding": "N",
+  "insert": "35"
+  }},
+{"FN53": {
+  "shell_size": "F",
+  "grounding": "N",
+  "insert": "53"
+  }},
+{"GN11": {
+  "shell_size": "G",
+  "grounding": "N",
+  "insert": "11"
+  }},
+{"GN16": {
+  "shell_size": "G",
+  "grounding": "N",
+  "insert": "16"
+  }},
+{"GN20": {
+  "shell_size": "G",
+  "grounding": "N",
+  "insert": "20"
+  }},
+{"GN35": {
+  "shell_size": "G",
+  "grounding": "N",
+  "insert": "35"
+  }},
+{"GN39": {
+  "shell_size": "G",
+  "grounding": "N",
+  "insert": "39"
+  }},
+{"GN41": {
+  "shell_size": "G",
+  "grounding": "N",
+  "insert": "41"
+  }},
+{"GN75": {
+  "shell_size": "G",
+  "grounding": "N",
+  "insert": "75"
+  }},
+{"HN21": {
+  "shell_size": "H",
+  "grounding": "N",
+  "insert": "21"
+  }},
+{"HN35": {
+  "shell_size": "H",
+  "grounding": "N",
+  "insert": "35"
+  }},
+{"HN53": {
+  "shell_size": "H",
+  "grounding": "N",
+  "insert": "53"
+  }},
+{"HN55": {
+  "shell_size": "H",
+  "grounding": "N",
+  "insert": "55"
+  }},
+{"JN04": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "04"
+  }},
+{"JN07": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "07"
+  }},
+{"JN08": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "08"
+  }},
+{"JN11": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "11"
+  }},
+{"JN19": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "19"
+  }},
+{"JN20": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "20"
+  }},
+{"JN24": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "24"
+  }},
+{"JN29": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "29"
+  }},
+{"JN35": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "35"
+  }},
+{"JN37": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "37"
+  }},
+{"JN43": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "43"
+  }},
+{"JN46": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "46"
+  }},
+{"JN61": {
+  "shell_size": "J",
+  "grounding": "N",
+  "insert": "61"
+  }}
+    ],
+    "label": "Insert Arrangement"
+  },
+  "contact_type": {
+    "data": [
+"A",
+"B",
+"F",
+"M"
+    ],
+    "description": [
+"Connector Supplied less Pin Contact",
+"Connector Supplied Less Socket Contact",
+"Socket",
+"Pin"
+    ],
+    "label": "Contact Type"
+  },
+  "orientation": {
+    "data": [
+"N",
+"A",
+"B",
+"C",
+"D",
+"E"
+    ],
+    "label": "Orientation"
+  }
+}

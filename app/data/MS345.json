@@ -1,0 +1,708 @@
+{
+  "base": {
+    "data": [
+      "MS"
+    ],
+    "label": "Connector Type"
+  },
+  "shell_style": {
+    "data": [
+      "3450",
+      "3451",
+      "3452",
+      "3454",
+      "3456",
+      "3459"
+    ],
+    "description": [
+      "Wall Mounting Receptacle",
+      "Cable Connecting Receptacle",
+      "Box Mounting Receptacle",
+      "Jam Nut Receptacle",
+      "Straight Plug",
+      "Straight Plug with Self-Locking Coupling Nut"
+    ],
+    "label": "Shell Style"
+  },
+  "service_class": {
+    "data": [
+      "L",
+      "LS",
+      "W",
+      "KS",
+      "KT"
+    ],
+    "description": [
+      "Aluminum Shell, Electroless Nickel Finish, Fluid Resistant Insert",
+      "Stainless Steel Shell, Passivated, Fluid Resistant Insert",
+      "Aluminum Shell, Cadmium Olive Drab Finish, Fluid Resistant Insert",
+      "Firewall, Stainless Steel Shell, Passivated, Non-Flammable Hard Dielectric and Fluid Resistant Insert",
+      "Firewall, Steel Shell, Cadmium/Olive Drab Finish, Non-Flammable Hard Dielectric and Fluid Resistant Insert"
+    ],
+    "exception": {
+      "fields": [
+        "shell_style"
+      ],
+      "actions": [
+        {
+          "remove": [
+            "KS",
+            "KT"
+          ]
+        }
+      ],
+      "triggers": [
+        "3451",
+        "3452",
+        "3454"
+      ]
+    },
+    "label": "Service Class"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{
+  "8S-1": {
+    "shell_size": "8S",
+    "separator": "-",
+    "insert": "1"
+  }
+},
+{
+  "10S-2": {
+    "shell_size": "10S",
+    "separator": "-",
+    "insert": "2"
+  }
+},
+{
+  "10SL-3": {
+    "shell_size": "10SL",
+    "separator": "-",
+    "insert": "3"
+  }
+},
+{
+  "10SL-4": {
+    "shell_size": "10SL",
+    "separator": "-",
+    "insert": "4"
+  }
+},
+{
+  "12S-1": {
+    "shell_size": "12S",
+    "separator": "-",
+    "insert": "1"
+  }
+},
+{
+  "12S-2": {
+    "shell_size": "12S",
+    "separator": "-",
+    "insert": "2"
+  }
+},
+{
+  "12S-3": {
+    "shell_size": "12S",
+    "separator": "-",
+    "insert": "3"
+  }
+},
+{
+  "12S-4": {
+    "shell_size": "12S",
+    "separator": "-",
+    "insert": "4"
+  }
+},
+{
+  "12-5": {
+    "shell_size": "12",
+    "separator": "-",
+    "insert": "5"
+  }
+},
+{
+  "14-3": {
+    "shell_size": "14",
+    "separator": "-",
+    "insert": "3"
+  }
+},
+{
+  "14S-2": {
+    "shell_size": "14S",
+    "separator": "-",
+    "insert": "2"
+  }
+},
+{
+  "14S-5": {
+    "shell_size": "14S",
+    "separator": "-",
+    "insert": "5"
+  }
+},
+{"14S-6": {
+    "shell_size": "14S",
+    "separator": "-",
+    "insert": "6"
+  }},
+{"14S-7": {
+    "shell_size": "14S",
+    "separator": "-",
+    "insert": "7"
+  }},
+{"14S-10": {
+    "shell_size": "14S",
+    "separator": "-",
+    "insert": "10"
+  }},
+{"14S-11": {
+    "shell_size": "14S",
+    "separator": "-",
+    "insert": "11"
+  }},
+{"14S-12": {
+    "shell_size": "14S",
+    "separator": "-",
+    "insert": "12"
+  }},
+{"14S-13": {
+    "shell_size": "14S",
+    "separator": "-",
+    "insert": "13"
+  }},
+{"16-9": {
+    "shell_size": "16",
+    "separator": "-",
+    "insert": "9"
+  }},
+{"16-10": {
+    "shell_size": "16",
+    "separator": "-",
+    "insert": "10"
+  }},
+{"16-11": {
+    "shell_size": "16",
+    "separator": "-",
+    "insert": "11"
+  }},
+{"16-12": {
+    "shell_size": "16",
+    "separator": "-",
+    "insert": "12"
+  }},
+{"16-13": {
+    "shell_size": "16",
+    "separator": "-",
+    "insert": "13"
+  }},
+{"16S-1": {
+    "shell_size": "16S",
+    "separator": "-",
+    "insert": "1"
+  }},
+{"16S-8": {
+    "shell_size": "16S",
+    "separator": "-",
+    "insert": "8"
+  }},
+{"18-1": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "1"
+  }},
+{"18-4": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "4"
+  }},
+{"18-5": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "5"
+  }},
+{"18-11": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "11"
+  }},
+{"18-12": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "12"
+  }},
+{"18-13": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "13"
+  }},
+{"18-15": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "15"
+  }},
+{"18-17": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "17"
+  }},
+{"18-18": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "18"
+  }},
+{"18-23": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "23"
+  }},
+{"18-24": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "24"
+  }},
+{"18-27": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "27"
+  }},
+{"18-28": {
+    "shell_size": "18",
+    "separator": "-",
+    "insert": "28"
+  }},
+{"20-2": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "2"
+  }},
+{"20-4": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "4"
+  }},
+{"20-7": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "7"
+  }},
+{"20-8": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "8"
+  }},
+{"20-14": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "14"
+  }},
+{"20-15": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "15"
+  }},
+{"20-16": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "16"
+  }},
+{"20-17": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "17"
+  }},
+{"20-18": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "18"
+  }},
+{"20-19": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "19"
+  }},
+{"20-21": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "21"
+  }},
+{"20-22": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "22"
+  }},
+{"20-24": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "24"
+  }},
+{"20-27": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "27"
+  }},
+{"20-29": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "29"
+  }},
+{"20-32": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "32"
+  }},
+{"20-33": {
+    "shell_size": "20",
+    "separator": "-",
+    "insert": "33"
+  }},
+{"22-2": {
+    "shell_size": "22",
+    "separator": "-",
+    "insert": "2"
+  }},
+{"22-5": {
+    "shell_size": "22",
+    "separator": "-",
+    "insert": "5"
+  }},
+{"22-14": {
+    "shell_size": "22",
+    "separator": "-",
+    "insert": "14"
+  }},
+{"22-19": {
+    "shell_size": "22",
+    "separator": "-",
+    "insert": "19"
+  }},
+{"22-21": {
+    "shell_size": "22",
+    "separator": "-",
+    "insert": "21"
+  }},
+{"22-22": {
+    "shell_size": "22",
+    "separator": "-",
+    "insert": "22"
+  }},
+{"22-23": {
+    "shell_size": "22",
+    "separator": "-",
+    "insert": "23"
+  }},
+{"22-30": {
+    "shell_size": "22",
+    "separator": "-",
+    "insert": "30"
+  }},
+{"22-32": {
+    "shell_size": "22",
+    "separator": "-",
+    "insert": "32"
+  }},
+{"24-2": {
+    "shell_size": "24",
+    "separator": "-",
+    "insert": "2"
+  }},
+{"24-7": {
+    "shell_size": "24",
+    "separator": "-",
+    "insert": "7"
+  }},
+{"24-10": {
+    "shell_size": "24",
+    "separator": "-",
+    "insert": "10"
+  }},
+{"24-11": {
+    "shell_size": "24",
+    "separator": "-",
+    "insert": "11"
+  }},
+{"24-12": {
+    "shell_size": "24",
+    "separator": "-",
+    "insert": "12"
+  }},
+{"24-15": {
+    "shell_size": "24",
+    "separator": "-",
+    "insert": "15"
+  }},
+{"24-20": {
+    "shell_size": "24",
+    "separator": "-",
+    "insert": "20"
+  }},
+{"24-22": {
+    "shell_size": "24",
+    "separator": "-",
+    "insert": "22"
+  }},
+{"24-24": {
+    "shell_size": "24",
+    "separator": "-",
+    "insert": "24"
+  }},
+{"24-28": {
+    "shell_size": "24",
+    "separator": "-",
+    "insert": "28"
+  }},
+{"28-1": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "1"
+  }},
+{"28-2": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "2"
+  }},
+{"28-8": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "8"
+  }},
+{"28-9": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "9"
+  }},
+{"28-10": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "10"
+  }},
+{"28-11": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "11"
+  }},
+{"28-12": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "12"
+  }},
+{"28-13": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "13"
+  }},
+{"28-15": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "15"
+  }},
+{"28-16": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "16"
+  }},
+{"28-17": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "17"
+  }},
+{"28-20": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "20"
+  }},
+{"28-21": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "21"
+  }},
+{"28-22": {
+    "shell_size": "28",
+    "separator": "-",
+    "insert": "22"
+  }},
+{"32-1": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "1"
+  }},
+{"32-6": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "6"
+  }},
+{"32-7": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "7"
+  }},
+{"32-9": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "9"
+  }},
+{"32-13": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "13"
+  }},
+{"32-15": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "15"
+  }},
+{"32-16": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "16"
+  }},
+{"32-17": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "17"
+  }},
+{"32-19": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "19"
+  }},
+{"32-20": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "20"
+  }},
+{"32-73": {
+    "shell_size": "32",
+    "separator": "-",
+    "insert": "73"
+  }},
+{"36-3": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "3"
+  }},
+{"36-5": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "5"
+  }},
+{"36-6": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "6"
+  }},
+{"36-7": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "7"
+  }},
+{"36-8": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "8"
+  }},
+{"36-9": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "9"
+  }},
+{"36-10": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "10"
+  }},
+{"36-11": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "11"
+  }},
+{"36-12": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "12"
+  }},
+{"36-15": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "15"
+  }},
+{"36-16": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "16"
+  }},
+{"36-17": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "17"
+  }},
+{"36-18": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "18"
+  }},
+{"36-21": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "21"
+  }},
+{"36-52": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "52"
+  }},
+{"36-66": {
+    "shell_size": "36",
+    "separator": "-",
+    "insert": "66"
+  }},
+{"40-1": {
+    "shell_size": "40",
+    "separator": "-",
+    "insert": "1"
+  }},
+{"40-9": {
+    "shell_size": "40",
+    "separator": "-",
+    "insert": "9"
+  }},
+{"40-56": {
+    "shell_size": "40",
+    "separator": "-",
+    "insert": "56"
+  }}
+    ],
+    "label": "Insert Pattern"
+  },
+  "contact_type": {
+    "data": [
+      "P",
+      "S",
+      "A",
+      "B"
+    ],
+    "description": [
+      "Pin",
+      "Socket",
+      "Less Pins",
+      "Less Sockets"
+    ],
+    "label": "Contact Type"
+  }
+}

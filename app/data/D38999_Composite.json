@@ -1,0 +1,292 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "D38999/"
+    ],
+    "label": "Basic Series"
+  },
+  "shell_type": {
+    "data": [
+"20",
+"26"
+    ],
+    "description": [
+"Square Flange Receptacle",
+"Plug with RFI Shielding"
+    ],
+    "label": "Shell Type"
+  },
+  "plating": {
+    "data": [
+"J",
+"M"
+    ],
+    "description": [
+"Olive Green Cadmium",
+"Nickel"
+    ],
+    "label": "Plating"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"A35": {
+  "shell_size": "A",
+  "insert": "35"
+  }},
+{"A98": {
+  "shell_size": "A",
+  "insert": "98"
+  }},
+{"B02": {
+  "shell_size": "B",
+  "insert": "02"
+  }},
+{"B04": {
+  "shell_size": "B",
+  "insert": "04"
+  }},
+{"B05": {
+  "shell_size": "B",
+  "insert": "05"
+  }},
+{"B35": {
+  "shell_size": "B",
+  "insert": "35"
+  }},
+{"B98": {
+  "shell_size": "B",
+  "insert": "98"
+  }},
+{"B99": {
+  "shell_size": "B",
+  "insert": "99"
+  }},
+{"C04": {
+  "shell_size": "C",
+  "insert": "04"
+  }},
+{"C08": {
+  "shell_size": "C",
+  "insert": "08"
+  }},
+{"C35": {
+  "shell_size": "C",
+  "insert": "35"
+  }},
+{"C98": {
+  "shell_size": "C",
+  "insert": "98"
+  }},
+{"D05": {
+  "shell_size": "D",
+  "insert": "05"
+  }},
+{"D15": {
+  "shell_size": "D",
+  "insert": "15"
+  }},
+{"D18": {
+  "shell_size": "D",
+  "insert": "18"
+  }},
+{"D19": {
+  "shell_size": "D",
+  "insert": "19"
+  }},
+{"D35": {
+  "shell_size": "D",
+  "insert": "35"
+  }},
+{"D97": {
+  "shell_size": "D",
+  "insert": "97"
+  }},
+{"E02": {
+  "shell_size": "E",
+  "insert": "02"
+  }},
+{"E06": {
+  "shell_size": "E",
+  "insert": "06"
+  }},
+{"E08": {
+  "shell_size": "E",
+  "insert": "08"
+  }},
+{"E26": {
+  "shell_size": "E",
+  "insert": "26"
+  }},
+{"E35": {
+  "shell_size": "E",
+  "insert": "35"
+  }},
+{"E99": {
+  "shell_size": "E",
+  "insert": "99"
+  }},
+{"F11": {
+  "shell_size": "F",
+  "insert": "11"
+  }},
+{"F28": {
+  "shell_size": "F",
+  "insert": "28"
+  }},
+{"F32": {
+  "shell_size": "F",
+  "insert": "32"
+  }},
+{"F35": {
+  "shell_size": "F",
+  "insert": "35"
+  }},
+{"G11": {
+  "shell_size": "G",
+  "insert": "11"
+  }},
+{"G16": {
+  "shell_size": "G",
+  "insert": "16"
+  }},
+{"G35": {
+  "shell_size": "G",
+  "insert": "35"
+  }},
+{"G39": {
+  "shell_size": "G",
+  "insert": "39"
+  }},
+{"G41": {
+  "shell_size": "G",
+  "insert": "41"
+  }},
+{"G59": {
+  "shell_size": "G",
+  "insert": "59"
+  }},
+{"H21": {
+  "shell_size": "H",
+  "insert": "21"
+  }},
+{"H35": {
+  "shell_size": "H",
+  "insert": "35"
+  }},
+{"H53": {
+  "shell_size": "H",
+  "insert": "53"
+  }},
+{"H55": {
+  "shell_size": "H",
+  "insert": "55"
+  }},
+{"J04": {
+  "shell_size": "J",
+  "insert": "04"
+  }},
+{"J07": {
+  "shell_size": "J",
+  "insert": "07"
+  }},
+{"J08": {
+  "shell_size": "J",
+  "insert": "08"
+  }},
+{"J11": {
+  "shell_size": "J",
+  "insert": "11"
+  }},
+{"J19": {
+  "shell_size": "J",
+  "insert": "19"
+  }},
+{"J20": {
+  "shell_size": "J",
+  "insert": "20"
+  }},
+{"J24": {
+  "shell_size": "J",
+  "insert": "24"
+  }},
+{"J29": {
+  "shell_size": "J",
+  "insert": "29"
+  }},
+{"J41": {
+  "shell_size": "J",
+  "insert": "41"
+  }},
+{"J44": {
+  "shell_size": "J",
+  "insert": "44"
+  }},
+{"J46": {
+  "shell_size": "J",
+  "insert": "46"
+  }}
+    ],
+    "label": "Insert Arrangement"
+  },
+  "contact_type": {
+    "data": [
+"A",
+"B",
+"H",
+"J",
+"P",
+"S"
+    ],
+    "description": [
+"Connector supplied less pin contact or with specific contacts (connector marking: A + orientation)",
+"Connector supplies less socket contact or with specific contacts (connector marking: B + orientation)",
+"Pin (500 Mating / Unmating)",
+"Socket (500 Mating / Unmating)",
+      "Pin (1500 Mating / Unmating)",
+      "Socket (1500 Mating / Unmating)"
+    ],
+    "label": "Contact Style"
+  },
+  "orientation": {
+    "data": [
+"N",
+"A",
+"B",
+"C",
+"D",
+"E"
+    ],
+    "description": [
+"Normal Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position"
+    ],
+    "label":"Orientation"
+  },
+  "without_contacts": {
+    "data": [
+"L"
+    ],
+    "description": [
+"For P or S Contact Type Only, Connector Delivered Without Contacts, Connector Marking P or S (Without L)"
+    ],
+    "label": "Widthout Contacts"
+  }
+}

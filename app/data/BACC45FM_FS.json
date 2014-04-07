@@ -1,0 +1,571 @@
+{
+  "base": {
+    "data": [
+      "BACC45FM",
+      "BACC45FS"
+    ],
+    "label": "Basic Part Number"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "cable_clamp": {
+    "data": [
+"-",
+"A",
+"B",
+"C",
+"D",
+"E"
+    ],
+    "description": [
+"No Cable Clamp",
+"BACC10GH Straight Single Leg Clamp",
+"MS27559 Right Angle Saddle Clamp",
+"MS24291 Straight Saddle Clamp",
+"BACC10JC Right Angle Single Leg Clamp",
+"BACC10JS Straight Single Leg Composite Clamp"
+    ],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Cable Clamp"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"10-5": {
+  "shell_size": "10",
+  "cable_clamp": "-",
+  "insert": "5"
+  }},
+{"10A5": {
+  "shell_size": "10",
+  "cable_clamp": "A",
+  "insert": "5"
+  }},
+{"10B5": {
+  "shell_size": "10",
+  "cable_clamp": "B",
+  "insert": "5"
+  }},
+{"10C5": {
+  "shell_size": "10",
+  "cable_clamp": "C",
+  "insert": "5"
+  }},
+{"10D5": {
+  "shell_size": "10",
+  "cable_clamp": "D",
+  "insert": "5"
+  }},
+{"10E5": {
+  "shell_size": "10",
+  "cable_clamp": "E",
+  "insert": "5"
+  }},
+{"12-3": {
+  "shell_size": "12",
+  "cable_clamp": "-",
+  "insert": "3"
+  }},
+{"12A3": {
+  "shell_size": "12",
+  "cable_clamp": "A",
+  "insert": "3"
+  }},
+{"12B3": {
+  "shell_size": "12",
+  "cable_clamp": "B",
+  "insert": "3"
+  }},
+{"12C3": {
+  "shell_size": "12",
+  "cable_clamp": "C",
+  "insert": "3"
+  }},
+{"12D3": {
+  "shell_size": "12",
+  "cable_clamp": "D",
+  "insert": "3"
+  }},
+{"12E3": {
+  "shell_size": "12",
+  "cable_clamp": "E",
+  "insert": "3"
+  }},
+{"12-12": {
+  "shell_size": "12",
+  "cable_clamp": "-",
+  "insert": "12"
+  }},
+{"12A12": {
+  "shell_size": "12",
+  "cable_clamp": "A",
+  "insert": "12"
+  }},
+{"12B12": {
+  "shell_size": "12",
+  "cable_clamp": "B",
+  "insert": "12"
+  }},
+{"12C12": {
+  "shell_size": "12",
+  "cable_clamp": "C",
+  "insert": "12"
+  }},
+{"12D12": {
+  "shell_size": "12",
+  "cable_clamp": "D",
+  "insert": "12"
+  }},
+{"12E12": {
+  "shell_size": "12",
+  "cable_clamp": "E",
+  "insert": "12"
+  }},
+{"14-3": {
+  "shell_size": "14",
+  "cable_clamp": "-",
+  "insert": "3"
+  }},
+{"14A3": {
+  "shell_size": "14",
+  "cable_clamp": "A",
+  "insert": "3"
+  }},
+{"14B3": {
+  "shell_size": "14",
+  "cable_clamp": "B",
+  "insert": "3"
+  }},
+{"14C3": {
+  "shell_size": "14",
+  "cable_clamp": "C",
+  "insert": "3"
+  }},
+{"14D3": {
+  "shell_size": "14",
+  "cable_clamp": "D",
+  "insert": "3"
+  }},
+{"14E3": {
+  "shell_size": "14",
+  "cable_clamp": "E",
+  "insert": "3"
+  }},
+{"14-4": {
+  "shell_size": "14",
+  "cable_clamp": "-",
+  "insert": "4"
+  }},
+{"14A4": {
+  "shell_size": "14",
+  "cable_clamp": "A",
+  "insert": "4"
+  }},
+{"14B4": {
+  "shell_size": "14",
+  "cable_clamp": "B",
+  "insert": "4"
+  }},
+{"14C4": {
+  "shell_size": "14",
+  "cable_clamp": "C",
+  "insert": "4"
+  }},
+{"14D4": {
+  "shell_size": "14",
+  "cable_clamp": "D",
+  "insert": "4"
+  }},
+{"14E4": {
+  "shell_size": "14",
+  "cable_clamp": "E",
+  "insert": "4"
+  }},
+{"14-7": {
+  "shell_size": "14",
+  "cable_clamp": "-",
+  "insert": "7"
+  }},
+{"14A7": {
+  "shell_size": "14",
+  "cable_clamp": "A",
+  "insert": "7"
+  }},
+{"14B7": {
+  "shell_size": "14",
+  "cable_clamp": "B",
+  "insert": "7"
+  }},
+{"14C7": {
+  "shell_size": "14",
+  "cable_clamp": "C",
+  "insert": "7"
+  }},
+{"14D7": {
+  "shell_size": "14",
+  "cable_clamp": "D",
+  "insert": "7"
+  }},
+{"14E7": {
+  "shell_size": "14",
+  "cable_clamp": "E",
+  "insert": "7"
+  }},
+{"14-15": {
+  "shell_size": "14",
+  "cable_clamp": "-",
+  "insert": "15"
+  }},
+{"14A15": {
+  "shell_size": "14",
+  "cable_clamp": "A",
+  "insert": "15"
+  }},
+{"14B15": {
+  "shell_size": "14",
+  "cable_clamp": "B",
+  "insert": "15"
+  }},
+{"14C15": {
+  "shell_size": "14",
+  "cable_clamp": "C",
+  "insert": "15"
+  }},
+{"14D15": {
+  "shell_size": "14",
+  "cable_clamp": "D",
+  "insert": "15"
+  }},
+{"14E15": {
+  "shell_size": "14",
+  "cable_clamp": "E",
+  "insert": "15"
+  }},
+{"16-10": {
+  "shell_size": "16",
+  "cable_clamp": "-",
+  "insert": "10"
+  }},
+{"16A10": {
+  "shell_size": "16",
+  "cable_clamp": "A",
+  "insert": "10"
+  }},
+{"16B10": {
+  "shell_size": "16",
+  "cable_clamp": "B",
+  "insert": "10"
+  }},
+{"16C10": {
+  "shell_size": "16",
+  "cable_clamp": "C",
+  "insert": "10"
+  }},
+{"16D10": {
+  "shell_size": "16",
+  "cable_clamp": "D",
+  "insert": "10"
+  }},
+{"16E10": {
+  "shell_size": "16",
+  "cable_clamp": "E",
+  "insert": "10"
+  }},
+{"16-24": {
+  "shell_size": "16",
+  "cable_clamp": "-",
+  "insert": "24"
+  }},
+{"16A24": {
+  "shell_size": "16",
+  "cable_clamp": "A",
+  "insert": "24"
+  }},
+{"16B24": {
+  "shell_size": "16",
+  "cable_clamp": "B",
+  "insert": "24"
+  }},
+{"16C24": {
+  "shell_size": "16",
+  "cable_clamp": "C",
+  "insert": "24"
+  }},
+{"16D24": {
+  "shell_size": "16",
+  "cable_clamp": "D",
+  "insert": "24"
+  }},
+{"16E24": {
+  "shell_size": "16",
+  "cable_clamp": "E",
+  "insert": "24"
+  }},
+{"18-8": {
+  "shell_size": "18",
+  "cable_clamp": "-",
+  "insert": "8"
+  }},
+{"18A8": {
+  "shell_size": "18",
+  "cable_clamp": "A",
+  "insert": "8"
+  }},
+{"18B8": {
+  "shell_size": "18",
+  "cable_clamp": "B",
+  "insert": "8"
+  }},
+{"18C8": {
+  "shell_size": "18",
+  "cable_clamp": "C",
+  "insert": "8"
+  }},
+{"18D8": {
+  "shell_size": "18",
+  "cable_clamp": "D",
+  "insert": "8"
+  }},
+{"18E8": {
+  "shell_size": "18",
+  "cable_clamp": "E",
+  "insert": "8"
+  }},
+{"18-11": {
+  "shell_size": "18",
+  "cable_clamp": "-",
+  "insert": "11"
+  }},
+{"18A11": {
+  "shell_size": "18",
+  "cable_clamp": "A",
+  "insert": "11"
+  }},
+{"18B11": {
+  "shell_size": "18",
+  "cable_clamp": "B",
+  "insert": "11"
+  }},
+{"18C11": {
+  "shell_size": "18",
+  "cable_clamp": "C",
+  "insert": "11"
+  }},
+{"18D11": {
+  "shell_size": "18",
+  "cable_clamp": "D",
+  "insert": "11"
+  }},
+{"18E11": {
+  "shell_size": "18",
+  "cable_clamp": "E",
+  "insert": "11"
+  }},
+{"18-14": {
+  "shell_size": "18",
+  "cable_clamp": "-",
+  "insert": "14"
+  }},
+{"18A14": {
+  "shell_size": "18",
+  "cable_clamp": "A",
+  "insert": "14"
+  }},
+{"18B14": {
+  "shell_size": "18",
+  "cable_clamp": "B",
+  "insert": "14"
+  }},
+{"18C14": {
+  "shell_size": "18",
+  "cable_clamp": "C",
+  "insert": "14"
+  }},
+{"18D14": {
+  "shell_size": "18",
+  "cable_clamp": "D",
+  "insert": "14"
+  }},
+{"18E14": {
+  "shell_size": "18",
+  "cable_clamp": "E",
+  "insert": "14"
+  }},
+{"18-31": {
+  "shell_size": "18",
+  "cable_clamp": "-",
+  "insert": "31"
+  }},
+{"18A31": {
+  "shell_size": "18",
+  "cable_clamp": "A",
+  "insert": "31"
+  }},
+{"18B31": {
+  "shell_size": "18",
+  "cable_clamp": "B",
+  "insert": "31"
+  }},
+{"18C31": {
+  "shell_size": "18",
+  "cable_clamp": "C",
+  "insert": "31"
+  }},
+{"18D31": {
+  "shell_size": "18",
+  "cable_clamp": "D",
+  "insert": "31"
+  }},
+{"18E31": {
+  "shell_size": "18",
+  "cable_clamp": "E",
+  "insert": "31"
+  }},
+{"22-12": {
+  "shell_size": "22",
+  "cable_clamp": "-",
+  "insert": "12"
+  }},
+{"22A12": {
+  "shell_size": "22",
+  "cable_clamp": "A",
+  "insert": "12"
+  }},
+{"22B12": {
+  "shell_size": "22",
+  "cable_clamp": "B",
+  "insert": "12"
+  }},
+{"22C12": {
+  "shell_size": "22",
+  "cable_clamp": "C",
+  "insert": "12"
+  }},
+{"22D12": {
+  "shell_size": "22",
+  "cable_clamp": "D",
+  "insert": "12"
+  }},
+{"22E12": {
+  "shell_size": "22",
+  "cable_clamp": "E",
+  "insert": "12"
+  }},
+{"22-19": {
+  "shell_size": "22",
+  "cable_clamp": "-",
+  "insert": "19"
+  }},
+{"22A19": {
+  "shell_size": "22",
+  "cable_clamp": "A",
+  "insert": "19"
+  }},
+{"22B19": {
+  "shell_size": "22",
+  "cable_clamp": "B",
+  "insert": "19"
+  }},
+{"22C19": {
+  "shell_size": "22",
+  "cable_clamp": "C",
+  "insert": "19"
+  }},
+{"22D19": {
+  "shell_size": "22",
+  "cable_clamp": "D",
+  "insert": "19"
+  }},
+{"22E19": {
+  "shell_size": "22",
+  "cable_clamp": "E",
+  "insert": "19"
+  }},
+{"22-55": {
+  "shell_size": "22",
+  "cable_clamp": "-",
+  "insert": "55"
+  }},
+{"22A55": {
+  "shell_size": "22",
+  "cable_clamp": "A",
+  "insert": "55"
+  }},
+{"22B55": {
+  "shell_size": "22",
+  "cable_clamp": "B",
+  "insert": "55"
+  }},
+{"22C55": {
+  "shell_size": "22",
+  "cable_clamp": "C",
+  "insert": "55"
+  }},
+{"22D55": {
+  "shell_size": "22",
+  "cable_clamp": "D",
+  "insert": "55"
+  }},
+{"22E55": {
+  "shell_size": "22",
+  "cable_clamp": "E",
+  "insert": "55"
+  }}
+    ],
+    "description": {
+      "dependency": "cable_clamp"
+    },
+    "label": "Insert Pattern"
+  },
+  "contact_style": {
+    "data": [
+      "P",
+      "S"
+    ],
+    "description": [
+      "Pin",
+      "Socket"
+    ],
+    "label": "Contact Style"
+  },
+  "keyway_position": {
+    "data": [
+      "[blank]",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "description": [
+      "Normal",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying"
+    ],
+    "label": "Keyway Position"
+  },
+  "ordering_option": {
+    "data": [
+      "[blank]",
+      "H"
+    ],
+    "description": [
+      "With Contacts & Seal Plugs",
+      "Without Contacts & Seal Plugs"
+    ],
+    "label": "Ordering Option"
+  }
+}

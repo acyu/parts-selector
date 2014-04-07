@@ -1,0 +1,146 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "8525-"
+    ],
+    "label": "Basic Series"
+  },
+  "shell_type": {
+    "data": [
+"10",
+"16",
+"17",
+"36"
+    ],
+    "description": [
+"Square Flange Receptacle",
+"Jam Nut Receptacle",
+"Plug",
+"RFI Shielding Plug"
+    ],
+    "label": "Shell Type"
+  },
+  "plating": {
+    "data": [
+"R",
+"N",
+"G"
+    ],
+    "description": [
+"Black Anodized (Non Conductive Plating)",
+"Nickel (Conductive Plating)",
+"Yellow Cadmium (Conductive Plating)"
+    ],
+    "label":"Plating"
+  },
+  "contact_layout": {
+    "data": [
+"08B3A",
+"08B33",
+"10B6",
+"12B3",
+"12B10",
+"14B4",
+"14B5",
+"14B12",
+"14B15",
+"14B19",
+"16B8",
+"16B21",
+"16B26",
+"18B8",
+"18B11",
+"18B32",
+"20B16",
+"20B34",
+"20B39",
+"20B41",
+"22B12",
+"22B21",
+"22B41",
+"22B55",
+"24B61",
+"24B31",
+"24B19"
+    ],
+    "label": "Contact Layout"
+  },
+  "contact_type": {
+    "data": [
+"P",
+"S"
+    ],
+    "description":[
+"Male Contact",
+"Female Contact"
+    ],
+    "label": "Contact Type"
+  },
+  "orientation": {
+    "data": [
+"N",
+"W",
+"X",
+"Y",
+"Z"
+    ],
+    "description": [
+"Normal Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position"
+    ],
+    "label": "Orientation"
+  },
+  "obligatory_suffix": {
+    "data": [
+"H",
+"K"
+    ],
+    "description": [
+"3 Rear Teeth at 90°",
+"Rear Teeth over 360°"
+    ],
+    "label": "Obligatory Suffix"
+  },
+  "specification": {
+    "data": [
+"[blank]",
+"L",
+"008",
+"068",
+"009",
+"001",
+"002",
+"003",
+"011",
+"013",
+"007",
+"057",
+"012",
+"017",
+"018"
+    ],
+    "description": [
+"Connector Supplied with Standard Contacts",
+"Connector Supplied without Contacts",
+"Connector Supplied with Special Contacts #20 for 0.38 to 0.93 mm2  Cable or #16 for 0.93 to 1.91 mm2 Cable",
+"Mixed Contact Layouts (#20 and #16) Connector Supplied with Special Contacts #20 for 0.38 to 0.93mm2 Cable, and standard Contacts #16",
+"Receptacle 10 or 17 with Straight Spills Contacts Size 20 - Ø 0.60 mm - Size 16 - Ø 1.00 mm - Length Max 7.30 mm Connector Supplied with Backshells",
+"Backnut",
+"Straight Cable Clamp",
+"Elbow Cable Clamp",
+"Backnut (Connector Supplied with Special Contacts, Large Barrel)",
+"Elbow Cable Clamp (Connector Supplied with Special Contacts, Large Barrel)",
+"Backshell for Heatshrink Sleeving",
+"Backnut for Heatshrink Sleeving",
+"Straight Cable Clamp (Connector Supplied with Special Contacts, Large Barrel)",
+"Backshell for Heatshrink Sleeving (Connector Supplied with Special Contacts, Large Barrel)",
+"Backshell for Solder Shield Termination (Connector Supplied with Special Contacts, Large Barrel)"
+    ],
+    "label": "Specification"
+  }
+}

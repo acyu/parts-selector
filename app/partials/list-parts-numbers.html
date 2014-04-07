@@ -1,0 +1,10 @@
+<div class="content">
+<ul class="manufacture">
+  <li ng-repeat="manufacturer_part_number in data.manufacturers_series | unique:'manufacturer'">
+    <a ng-click="fn.toggleListDisplay($index);" style="cursor:pointer;">{{manufacturer_part_number.manufacturer}} {{data.accordions.accordion$index}}</a>
+    <ul ng-show="data.accordions.accordion{{$index}}">
+      <li ng-repeat="parts_number in data.manufacturers_series | filter:filterByManufacturer(manufacturer_part_number.manufacturer)"><a href="#/{{parts_number.series}}" style="cursor:pointer;">{{parts_number.description}}</a></li>
+    </ul>
+  </li>
+</ul>
+</div>

@@ -1,0 +1,345 @@
+{
+  "base": {
+    "data": [
+      "BACC63DB",
+      "BACC63DC"
+    ],
+    "description": [
+"Stainless Steel Plug",
+"Stainless Steel Square Flange Receptacle"
+    ],
+    "label": "Basic Series"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"09-98": {
+  "shell_size": "09",
+  "separator": "-",
+  "insert": "98"
+  }},
+{"11-02": {
+  "shell_size": "11",
+  "separator": "-",
+  "insert": "02"
+  }},
+{"11-04": {
+  "shell_size": "11",
+  "separator": "-",
+  "insert": "04"
+  }},
+{"11-05": {
+  "shell_size": "11",
+  "separator": "-",
+  "insert": "05"
+  }},
+{"11-35": {
+  "shell_size": "11",
+  "separator": "-",
+  "insert": "35"
+  }},
+{"11-98": {
+  "shell_size": "11",
+  "separator": "-",
+  "insert": "98"
+  }},
+{"11-99": {
+  "shell_size": "11",
+  "separator": "-",
+  "insert": "99"
+  }},
+{"13-04": {
+  "shell_size": "13",
+  "separator": "-",
+  "insert": "04"
+  }},
+{"13-08": {
+  "shell_size": "13",
+  "separator": "-",
+  "insert": "08"
+  }},
+{"13-35": {
+  "shell_size": "13",
+  "separator": "-",
+  "insert": "35"
+  }},
+{"13-98": {
+  "shell_size": "13",
+  "separator": "-",
+  "insert": "98"
+  }},
+{"15-05": {
+  "shell_size": "15",
+  "separator": "-",
+  "insert": "05"
+  }},
+{"15-15": {
+  "shell_size": "15",
+  "separator": "-",
+  "insert": "15"
+  }},
+{"15-18": {
+  "shell_size": "15",
+  "separator": "-",
+  "insert": "18"
+  }},
+{"15-19": {
+  "shell_size": "15",
+  "separator": "-",
+  "insert": "19"
+  }},
+{"15-35": {
+  "shell_size": "15",
+  "separator": "-",
+  "insert": "35"
+  }},
+{"15-97": {
+  "shell_size": "15",
+  "separator": "-",
+  "insert": "97"
+  }},
+{"17-02": {
+  "shell_size": "17",
+  "separator": "-",
+  "insert": "02"
+  }},
+{"17-06": {
+  "shell_size": "17",
+  "separator": "-",
+  "insert": "06"
+  }},
+{"17-08": {
+  "shell_size": "17",
+  "separator": "-",
+  "insert": "08"
+  }},
+{"17-26": {
+  "shell_size": "17",
+  "separator": "-",
+  "insert": "26"
+  }},
+{"17-35": {
+  "shell_size": "17",
+  "separator": "-",
+  "insert": "35"
+  }},
+{"17-82": {
+  "shell_size": "17",
+  "separator": "-",
+  "insert": "82"
+  }},
+{"17-99": {
+  "shell_size": "17",
+  "separator": "-",
+  "insert": "99"
+  }},
+{"19-11": {
+  "shell_size": "19",
+  "separator": "-",
+  "insert": "11"
+  }},
+{"19-18": {
+  "shell_size": "19",
+  "separator": "-",
+  "insert": "18"
+  }},
+{"19-28": {
+  "shell_size": "19",
+  "separator": "-",
+  "insert": "28"
+  }},
+{"19-32": {
+  "shell_size": "19",
+  "separator": "-",
+  "insert": "32"
+  }},
+{"19-35": {
+  "shell_size": "19",
+  "separator": "-",
+  "insert": "35"
+  }},
+{"21-11": {
+  "shell_size": "21",
+  "separator": "-",
+  "insert": "11"
+  }},
+{"21-16": {
+  "shell_size": "21",
+  "separator": "-",
+  "insert": "16"
+  }},
+{"21-35": {
+  "shell_size": "21",
+  "separator": "-",
+  "insert": "35"
+  }},
+{"21-39": {
+  "shell_size": "21",
+  "separator": "-",
+  "insert": "39"
+  }},
+{"21-41": {
+  "shell_size": "21",
+  "separator": "-",
+  "insert": "41"
+  }},
+{"21-75": {
+  "shell_size": "21",
+  "separator": "-",
+  "insert": "75"
+  }},
+{"21-78": {
+  "shell_size": "21",
+  "separator": "-",
+  "insert": "78"
+  }},
+{"21-84": {
+  "shell_size": "21",
+  "separator": "-",
+  "insert": "84"
+  }},
+{"23-21": {
+  "shell_size": "23",
+  "separator": "-",
+  "insert": "21"
+  }},
+{"23-35": {
+  "shell_size": "23",
+  "separator": "-",
+  "insert": "35"
+  }},
+{"23-53": {
+  "shell_size": "23",
+  "separator": "-",
+  "insert": "53"
+  }},
+{"23-55": {
+  "shell_size": "23",
+  "separator": "-",
+  "insert": "55"
+  }},
+{"25-04": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "04"
+  }},
+{"25-07": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "07"
+  }},
+{"25-08": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "08"
+  }},
+{"25-11": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "11"
+  }},
+{"25-19": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "19"
+  }},
+{"25-20": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "20"
+  }},
+{"25-24": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "24"
+  }},
+{"25-29": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "29"
+  }},
+{"25-35": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "35"
+  }},
+{"25-37": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "37"
+  }},
+{"25-43": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "43"
+  }},
+{"25-46": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "46"
+  }},
+{"25-61": {
+  "shell_size": "25",
+  "separator": "-",
+  "insert": "61"
+  }}
+    ],
+    "label": "Insert Arrangement"
+  },
+  "contact_type": {
+    "data": [
+"A",
+"B",
+"P",
+"S"
+    ],
+    "description": [
+"Connector Supplied less Pin Contact or with Specific Contacts (Connector Marking: A + Orientation)",
+"Connector Supplied Less Socket Contact or with Specific Contacts (Connector Marking: B + Orientation)",
+"Pin",
+"Socket"
+    ],
+    "label": "Contact Type"
+  },
+  "keyway_position": {
+    "data": [
+"N",
+"A",
+"B",
+"C",
+"D",
+"E"
+    ],
+    "description": [
+"Normal",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position"
+    ],
+    "label": "Keyway Position"
+  },
+  "ordering_code": {
+    "data": [
+      "[blank]",
+      "H"
+    ],
+    "description": [
+      "With Contacts",
+      "Without Contacts & Seal Plugs"
+    ],
+    "label": "Ordering Code"
+  }
+}

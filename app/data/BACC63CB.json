@@ -1,0 +1,551 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "BACC63CB"
+    ],
+    "label": "Basic Part Number"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "material_finish": {
+    "data": [
+"-",
+"A",
+"B"
+    ],
+    "description": [
+"Cadmium Plated Aluminum",
+"Anodized Aluminum",
+"Passivated Stainless Steel"
+    ],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Material Finish"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"8-3": {
+  "shell_size": "8",
+  "material_finish": "-",
+  "insert": "3"
+  }},
+{"8A3": {
+  "shell_size": "8",
+  "material_finish": "A",
+  "insert": "3"
+  }},
+{"8B3": {
+  "shell_size": "8",
+  "material_finish": "B",
+  "insert": "3"
+  }},
+{"10-2": {
+  "shell_size": "10",
+  "material_finish": "-",
+  "insert": "2"
+  }},
+{"10A2": {
+  "shell_size": "10",
+  "material_finish": "A",
+  "insert": "2"
+  }},
+{"10B2": {
+  "shell_size": "10",
+  "material_finish": "B",
+  "insert": "2"
+  }},
+{"10-5": {
+  "shell_size": "10",
+  "material_finish": "-",
+  "insert": "5"
+  }},
+{"10A5": {
+  "shell_size": "10",
+  "material_finish": "A",
+  "insert": "5"
+  }},
+{"10B5": {
+  "shell_size": "10",
+  "material_finish": "B",
+  "insert": "5"
+  }},
+{"10-20": {
+  "shell_size": "10",
+  "material_finish": "-",
+  "insert": "20"
+  }},
+{"10A20": {
+  "shell_size": "10",
+  "material_finish": "A",
+  "insert": "20"
+  }},
+{"10B20": {
+  "shell_size": "10",
+  "material_finish": "B",
+  "insert": "20"
+  }},
+{"12-3": {
+  "shell_size": "12",
+  "material_finish": "-",
+  "insert": "3"
+  }},
+{"12A3": {
+  "shell_size": "12",
+  "material_finish": "A",
+  "insert": "3"
+  }},
+{"12B3": {
+  "shell_size": "12",
+  "material_finish": "B",
+  "insert": "3"
+  }},
+{"12-12": {
+  "shell_size": "12",
+  "material_finish": "-",
+  "insert": "12"
+  }},
+{"12A12": {
+  "shell_size": "12",
+  "material_finish": "A",
+  "insert": "12"
+  }},
+{"12B12": {
+  "shell_size": "12",
+  "material_finish": "B",
+  "insert": "12"
+  }},
+{"14-3": {
+  "shell_size": "14",
+  "material_finish": "-",
+  "insert": "3"
+  }},
+{"14A3": {
+  "shell_size": "14",
+  "material_finish": "A",
+  "insert": "3"
+  }},
+{"14B3": {
+  "shell_size": "14",
+  "material_finish": "B",
+  "insert": "3"
+  }},
+{"14-4": {
+  "shell_size": "14",
+  "material_finish": "-",
+  "insert": "4"
+  }},
+{"14A4": {
+  "shell_size": "14",
+  "material_finish": "A",
+  "insert": "4"
+  }},
+{"14B4": {
+  "shell_size": "14",
+  "material_finish": "B",
+  "insert": "4"
+  }},
+{"14-7": {
+  "shell_size": "14",
+  "material_finish": "-",
+  "insert": "7"
+  }},
+{"14A7": {
+  "shell_size": "14",
+  "material_finish": "A",
+  "insert": "7"
+  }},
+{"14B7": {
+  "shell_size": "14",
+  "material_finish": "B",
+  "insert": "7"
+  }},
+{"14-12": {
+  "shell_size": "14",
+  "material_finish": "-",
+  "insert": "12"
+  }},
+{"14A12": {
+  "shell_size": "14",
+  "material_finish": "A",
+  "insert": "12"
+  }},
+{"14B12": {
+  "shell_size": "14",
+  "material_finish": "B",
+  "insert": "12"
+  }},
+{"14-15": {
+  "shell_size": "14",
+  "material_finish": "-",
+  "insert": "15"
+  }},
+{"14A15": {
+  "shell_size": "14",
+  "material_finish": "A",
+  "insert": "15"
+  }},
+{"14B15": {
+  "shell_size": "14",
+  "material_finish": "B",
+  "insert": "15"
+  }},
+{"16-10": {
+  "shell_size": "16",
+  "material_finish": "-",
+  "insert": "10"
+  }},
+{"16A10": {
+  "shell_size": "16",
+  "material_finish": "A",
+  "insert": "10"
+  }},
+{"16B10": {
+  "shell_size": "16",
+  "material_finish": "B",
+  "insert": "10"
+  }},
+{"16-24": {
+  "shell_size": "16",
+  "material_finish": "-",
+  "insert": "24"
+  }},
+{"16A24": {
+  "shell_size": "16",
+  "material_finish": "A",
+  "insert": "24"
+  }},
+{"16B24": {
+  "shell_size": "16",
+  "material_finish": "B",
+  "insert": "24"
+  }},
+{"18-8": {
+  "shell_size": "18",
+  "material_finish": "-",
+  "insert": "8"
+  }},
+{"18A8": {
+  "shell_size": "18",
+  "material_finish": "A",
+  "insert": "8"
+  }},
+{"18B8": {
+  "shell_size": "18",
+  "material_finish": "B",
+  "insert": "8"
+  }},
+{"18-11": {
+  "shell_size": "18",
+  "material_finish": "-",
+  "insert": "11"
+  }},
+{"18A11": {
+  "shell_size": "18",
+  "material_finish": "A",
+  "insert": "11"
+  }},
+{"18B11": {
+  "shell_size": "18",
+  "material_finish": "B",
+  "insert": "11"
+  }},
+{"18-14": {
+  "shell_size": "18",
+  "material_finish": "-",
+  "insert": "14"
+  }},
+{"18A14": {
+  "shell_size": "18",
+  "material_finish": "A",
+  "insert": "14"
+  }},
+{"18B14": {
+  "shell_size": "18",
+  "material_finish": "B",
+  "insert": "14"
+  }},
+{"18-31": {
+  "shell_size": "18",
+  "material_finish": "-",
+  "insert": "31"
+  }},
+{"18A31": {
+  "shell_size": "18",
+  "material_finish": "A",
+  "insert": "31"
+  }},
+{"18B31": {
+  "shell_size": "18",
+  "material_finish": "B",
+  "insert": "31"
+  }},
+{"20-16": {
+  "shell_size": "20",
+  "material_finish": "-",
+  "insert": "16"
+  }},
+{"20A16": {
+  "shell_size": "20",
+  "material_finish": "A",
+  "insert": "16"
+  }},
+{"20B16": {
+  "shell_size": "20",
+  "material_finish": "B",
+  "insert": "16"
+  }},
+{"20-25": {
+  "shell_size": "20",
+  "material_finish": "-",
+  "insert": "25"
+  }},
+{"20A25": {
+  "shell_size": "20",
+  "material_finish": "A",
+  "insert": "25"
+  }},
+{"20B25": {
+  "shell_size": "20",
+  "material_finish": "B",
+  "insert": "25"
+  }},
+{"20-28": {
+  "shell_size": "20",
+  "material_finish": "-",
+  "insert": "28"
+  }},
+{"20A28": {
+  "shell_size": "20",
+  "material_finish": "A",
+  "insert": "28"
+  }},
+{"20B28": {
+  "shell_size": "20",
+  "material_finish": "B",
+  "insert": "28"
+  }},
+{"20-39": {
+  "shell_size": "20",
+  "material_finish": "-",
+  "insert": "39"
+  }},
+{"20A39": {
+  "shell_size": "20",
+  "material_finish": "A",
+  "insert": "39"
+  }},
+{"20B39": {
+  "shell_size": "20",
+  "material_finish": "B",
+  "insert": "39"
+  }},
+{"20-41": {
+  "shell_size": "20",
+  "material_finish": "-",
+  "insert": "41"
+  }},
+{"20A41": {
+  "shell_size": "20",
+  "material_finish": "A",
+  "insert": "41"
+  }},
+{"20B41": {
+  "shell_size": "20",
+  "material_finish": "B",
+  "insert": "41"
+  }},
+{"22-12": {
+  "shell_size": "22",
+  "material_finish": "-",
+  "insert": "12"
+  }},
+{"22A12": {
+  "shell_size": "22",
+  "material_finish": "A",
+  "insert": "12"
+  }},
+{"22B12": {
+  "shell_size": "22",
+  "material_finish": "B",
+  "insert": "12"
+  }},
+{"22-19": {
+  "shell_size": "22",
+  "material_finish": "-",
+  "insert": "19"
+  }},
+{"22A19": {
+  "shell_size": "22",
+  "material_finish": "A",
+  "insert": "19"
+  }},
+{"22B19": {
+  "shell_size": "22",
+  "material_finish": "B",
+  "insert": "19"
+  }},
+{"22-32": {
+  "shell_size": "22",
+  "material_finish": "-",
+  "insert": "32"
+  }},
+{"22A32": {
+  "shell_size": "22",
+  "material_finish": "A",
+  "insert": "32"
+  }},
+{"22B32": {
+  "shell_size": "22",
+  "material_finish": "B",
+  "insert": "32"
+  }},
+{"22-55": {
+  "shell_size": "22",
+  "material_finish": "-",
+  "insert": "55"
+  }},
+{"22A55": {
+  "shell_size": "22",
+  "material_finish": "A",
+  "insert": "55"
+  }},
+{"22B55": {
+  "shell_size": "22",
+  "material_finish": "B",
+  "insert": "55"
+  }},
+{"24-30": {
+  "shell_size": "24",
+  "material_finish": "-",
+  "insert": "30"
+  }},
+{"24A30": {
+  "shell_size": "24",
+  "material_finish": "A",
+  "insert": "30"
+  }},
+{"24B30": {
+  "shell_size": "24",
+  "material_finish": "B",
+  "insert": "30"
+  }},
+{"24-43": {
+  "shell_size": "24",
+  "material_finish": "-",
+  "insert": "43"
+  }},
+{"24A43": {
+  "shell_size": "24",
+  "material_finish": "A",
+  "insert": "43"
+  }},
+{"24B43": {
+  "shell_size": "24",
+  "material_finish": "B",
+  "insert": "43"
+  }},
+{"24-57": {
+  "shell_size": "24",
+  "material_finish": "-",
+  "insert": "57"
+  }},
+{"24A57": {
+  "shell_size": "24",
+  "material_finish": "A",
+  "insert": "57"
+  }},
+{"24B57": {
+  "shell_size": "24",
+  "material_finish": "B",
+  "insert": "57"
+  }},
+{"24-61": {
+  "shell_size": "24",
+  "material_finish": "-",
+  "insert": "61"
+  }},
+{"24A61": {
+  "shell_size": "24",
+  "material_finish": "A",
+  "insert": "61"
+  }},
+{"24B61": {
+  "shell_size": "24",
+  "material_finish": "B",
+  "insert": "61"
+  }},
+{"28-42": {
+  "shell_size": "28",
+  "material_finish": "-",
+  "insert": "42"
+  }},
+{"28A42": {
+  "shell_size": "28",
+  "material_finish": "A",
+  "insert": "42"
+  }},
+{"28B42": {
+  "shell_size": "28",
+  "material_finish": "B",
+  "insert": "42"
+  }}
+    ],
+    "description": {
+      "dependency": "material_finish"
+    },
+    "label": "Insert Pattern"
+  },
+  "contact_style": {
+    "data": [
+      "P",
+      "S"
+    ],
+    "description": [
+      "Pin Contacts",
+      "Socket Contacts"
+    ],
+    "label": "Contact Style"
+  },
+  "keyway_position": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"10"
+    ],
+    "description": [
+      "Normal",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying"
+    ],
+    "label": "Keyway Position"
+  },
+  "ordering_option": {
+    "data": [
+      "[blank]",
+      "H"
+    ],
+    "description": [
+      "With Contacts & Seal Plugs",
+      "Without Contacts & Seal Plugs"
+    ],
+    "label": "Ordering Option"
+  }
+}

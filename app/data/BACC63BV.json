@@ -1,0 +1,1179 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "BACC63BV"
+    ],
+    "label": "Basic Part Number"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "material_finish": {
+    "data": [
+"A",
+"B",
+"E",
+"F",
+"R",
+"-",
+"H"
+    ],
+    "description": [
+"Anodized Aluminum with rear accessory teeth per MS3155 ",
+"Stainless steel with rear accessory teeth per MS3155",
+"Electrodeposited aluminum plate with rear accessory teeth per MS3155",
+"Cadmium plated aluminum with rear accessory teeth per MS3155",
+"Stainless steel with rear accessory teeth per MIL-DTL-83723",
+"Stainless steel with rear accessory teeth per MIL-DTL-83723",
+"Anodized Aluminum with rear accessory teeth per MS3155 "
+    ],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Material Finish"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"8A3": {
+  "shell_size": "8",
+  "material_finish": "A",
+  "insert": "3"
+  }},
+{"8B3": {
+  "shell_size": "8",
+  "material_finish": "B",
+  "insert": "3"
+  }},
+{"8E3": {
+  "shell_size": "8",
+  "material_finish": "E",
+  "insert": "3"
+  }},
+{"8F3": {
+  "shell_size": "8",
+  "material_finish": "F",
+  "insert": "3"
+  }},
+{"8R3": {
+  "shell_size": "8",
+  "material_finish": "R",
+  "insert": "3"
+  }},
+{"8-3": {
+  "shell_size": "8",
+  "material_finish": "-",
+  "insert": "3"
+  }},
+{"8H3": {
+  "shell_size": "8",
+  "material_finish": "H",
+  "insert": "3"
+  }},
+{"10A2": {
+  "shell_size": "10",
+  "material_finish": "A",
+  "insert": "2"
+  }},
+{"10B2": {
+  "shell_size": "10",
+  "material_finish": "B",
+  "insert": "2"
+  }},
+{"10E2": {
+  "shell_size": "10",
+  "material_finish": "E",
+  "insert": "2"
+  }},
+{"10F2": {
+  "shell_size": "10",
+  "material_finish": "F",
+  "insert": "2"
+  }},
+{"10R2": {
+  "shell_size": "10",
+  "material_finish": "R",
+  "insert": "2"
+  }},
+{"10-2": {
+  "shell_size": "10",
+  "material_finish": "-",
+  "insert": "2"
+  }},
+{"10H2": {
+  "shell_size": "10",
+  "material_finish": "H",
+  "insert": "2"
+  }},
+{"10A5": {
+  "shell_size": "10",
+  "material_finish": "A",
+  "insert": "5"
+  }},
+{"10B5": {
+  "shell_size": "10",
+  "material_finish": "B",
+  "insert": "5"
+  }},
+{"10E5": {
+  "shell_size": "10",
+  "material_finish": "E",
+  "insert": "5"
+  }},
+{"10F5": {
+  "shell_size": "10",
+  "material_finish": "F",
+  "insert": "5"
+  }},
+{"10R5": {
+  "shell_size": "10",
+  "material_finish": "R",
+  "insert": "5"
+  }},
+{"10-5": {
+  "shell_size": "10",
+  "material_finish": "-",
+  "insert": "5"
+  }},
+{"10H5": {
+  "shell_size": "10",
+  "material_finish": "H",
+  "insert": "5"
+  }},
+{"10A20": {
+  "shell_size": "10",
+  "material_finish": "A",
+  "insert": "20"
+  }},
+{"10B20": {
+  "shell_size": "10",
+  "material_finish": "B",
+  "insert": "20"
+  }},
+{"10E20": {
+  "shell_size": "10",
+  "material_finish": "E",
+  "insert": "20"
+  }},
+{"10F20": {
+  "shell_size": "10",
+  "material_finish": "F",
+  "insert": "20"
+  }},
+{"10R20": {
+  "shell_size": "10",
+  "material_finish": "R",
+  "insert": "20"
+  }},
+{"10-20": {
+  "shell_size": "10",
+  "material_finish": "-",
+  "insert": "20"
+  }},
+{"10H20": {
+  "shell_size": "10",
+  "material_finish": "H",
+  "insert": "20"
+  }},
+{"12A3": {
+  "shell_size": "12",
+  "material_finish": "A",
+  "insert": "3"
+  }},
+{"12B3": {
+  "shell_size": "12",
+  "material_finish": "B",
+  "insert": "3"
+  }},
+{"12E3": {
+  "shell_size": "12",
+  "material_finish": "E",
+  "insert": "3"
+  }},
+{"12F3": {
+  "shell_size": "12",
+  "material_finish": "F",
+  "insert": "3"
+  }},
+{"12R3": {
+  "shell_size": "12",
+  "material_finish": "R",
+  "insert": "3"
+  }},
+{"12-3": {
+  "shell_size": "12",
+  "material_finish": "-",
+  "insert": "3"
+  }},
+{"12H3": {
+  "shell_size": "12",
+  "material_finish": "H",
+  "insert": "3"
+  }},
+{"12A12": {
+  "shell_size": "12",
+  "material_finish": "A",
+  "insert": "12"
+  }},
+{"12B12": {
+  "shell_size": "12",
+  "material_finish": "B",
+  "insert": "12"
+  }},
+{"12E12": {
+  "shell_size": "12",
+  "material_finish": "E",
+  "insert": "12"
+  }},
+{"12F12": {
+  "shell_size": "12",
+  "material_finish": "F",
+  "insert": "12"
+  }},
+{"12R12": {
+  "shell_size": "12",
+  "material_finish": "R",
+  "insert": "12"
+  }},
+{"12-12": {
+  "shell_size": "12",
+  "material_finish": "-",
+  "insert": "12"
+  }},
+{"12H12": {
+  "shell_size": "12",
+  "material_finish": "H",
+  "insert": "12"
+  }},
+{"14A3": {
+  "shell_size": "14",
+  "material_finish": "A",
+  "insert": "3"
+  }},
+{"14B3": {
+  "shell_size": "14",
+  "material_finish": "B",
+  "insert": "3"
+  }},
+{"14E3": {
+  "shell_size": "14",
+  "material_finish": "E",
+  "insert": "3"
+  }},
+{"14F3": {
+  "shell_size": "14",
+  "material_finish": "F",
+  "insert": "3"
+  }},
+{"14R3": {
+  "shell_size": "14",
+  "material_finish": "R",
+  "insert": "3"
+  }},
+{"14-3": {
+  "shell_size": "14",
+  "material_finish": "-",
+  "insert": "3"
+  }},
+{"14H3": {
+  "shell_size": "14",
+  "material_finish": "H",
+  "insert": "3"
+  }},
+{"14A4": {
+  "shell_size": "14",
+  "material_finish": "A",
+  "insert": "4"
+  }},
+{"14B4": {
+  "shell_size": "14",
+  "material_finish": "B",
+  "insert": "4"
+  }},
+{"14E4": {
+  "shell_size": "14",
+  "material_finish": "E",
+  "insert": "4"
+  }},
+{"14F4": {
+  "shell_size": "14",
+  "material_finish": "F",
+  "insert": "4"
+  }},
+{"14R4": {
+  "shell_size": "14",
+  "material_finish": "R",
+  "insert": "4"
+  }},
+{"14-4": {
+  "shell_size": "14",
+  "material_finish": "-",
+  "insert": "4"
+  }},
+{"14H4": {
+  "shell_size": "14",
+  "material_finish": "H",
+  "insert": "4"
+  }},
+{"14A7": {
+  "shell_size": "14",
+  "material_finish": "A",
+  "insert": "7"
+  }},
+{"14B7": {
+  "shell_size": "14",
+  "material_finish": "B",
+  "insert": "7"
+  }},
+{"14E7": {
+  "shell_size": "14",
+  "material_finish": "E",
+  "insert": "7"
+  }},
+{"14F7": {
+  "shell_size": "14",
+  "material_finish": "F",
+  "insert": "7"
+  }},
+{"14R7": {
+  "shell_size": "14",
+  "material_finish": "R",
+  "insert": "7"
+  }},
+{"14-7": {
+  "shell_size": "14",
+  "material_finish": "-",
+  "insert": "7"
+  }},
+{"14H7": {
+  "shell_size": "14",
+  "material_finish": "H",
+  "insert": "7"
+  }},
+{"14A12": {
+  "shell_size": "14",
+  "material_finish": "A",
+  "insert": "12"
+  }},
+{"14B12": {
+  "shell_size": "14",
+  "material_finish": "B",
+  "insert": "12"
+  }},
+{"14E12": {
+  "shell_size": "14",
+  "material_finish": "E",
+  "insert": "12"
+  }},
+{"14F12": {
+  "shell_size": "14",
+  "material_finish": "F",
+  "insert": "12"
+  }},
+{"14R12": {
+  "shell_size": "14",
+  "material_finish": "R",
+  "insert": "12"
+  }},
+{"14-12": {
+  "shell_size": "14",
+  "material_finish": "-",
+  "insert": "12"
+  }},
+{"14H12": {
+  "shell_size": "14",
+  "material_finish": "H",
+  "insert": "12"
+  }},
+{"14A15": {
+  "shell_size": "14",
+  "material_finish": "A",
+  "insert": "15"
+  }},
+{"14B15": {
+  "shell_size": "14",
+  "material_finish": "B",
+  "insert": "15"
+  }},
+{"14E15": {
+  "shell_size": "14",
+  "material_finish": "E",
+  "insert": "15"
+  }},
+{"14F15": {
+  "shell_size": "14",
+  "material_finish": "F",
+  "insert": "15"
+  }},
+{"14R15": {
+  "shell_size": "14",
+  "material_finish": "R",
+  "insert": "15"
+  }},
+{"14-15": {
+  "shell_size": "14",
+  "material_finish": "-",
+  "insert": "15"
+  }},
+{"14H15": {
+  "shell_size": "14",
+  "material_finish": "H",
+  "insert": "15"
+  }},
+{"16A10": {
+  "shell_size": "16",
+  "material_finish": "A",
+  "insert": "10"
+  }},
+{"16B10": {
+  "shell_size": "16",
+  "material_finish": "B",
+  "insert": "10"
+  }},
+{"16E10": {
+  "shell_size": "16",
+  "material_finish": "E",
+  "insert": "10"
+  }},
+{"16F10": {
+  "shell_size": "16",
+  "material_finish": "F",
+  "insert": "10"
+  }},
+{"16R10": {
+  "shell_size": "16",
+  "material_finish": "R",
+  "insert": "10"
+  }},
+{"16-10": {
+  "shell_size": "16",
+  "material_finish": "-",
+  "insert": "10"
+  }},
+{"16H10": {
+  "shell_size": "16",
+  "material_finish": "H",
+  "insert": "10"
+  }},
+{"16A24": {
+  "shell_size": "16",
+  "material_finish": "A",
+  "insert": "24"
+  }},
+{"16B24": {
+  "shell_size": "16",
+  "material_finish": "B",
+  "insert": "24"
+  }},
+{"16E24": {
+  "shell_size": "16",
+  "material_finish": "E",
+  "insert": "24"
+  }},
+{"16F24": {
+  "shell_size": "16",
+  "material_finish": "F",
+  "insert": "24"
+  }},
+{"16R24": {
+  "shell_size": "16",
+  "material_finish": "R",
+  "insert": "24"
+  }},
+{"16-24": {
+  "shell_size": "16",
+  "material_finish": "-",
+  "insert": "24"
+  }},
+{"16H24": {
+  "shell_size": "16",
+  "material_finish": "H",
+  "insert": "24"
+  }},
+{"18A8": {
+  "shell_size": "18",
+  "material_finish": "A",
+  "insert": "8"
+  }},
+{"18B8": {
+  "shell_size": "18",
+  "material_finish": "B",
+  "insert": "8"
+  }},
+{"18E8": {
+  "shell_size": "18",
+  "material_finish": "E",
+  "insert": "8"
+  }},
+{"18F8": {
+  "shell_size": "18",
+  "material_finish": "F",
+  "insert": "8"
+  }},
+{"18R8": {
+  "shell_size": "18",
+  "material_finish": "R",
+  "insert": "8"
+  }},
+{"18-8": {
+  "shell_size": "18",
+  "material_finish": "-",
+  "insert": "8"
+  }},
+{"18H8": {
+  "shell_size": "18",
+  "material_finish": "H",
+  "insert": "8"
+  }},
+{"18A11": {
+  "shell_size": "18",
+  "material_finish": "A",
+  "insert": "11"
+  }},
+{"18B11": {
+  "shell_size": "18",
+  "material_finish": "B",
+  "insert": "11"
+  }},
+{"18E11": {
+  "shell_size": "18",
+  "material_finish": "E",
+  "insert": "11"
+  }},
+{"18F11": {
+  "shell_size": "18",
+  "material_finish": "F",
+  "insert": "11"
+  }},
+{"18R11": {
+  "shell_size": "18",
+  "material_finish": "R",
+  "insert": "11"
+  }},
+{"18-11": {
+  "shell_size": "18",
+  "material_finish": "-",
+  "insert": "11"
+  }},
+{"18H11": {
+  "shell_size": "18",
+  "material_finish": "H",
+  "insert": "11"
+  }},
+{"18A14": {
+  "shell_size": "18",
+  "material_finish": "A",
+  "insert": "14"
+  }},
+{"18B14": {
+  "shell_size": "18",
+  "material_finish": "B",
+  "insert": "14"
+  }},
+{"18E14": {
+  "shell_size": "18",
+  "material_finish": "E",
+  "insert": "14"
+  }},
+{"18F14": {
+  "shell_size": "18",
+  "material_finish": "F",
+  "insert": "14"
+  }},
+{"18R14": {
+  "shell_size": "18",
+  "material_finish": "R",
+  "insert": "14"
+  }},
+{"18-14": {
+  "shell_size": "18",
+  "material_finish": "-",
+  "insert": "14"
+  }},
+{"18H14": {
+  "shell_size": "18",
+  "material_finish": "H",
+  "insert": "14"
+  }},
+{"18A31": {
+  "shell_size": "18",
+  "material_finish": "A",
+  "insert": "31"
+  }},
+{"18B31": {
+  "shell_size": "18",
+  "material_finish": "B",
+  "insert": "31"
+  }},
+{"18E31": {
+  "shell_size": "18",
+  "material_finish": "E",
+  "insert": "31"
+  }},
+{"18F31": {
+  "shell_size": "18",
+  "material_finish": "F",
+  "insert": "31"
+  }},
+{"18R31": {
+  "shell_size": "18",
+  "material_finish": "R",
+  "insert": "31"
+  }},
+{"18-31": {
+  "shell_size": "18",
+  "material_finish": "-",
+  "insert": "31"
+  }},
+{"18H31": {
+  "shell_size": "18",
+  "material_finish": "H",
+  "insert": "31"
+  }},
+{"20A16": {
+  "shell_size": "20",
+  "material_finish": "A",
+  "insert": "16"
+  }},
+{"20B16": {
+  "shell_size": "20",
+  "material_finish": "B",
+  "insert": "16"
+  }},
+{"20E16": {
+  "shell_size": "20",
+  "material_finish": "E",
+  "insert": "16"
+  }},
+{"20F16": {
+  "shell_size": "20",
+  "material_finish": "F",
+  "insert": "16"
+  }},
+{"20R16": {
+  "shell_size": "20",
+  "material_finish": "R",
+  "insert": "16"
+  }},
+{"20-16": {
+  "shell_size": "20",
+  "material_finish": "-",
+  "insert": "16"
+  }},
+{"20H16": {
+  "shell_size": "20",
+  "material_finish": "H",
+  "insert": "16"
+  }},
+{"20A25": {
+  "shell_size": "20",
+  "material_finish": "A",
+  "insert": "25"
+  }},
+{"20B25": {
+  "shell_size": "20",
+  "material_finish": "B",
+  "insert": "25"
+  }},
+{"20E25": {
+  "shell_size": "20",
+  "material_finish": "E",
+  "insert": "25"
+  }},
+{"20F25": {
+  "shell_size": "20",
+  "material_finish": "F",
+  "insert": "25"
+  }},
+{"20R25": {
+  "shell_size": "20",
+  "material_finish": "R",
+  "insert": "25"
+  }},
+{"20-25": {
+  "shell_size": "20",
+  "material_finish": "-",
+  "insert": "25"
+  }},
+{"20H25": {
+  "shell_size": "20",
+  "material_finish": "H",
+  "insert": "25"
+  }},
+{"20A28": {
+  "shell_size": "20",
+  "material_finish": "A",
+  "insert": "28"
+  }},
+{"20B28": {
+  "shell_size": "20",
+  "material_finish": "B",
+  "insert": "28"
+  }},
+{"20E28": {
+  "shell_size": "20",
+  "material_finish": "E",
+  "insert": "28"
+  }},
+{"20F28": {
+  "shell_size": "20",
+  "material_finish": "F",
+  "insert": "28"
+  }},
+{"20R28": {
+  "shell_size": "20",
+  "material_finish": "R",
+  "insert": "28"
+  }},
+{"20-28": {
+  "shell_size": "20",
+  "material_finish": "-",
+  "insert": "28"
+  }},
+{"20H28": {
+  "shell_size": "20",
+  "material_finish": "H",
+  "insert": "28"
+  }},
+{"20A39": {
+  "shell_size": "20",
+  "material_finish": "A",
+  "insert": "39"
+  }},
+{"20B39": {
+  "shell_size": "20",
+  "material_finish": "B",
+  "insert": "39"
+  }},
+{"20E39": {
+  "shell_size": "20",
+  "material_finish": "E",
+  "insert": "39"
+  }},
+{"20F39": {
+  "shell_size": "20",
+  "material_finish": "F",
+  "insert": "39"
+  }},
+{"20R39": {
+  "shell_size": "20",
+  "material_finish": "R",
+  "insert": "39"
+  }},
+{"20-39": {
+  "shell_size": "20",
+  "material_finish": "-",
+  "insert": "39"
+  }},
+{"20H39": {
+  "shell_size": "20",
+  "material_finish": "H",
+  "insert": "39"
+  }},
+{"20A41": {
+  "shell_size": "20",
+  "material_finish": "A",
+  "insert": "41"
+  }},
+{"20B41": {
+  "shell_size": "20",
+  "material_finish": "B",
+  "insert": "41"
+  }},
+{"20E41": {
+  "shell_size": "20",
+  "material_finish": "E",
+  "insert": "41"
+  }},
+{"20F41": {
+  "shell_size": "20",
+  "material_finish": "F",
+  "insert": "41"
+  }},
+{"20R41": {
+  "shell_size": "20",
+  "material_finish": "R",
+  "insert": "41"
+  }},
+{"20-41": {
+  "shell_size": "20",
+  "material_finish": "-",
+  "insert": "41"
+  }},
+{"20H41": {
+  "shell_size": "20",
+  "material_finish": "H",
+  "insert": "41"
+  }},
+{"22A12": {
+  "shell_size": "22",
+  "material_finish": "A",
+  "insert": "12"
+  }},
+{"22B12": {
+  "shell_size": "22",
+  "material_finish": "B",
+  "insert": "12"
+  }},
+{"22E12": {
+  "shell_size": "22",
+  "material_finish": "E",
+  "insert": "12"
+  }},
+{"22F12": {
+  "shell_size": "22",
+  "material_finish": "F",
+  "insert": "12"
+  }},
+{"22R12": {
+  "shell_size": "22",
+  "material_finish": "R",
+  "insert": "12"
+  }},
+{"22-12": {
+  "shell_size": "22",
+  "material_finish": "-",
+  "insert": "12"
+  }},
+{"22H12": {
+  "shell_size": "22",
+  "material_finish": "H",
+  "insert": "12"
+  }},
+{"22A19": {
+  "shell_size": "22",
+  "material_finish": "A",
+  "insert": "19"
+  }},
+{"22B19": {
+  "shell_size": "22",
+  "material_finish": "B",
+  "insert": "19"
+  }},
+{"22E19": {
+  "shell_size": "22",
+  "material_finish": "E",
+  "insert": "19"
+  }},
+{"22F19": {
+  "shell_size": "22",
+  "material_finish": "F",
+  "insert": "19"
+  }},
+{"22R19": {
+  "shell_size": "22",
+  "material_finish": "R",
+  "insert": "19"
+  }},
+{"22-19": {
+  "shell_size": "22",
+  "material_finish": "-",
+  "insert": "19"
+  }},
+{"22H19": {
+  "shell_size": "22",
+  "material_finish": "H",
+  "insert": "19"
+  }},
+{"22A32": {
+  "shell_size": "22",
+  "material_finish": "A",
+  "insert": "32"
+  }},
+{"22B32": {
+  "shell_size": "22",
+  "material_finish": "B",
+  "insert": "32"
+  }},
+{"22E32": {
+  "shell_size": "22",
+  "material_finish": "E",
+  "insert": "32"
+  }},
+{"22F32": {
+  "shell_size": "22",
+  "material_finish": "F",
+  "insert": "32"
+  }},
+{"22R32": {
+  "shell_size": "22",
+  "material_finish": "R",
+  "insert": "32"
+  }},
+{"22-32": {
+  "shell_size": "22",
+  "material_finish": "-",
+  "insert": "32"
+  }},
+{"22H32": {
+  "shell_size": "22",
+  "material_finish": "H",
+  "insert": "32"
+  }},
+{"22A55": {
+  "shell_size": "22",
+  "material_finish": "A",
+  "insert": "55"
+  }},
+{"22B55": {
+  "shell_size": "22",
+  "material_finish": "B",
+  "insert": "55"
+  }},
+{"22E55": {
+  "shell_size": "22",
+  "material_finish": "E",
+  "insert": "55"
+  }},
+{"22F55": {
+  "shell_size": "22",
+  "material_finish": "F",
+  "insert": "55"
+  }},
+{"22R55": {
+  "shell_size": "22",
+  "material_finish": "R",
+  "insert": "55"
+  }},
+{"22-55": {
+  "shell_size": "22",
+  "material_finish": "-",
+  "insert": "55"
+  }},
+{"22H55": {
+  "shell_size": "22",
+  "material_finish": "H",
+  "insert": "55"
+  }},
+{"24A30": {
+  "shell_size": "24",
+  "material_finish": "A",
+  "insert": "30"
+  }},
+{"24B30": {
+  "shell_size": "24",
+  "material_finish": "B",
+  "insert": "30"
+  }},
+{"24E30": {
+  "shell_size": "24",
+  "material_finish": "E",
+  "insert": "30"
+  }},
+{"24F30": {
+  "shell_size": "24",
+  "material_finish": "F",
+  "insert": "30"
+  }},
+{"24R30": {
+  "shell_size": "24",
+  "material_finish": "R",
+  "insert": "30"
+  }},
+{"24-30": {
+  "shell_size": "24",
+  "material_finish": "-",
+  "insert": "30"
+  }},
+{"24H30": {
+  "shell_size": "24",
+  "material_finish": "H",
+  "insert": "30"
+  }},
+{"24A43": {
+  "shell_size": "24",
+  "material_finish": "A",
+  "insert": "43"
+  }},
+{"24B43": {
+  "shell_size": "24",
+  "material_finish": "B",
+  "insert": "43"
+  }},
+{"24E43": {
+  "shell_size": "24",
+  "material_finish": "E",
+  "insert": "43"
+  }},
+{"24F43": {
+  "shell_size": "24",
+  "material_finish": "F",
+  "insert": "43"
+  }},
+{"24R43": {
+  "shell_size": "24",
+  "material_finish": "R",
+  "insert": "43"
+  }},
+{"24-43": {
+  "shell_size": "24",
+  "material_finish": "-",
+  "insert": "43"
+  }},
+{"24H43": {
+  "shell_size": "24",
+  "material_finish": "H",
+  "insert": "43"
+  }},
+{"24A57": {
+  "shell_size": "24",
+  "material_finish": "A",
+  "insert": "57"
+  }},
+{"24B57": {
+  "shell_size": "24",
+  "material_finish": "B",
+  "insert": "57"
+  }},
+{"24E57": {
+  "shell_size": "24",
+  "material_finish": "E",
+  "insert": "57"
+  }},
+{"24F57": {
+  "shell_size": "24",
+  "material_finish": "F",
+  "insert": "57"
+  }},
+{"24R57": {
+  "shell_size": "24",
+  "material_finish": "R",
+  "insert": "57"
+  }},
+{"24-57": {
+  "shell_size": "24",
+  "material_finish": "-",
+  "insert": "57"
+  }},
+{"24H57": {
+  "shell_size": "24",
+  "material_finish": "H",
+  "insert": "57"
+  }},
+{"24A61": {
+  "shell_size": "24",
+  "material_finish": "A",
+  "insert": "61"
+  }},
+{"24B61": {
+  "shell_size": "24",
+  "material_finish": "B",
+  "insert": "61"
+  }},
+{"24E61": {
+  "shell_size": "24",
+  "material_finish": "E",
+  "insert": "61"
+  }},
+{"24F61": {
+  "shell_size": "24",
+  "material_finish": "F",
+  "insert": "61"
+  }},
+{"24R61": {
+  "shell_size": "24",
+  "material_finish": "R",
+  "insert": "61"
+  }},
+{"24-61": {
+  "shell_size": "24",
+  "material_finish": "-",
+  "insert": "61"
+  }},
+{"24H61": {
+  "shell_size": "24",
+  "material_finish": "H",
+  "insert": "61"
+  }},
+{"28A42": {
+  "shell_size": "28",
+  "material_finish": "A",
+  "insert": "42"
+  }},
+{"28B42": {
+  "shell_size": "28",
+  "material_finish": "B",
+  "insert": "42"
+  }},
+{"28E42": {
+  "shell_size": "28",
+  "material_finish": "E",
+  "insert": "42"
+  }},
+{"28F42": {
+  "shell_size": "28",
+  "material_finish": "F",
+  "insert": "42"
+  }},
+{"28R42": {
+  "shell_size": "28",
+  "material_finish": "R",
+  "insert": "42"
+  }},
+{"28-42": {
+  "shell_size": "28",
+  "material_finish": "-",
+  "insert": "42"
+  }},
+{"28H42": {
+  "shell_size": "28",
+  "material_finish": "42",
+  "insert": "42"
+  }}
+    ],
+    "description": {
+      "dependency": "material_finish"
+    },
+    "label": "Insert Pattern"
+  },
+  "contact_style": {
+    "data": [
+      "P",
+      "S"
+    ],
+    "description": [
+      "Pin Contacts",
+      "Socket Contacts"
+    ],
+    "label": "Contact Style"
+  },
+  "keyway_position": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"10"
+    ],
+    "description": [
+      "Normal",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying"
+    ],
+    "label": "Keyway Position"
+  },
+  "ordering_option": {
+    "data": [
+      "[blank]",
+      "H"
+    ],
+    "description": [
+      "With Contacts & Seal Plugs",
+      "Without Contacts & Seal Plugs"
+    ],
+    "label": "Ordering Option"
+  }
+}

@@ -1,0 +1,605 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "CN0944"
+    ],
+    "label": "Series Designation"
+  },
+  "series_modification": {
+    "data": [
+"B",
+"C",
+"D",
+"E"
+    ],
+    "description": [
+"Square Flange Mount Bayonet Coupled",
+"Square Flange Mount Thread Coupled",
+"Single Hole Mount Bayonet Coupled",
+"Single Hole Mount thread Coupled"
+    ],
+    "label": "Series Modification"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "environmental_class": {
+    "data": [
+"G",
+"N",
+"R"
+    ],
+    "description": [
+"Cadmium/Nickel Finish",
+"Electroless Nickel Finish",
+"Anodized Finish"
+    ],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Environmental Class"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"8G02": {
+  "shell_size": "8",
+  "environmental_class": "G",
+  "insert": "02"
+  }},
+{"8N02": {
+  "shell_size": "8",
+  "environmental_class": "N",
+  "insert": "02"
+  }},
+{"8R02": {
+  "shell_size": "8",
+  "environmental_class": "R",
+  "insert": "02"
+  }},
+{"8G03": {
+  "shell_size": "8",
+  "environmental_class": "G",
+  "insert": "03"
+  }},
+{"8N03": {
+  "shell_size": "8",
+  "environmental_class": "N",
+  "insert": "03"
+  }},
+{"8R03": {
+  "shell_size": "8",
+  "environmental_class": "R",
+  "insert": "03"
+  }},
+{"10G02": {
+  "shell_size": "10",
+  "environmental_class": "G",
+  "insert": "02"
+  }},
+{"10N02": {
+  "shell_size": "10",
+  "environmental_class": "G",
+  "insert": "02"
+  }},
+{"10R02": {
+  "shell_size": "10",
+  "environmental_class": "R",
+  "insert": "02"
+  }},
+{"10G05": {
+  "shell_size": "10",
+  "environmental_class": "G",
+  "insert": "05"
+  }},
+{"10N05": {
+  "shell_size": "10",
+  "environmental_class": "N",
+  "insert": "05"
+  }},
+{"10R05": {
+  "shell_size": "10",
+  "environmental_class": "R",
+  "insert": "05"
+  }},
+{"10G20": {
+  "shell_size": "10",
+  "environmental_class": "G",
+  "insert": "20"
+  }},
+{"10N20": {
+  "shell_size": "10",
+  "environmental_class": "N",
+  "insert": "20"
+  }},
+{"10R20": {
+  "shell_size": "10",
+  "environmental_class": "R",
+  "insert": "20"
+  }},
+{"12G03": {
+  "shell_size": "12",
+  "environmental_class": "G",
+  "insert": "03"
+  }},
+{"12N03": {
+  "shell_size": "12",
+  "environmental_class": "N",
+  "insert": "03"
+  }},
+{"12R03": {
+  "shell_size": "12",
+  "environmental_class": "R",
+  "insert": "03"
+  }},
+{"12G12": {
+  "shell_size": "12",
+  "environmental_class": "G",
+  "insert": "12"
+  }},
+{"12N12": {
+  "shell_size": "12",
+  "environmental_class": "N",
+  "insert": "12"
+  }},
+{"12R12": {
+  "shell_size": "12",
+  "environmental_class": "R",
+  "insert": "12"
+  }},
+{"14G03": {
+  "shell_size": "14",
+  "environmental_class": "G",
+  "insert": "03"
+  }},
+{"14N03": {
+  "shell_size": "14",
+  "environmental_class": "N",
+  "insert": "03"
+  }},
+{"14R03": {
+  "shell_size": "14",
+  "environmental_class": "R",
+  "insert": "03"
+  }},
+{"14G04": {
+  "shell_size": "14",
+  "environmental_class": "G",
+  "insert": "04"
+  }},
+{"14N04": {
+  "shell_size": "14",
+  "environmental_class": "N",
+  "insert": "04"
+  }},
+{"14R04": {
+  "shell_size": "14",
+  "environmental_class": "R",
+  "insert": "04"
+  }},
+{"14G07": {
+  "shell_size": "14",
+  "environmental_class": "G",
+  "insert": "07"
+  }},
+{"14N07": {
+  "shell_size": "14",
+  "environmental_class": "N",
+  "insert": "07"
+  }},
+{"14R07": {
+  "shell_size": "14",
+  "environmental_class": "R",
+  "insert": "07"
+  }},
+{"14G12": {
+  "shell_size": "14",
+  "environmental_class": "G",
+  "insert": "12"
+  }},
+{"14N12": {
+  "shell_size": "14",
+  "environmental_class": "N",
+  "insert": "12"
+  }},
+{"14R12": {
+  "shell_size": "14",
+  "environmental_class": "R",
+  "insert": "12"
+  }},
+{"14G15": {
+  "shell_size": "14",
+  "environmental_class": "G",
+  "insert": "15"
+  }},
+{"14N15": {
+  "shell_size": "14",
+  "environmental_class": "N",
+  "insert": "15"
+  }},
+{"14R15": {
+  "shell_size": "14",
+  "environmental_class": "R",
+  "insert": "15"
+  }},
+{"16G10": {
+  "shell_size": "16",
+  "environmental_class": "G",
+  "insert": "10"
+  }},
+{"16N10": {
+  "shell_size": "16",
+  "environmental_class": "N",
+  "insert": "10"
+  }},
+{"16R10": {
+  "shell_size": "16",
+  "environmental_class": "R",
+  "insert": "10"
+  }},
+{"16G24": {
+  "shell_size": "16",
+  "environmental_class": "G",
+  "insert": "24"
+  }},
+{"16N24": {
+  "shell_size": "16",
+  "environmental_class": "N",
+  "insert": "24"
+  }},
+{"16R24": {
+  "shell_size": "16",
+  "environmental_class": "R",
+  "insert": "24"
+  }},
+{"18G08": {
+  "shell_size": "18",
+  "environmental_class": "G",
+  "insert": "08"
+  }},
+{"18N08": {
+  "shell_size": "18",
+  "environmental_class": "N",
+  "insert": "08"
+  }},
+{"18R08": {
+  "shell_size": "18",
+  "environmental_class": "R",
+  "insert": "08"
+  }},
+{"18G11": {
+  "shell_size": "18",
+  "environmental_class": "G",
+  "insert": "11"
+  }},
+{"18N11": {
+  "shell_size": "18",
+  "environmental_class": "N",
+  "insert": "11"
+  }},
+{"18R11": {
+  "shell_size": "18",
+  "environmental_class": "R",
+  "insert": "11"
+  }},
+{"18G14": {
+  "shell_size": "18",
+  "environmental_class": "G",
+  "insert": "14"
+  }},
+{"18N14": {
+  "shell_size": "18",
+  "environmental_class": "N",
+  "insert": "14"
+  }},
+{"18R14": {
+  "shell_size": "18",
+  "environmental_class": "R",
+  "insert": "14"
+  }},
+{"18G31": {
+  "shell_size": "18",
+  "environmental_class": "G",
+  "insert": "31"
+  }},
+{"18N31": {
+  "shell_size": "18",
+  "environmental_class": "N",
+  "insert": "31"
+  }},
+{"18R31": {
+  "shell_size": "18",
+  "environmental_class": "R",
+  "insert": "31"
+  }},
+{"20G16": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "16"
+  }},
+{"20N16": {
+  "shell_size": "20",
+  "environmental_class": "N",
+  "insert": "16"
+  }},
+{"20R16": {
+  "shell_size": "20",
+  "environmental_class": "R",
+  "insert": "16"
+  }},
+{"20G25": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "25"
+  }},
+{"20N25": {
+  "shell_size": "20",
+  "environmental_class": "N",
+  "insert": "25"
+  }},
+{"20R25": {
+  "shell_size": "20",
+  "environmental_class": "R",
+  "insert": "25"
+  }},
+{"20G28": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "28"
+  }},
+{"20N28": {
+  "shell_size": "20",
+  "environmental_class": "N",
+  "insert": "28"
+  }},
+{"20R28": {
+  "shell_size": "20",
+  "environmental_class": "R",
+  "insert": "28"
+  }},
+{"20G39": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "39"
+  }},
+{"20N39": {
+  "shell_size": "20",
+  "environmental_class": "N",
+  "insert": "39"
+  }},
+{"20R39": {
+  "shell_size": "20",
+  "environmental_class": "R",
+  "insert": "39"
+  }},
+{"20G41": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "41"
+  }},
+{"20N41": {
+  "shell_size": "20",
+  "environmental_class": "N",
+  "insert": "41"
+  }},
+{"20R41": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "41"
+  }},
+{"22G12": {
+  "shell_size": "22",
+  "environmental_class": "G",
+  "insert": "12"
+  }},
+{"22N12": {
+  "shell_size": "22",
+  "environmental_class": "N",
+  "insert": "12"
+  }},
+{"22R12": {
+  "shell_size": "22",
+  "environmental_class": "R",
+  "insert": "12"
+  }},
+{"22G19": {
+  "shell_size": "22",
+  "environmental_class": "G",
+  "insert": "19"
+  }},
+{"22N19": {
+  "shell_size": "22",
+  "environmental_class": "N",
+  "insert": "19"
+  }},
+{"22R19": {
+  "shell_size": "22",
+  "environmental_class": "R",
+  "insert": "19"
+  }},
+{"22G32": {
+  "shell_size": "22",
+  "environmental_class": "G",
+  "insert": "32"
+  }},
+{"22N32": {
+  "shell_size": "22",
+  "environmental_class": "N",
+  "insert": "32"
+  }},
+{"22R32": {
+  "shell_size": "22",
+  "environmental_class": "R",
+  "insert": "32"
+  }},
+{"22G55": {
+  "shell_size": "22",
+  "environmental_class": "G",
+  "insert": "55"
+  }},
+{"22N55": {
+  "shell_size": "22",
+  "environmental_class": "N",
+  "insert": "55"
+  }},
+{"22R55": {
+  "shell_size": "22",
+  "environmental_class": "R",
+  "insert": "55"
+  }},
+{"24G29": {
+  "shell_size": "24",
+  "environmental_class": "G",
+  "insert": "29"
+  }},
+{"24N29": {
+  "shell_size": "24",
+  "environmental_class": "N",
+  "insert": "29"
+  }},
+{"24R29": {
+  "shell_size": "24",
+  "environmental_class": "R",
+  "insert": "29"
+  }},
+{"24G30": {
+  "shell_size": "24",
+  "environmental_class": "G",
+  "insert": "30"
+  }},
+{"24N30": {
+  "shell_size": "24",
+  "environmental_class": "N",
+  "insert": "30"
+  }},
+{"24R30": {
+  "shell_size": "24",
+  "environmental_class": "R",
+  "insert": "30"
+  }},
+{"24G43": {
+  "shell_size": "24",
+  "environmental_class": "G",
+  "insert": "43"
+  }},
+{"24N43": {
+  "shell_size": "24",
+  "environmental_class": "N",
+  "insert": "43"
+  }},
+{"24R43": {
+  "shell_size": "24",
+  "environmental_class": "R",
+  "insert": "43"
+  }},
+{"24G57": {
+  "shell_size": "24",
+  "environmental_class": "G",
+  "insert": "57"
+  }},
+{"24N57": {
+  "shell_size": "24",
+  "environmental_class": "N",
+  "insert": "57"
+  }},
+{"24R57": {
+  "shell_size": "24",
+  "environmental_class": "R",
+  "insert": "57"
+  }},
+{"24G61": {
+  "shell_size": "24",
+  "environmental_class": "G",
+  "insert": "61"
+  }},
+{"24N61": {
+  "shell_size": "24",
+  "environmental_class": "N",
+  "insert": "61"
+  }},
+{"24R61": {
+  "shell_size": "24",
+  "environmental_class": "R",
+  "insert": "61"
+  }}
+    ],
+    "description": {
+      "dependency": "environmental_class"
+    },
+    "label": "Insert Arrangement"
+  },
+  "contact_style": {
+    "data": [
+"P",
+"S"
+    ],
+    "description": [
+      "Pin",
+      "Socket"
+    ],
+    "label": "Contact Style"
+  },
+  "shell_position": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"Y"
+    ],
+    "exception": {
+      "fields": [
+        "insert_arrangement"
+      ],
+      "actions": [
+        {
+          "remove": [
+            "Y"
+          ]
+        }
+      ],
+      "triggers": [
+"8G02",
+"8N02",
+"8R02",
+"8G03",
+"8N03",
+"8R03"
+      ]
+    },
+    "label": "Shell Position"
+  },
+  "termination_type": {
+    "data": [
+"B",
+"C",
+"W"
+    ],
+    "description": [
+"Solder Pin",
+"Solder Cup",
+"Wire Wrap"
+    ],
+    "label": "Termination Type"
+  },
+  "termination": {
+    "data": [
+"01",
+"02",
+"03",
+"04",
+"06"
+    ],
+    "label": "Termination"
+  }
+}

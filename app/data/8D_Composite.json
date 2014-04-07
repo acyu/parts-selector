@@ -1,0 +1,893 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "8D"
+    ],
+    "label": "Series Designation"
+  },
+  "shell_style": {
+    "data": [
+"0",
+"5"
+    ],
+    "description": [
+"Square Flange Receptacle",
+"Plug with RFI Shielding"
+    ],
+    "label": "Shell Style"
+  },
+  "type": {
+    "data": [
+"-",
+"C",
+"L",
+"P",
+"S",
+"T",
+"W"
+    ],
+    "description":[
+"Connectors with Standard Crimp Contacts",
+"Receptacle with Short PC Tail (Male and Female #22D, #20)",
+"Receptacle with Long PC Tail (Male and Female #22D, #20, #16)",
+"Receptacle with Solder Cup (Male and Female #22D; Male #16 and #12; Female #16 and #12 and Female #20)",
+"Receptacle with Specific PC Tail (Male an Female #22D)",
+"Receptacle with Male Contacts #20 for Wire Wrap (2 Wraps)",
+"Receptacle with Male Contacts #22D for Wire Wrap (3 Wraps)"
+    ],
+    "label":"Type"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "plating": {
+    "data": [
+"J",
+"M",
+"X"
+    ],
+    "description": [
+"Olive Drab Cadmium",
+"Nickel",
+"Without Plating"
+    ],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Plating"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"09J35": {
+  "shell_size": "09",
+  "plating": "J",
+  "insert": "35"
+  }},
+{"09M35": {
+  "shell_size": "09",
+  "plating": "M",
+  "insert": "35"
+  }},
+{"09X35": {
+  "shell_size": "09",
+  "plating": "X",
+  "insert": "35"
+  }},
+{"09J98": {
+  "shell_size": "09",
+  "plating": "J",
+  "insert": "98"
+  }},
+{"09M98": {
+  "shell_size": "09",
+  "plating": "M",
+  "insert": "98"
+  }},
+{"09X98": {
+  "shell_size": "09",
+  "plating": "X",
+  "insert": "98"
+  }},
+{"11J02": {
+  "shell_size": "11",
+  "plating": "J",
+  "insert": "02"
+  }},
+{"11M02": {
+  "shell_size": "11",
+  "plating": "M",
+  "insert": "02"
+  }},
+{"11X02": {
+  "shell_size": "11",
+  "plating": "X",
+  "insert": "02"
+  }},
+{"11J04": {
+  "shell_size": "11",
+  "plating": "J",
+  "insert": "04"
+  }},
+{"11M04": {
+  "shell_size": "11",
+  "plating": "M",
+  "insert": "04"
+  }},
+{"11X04": {
+  "shell_size": "11",
+  "plating": "X",
+  "insert": "04"
+  }},
+{"11J05": {
+  "shell_size": "11",
+  "plating": "J",
+  "insert": "05"
+  }},
+{"11M05": {
+  "shell_size": "11",
+  "plating": "M",
+  "insert": "05"
+  }},
+{"11X05": {
+  "shell_size": "11",
+  "plating": "X",
+  "insert": "05"
+  }},
+{"11J35": {
+  "shell_size": "11",
+  "plating": "J",
+  "insert": "35"
+  }},
+{"11M35": {
+  "shell_size": "11",
+  "plating": "M",
+  "insert": "35"
+  }},
+{"11X35": {
+  "shell_size": "11",
+  "plating": "X",
+  "insert": "35"
+  }},
+{"11J98": {
+  "shell_size": "11",
+  "plating": "J",
+  "insert": "98"
+  }},
+{"11M98": {
+  "shell_size": "11",
+  "plating": "M",
+  "insert": "98"
+  }},
+{"11X98": {
+  "shell_size": "11",
+  "plating": "X",
+  "insert": "98"
+  }},
+{"11J99": {
+  "shell_size": "11",
+  "plating": "J",
+  "insert": "99"
+  }},
+{"11M99": {
+  "shell_size": "11",
+  "plating": "M",
+  "insert": "99"
+  }},
+{"11X99": {
+  "shell_size": "11",
+  "plating": "X",
+  "insert": "99"
+  }},
+{"13J04": {
+  "shell_size": "13",
+  "plating": "J",
+  "insert": "04"
+  }},
+{"13M04": {
+  "shell_size": "13",
+  "plating": "M",
+  "insert": "04"
+  }},
+{"13X04": {
+  "shell_size": "13",
+  "plating": "X",
+  "insert": "04"
+  }},
+{"13J08": {
+  "shell_size": "13",
+  "plating": "J",
+  "insert": "08"
+  }},
+{"13M08": {
+  "shell_size": "13",
+  "plating": "M",
+  "insert": "08"
+  }},
+{"13X08": {
+  "shell_size": "13",
+  "plating": "X",
+  "insert": "08"
+  }},
+{"13J35": {
+  "shell_size": "13",
+  "plating": "J",
+  "insert": "35"
+  }},
+{"13M35": {
+  "shell_size": "13",
+  "plating": "M",
+  "insert": "35"
+  }},
+{"13X35": {
+  "shell_size": "13",
+  "plating": "X",
+  "insert": "35"
+  }},
+{"13J98": {
+  "shell_size": "13",
+  "plating": "J",
+  "insert": "98"
+  }},
+{"13M98": {
+  "shell_size": "13",
+  "plating": "M",
+  "insert": "98"
+  }},
+{"13X98": {
+  "shell_size": "13",
+  "plating": "X",
+  "insert": "98"
+  }},
+{"15J05": {
+  "shell_size": "15",
+  "plating": "J",
+  "insert": "05"
+  }},
+{"15M05": {
+  "shell_size": "15",
+  "plating": "M",
+  "insert": "05"
+  }},
+{"15X05": {
+  "shell_size": "15",
+  "plating": "X",
+  "insert": "05"
+  }},
+{"15J15": {
+  "shell_size": "15",
+  "plating": "J",
+  "insert": "15"
+  }},
+{"15M15": {
+  "shell_size": "15",
+  "plating": "M",
+  "insert": "15"
+  }},
+{"15X15": {
+  "shell_size": "15",
+  "plating": "X",
+  "insert": "15"
+  }},
+{"15J18": {
+  "shell_size": "15",
+  "plating": "J",
+  "insert": "18"
+  }},
+{"15M18": {
+  "shell_size": "15",
+  "plating": "M",
+  "insert": "18"
+  }},
+{"15X18": {
+  "shell_size": "15",
+  "plating": "X",
+  "insert": "18"
+  }},
+{"15J19": {
+  "shell_size": "15",
+  "plating": "J",
+  "insert": "19"
+  }},
+{"15M19": {
+  "shell_size": "15",
+  "plating": "M",
+  "insert": "19"
+  }},
+{"15X19": {
+  "shell_size": "15",
+  "plating": "X",
+  "insert": "19"
+  }},
+{"15J35": {
+  "shell_size": "15",
+  "plating": "J",
+  "insert": "35"
+  }},
+{"15M35": {
+  "shell_size": "15",
+  "plating": "M",
+  "insert": "35"
+  }},
+{"15X35": {
+  "shell_size": "15",
+  "plating": "X",
+  "insert": "35"
+  }},
+{"15J97": {
+  "shell_size": "15",
+  "plating": "J",
+  "insert": "97"
+  }},
+{"15M97": {
+  "shell_size": "15",
+  "plating": "M",
+  "insert": "97"
+  }},
+{"15X97": {
+  "shell_size": "15",
+  "plating": "X",
+  "insert": "97"
+  }},
+{"17J02": {
+  "shell_size": "17",
+  "plating": "J",
+  "insert": "02"
+  }},
+{"17M02": {
+  "shell_size": "17",
+  "plating": "M",
+  "insert": "02"
+  }},
+{"17X02": {
+  "shell_size": "17",
+  "plating": "X",
+  "insert": "02"
+  }},
+{"17J06": {
+  "shell_size": "17",
+  "plating": "J",
+  "insert": "06"
+  }},
+{"17M06": {
+  "shell_size": "17",
+  "plating": "M",
+  "insert": "06"
+  }},
+{"17X06": {
+  "shell_size": "17",
+  "plating": "X",
+  "insert": "06"
+  }},
+{"17J26": {
+  "shell_size": "17",
+  "plating": "J",
+  "insert": "26"
+  }},
+{"17M26": {
+  "shell_size": "17",
+  "plating": "M",
+  "insert": "26"
+  }},
+{"17X26": {
+  "shell_size": "17",
+  "plating": "X",
+  "insert": "26"
+  }},
+{"17J35": {
+  "shell_size": "17",
+  "plating": "J",
+  "insert": "35"
+  }},
+{"17M35": {
+  "shell_size": "17",
+  "plating": "M",
+  "insert": "35"
+  }},
+{"17X35": {
+  "shell_size": "17",
+  "plating": "X",
+  "insert": "35"
+  }},
+{"17J99": {
+  "shell_size": "17",
+  "plating": "J",
+  "insert": "99"
+  }},
+{"17M99": {
+  "shell_size": "17",
+  "plating": "M",
+  "insert": "99"
+  }},
+{"17X99": {
+  "shell_size": "17",
+  "plating": "X",
+  "insert": "99"
+  }},
+{"19J11": {
+  "shell_size": "19",
+  "plating": "J",
+  "insert": "11"
+  }},
+{"19M11": {
+  "shell_size": "19",
+  "plating": "M",
+  "insert": "11"
+  }},
+{"19X11": {
+  "shell_size": "19",
+  "plating": "X",
+  "insert": "11"
+  }},
+{"19J18": {
+  "shell_size": "19",
+  "plating": "J",
+  "insert": "18"
+  }},
+{"19M18": {
+  "shell_size": "19",
+  "plating": "M",
+  "insert": "18"
+  }},
+{"19X18": {
+  "shell_size": "19",
+  "plating": "X",
+  "insert": "18"
+  }},
+{"19J28": {
+  "shell_size": "19",
+  "plating": "J",
+  "insert": "28"
+  }},
+{"19M28": {
+  "shell_size": "19",
+  "plating": "M",
+  "insert": "28"
+  }},
+{"19X28": {
+  "shell_size": "19",
+  "plating": "X",
+  "insert": "28"
+  }},
+{"19J32": {
+  "shell_size": "19",
+  "plating": "J",
+  "insert": "32"
+  }},
+{"19M32": {
+  "shell_size": "19",
+  "plating": "M",
+  "insert": "32"
+  }},
+{"19X32": {
+  "shell_size": "19",
+  "plating": "X",
+  "insert": "32"
+  }},
+{"19J35": {
+  "shell_size": "19",
+  "plating": "J",
+  "insert": "35"
+  }},
+{"19M35": {
+  "shell_size": "19",
+  "plating": "M",
+  "insert": "35"
+  }},
+{"19X35": {
+  "shell_size": "19",
+  "plating": "X",
+  "insert": "35"
+  }},
+{"21J11": {
+  "shell_size": "21",
+  "plating": "J",
+  "insert": "11"
+  }},
+{"21M11": {
+  "shell_size": "21",
+  "plating": "M",
+  "insert": "11"
+  }},
+{"21X11": {
+  "shell_size": "21",
+  "plating": "X",
+  "insert": "11"
+  }},
+{"21J16": {
+  "shell_size": "21",
+  "plating": "J",
+  "insert": "16"
+  }},
+{"21M16": {
+  "shell_size": "21",
+  "plating": "M",
+  "insert": "16"
+  }},
+{"21X16": {
+  "shell_size": "21",
+  "plating": "X",
+  "insert": "16"
+  }},
+{"21J35": {
+  "shell_size": "21",
+  "plating": "J",
+  "insert": "35"
+  }},
+{"21M35": {
+  "shell_size": "21",
+  "plating": "M",
+  "insert": "35"
+  }},
+{"21X35": {
+  "shell_size": "21",
+  "plating": "X",
+  "insert": "35"
+  }},
+{"21J39": {
+  "shell_size": "21",
+  "plating": "J",
+  "insert": "39"
+  }},
+{"21M39": {
+  "shell_size": "21",
+  "plating": "M",
+  "insert": "39"
+  }},
+{"21X39": {
+  "shell_size": "21",
+  "plating": "X",
+  "insert": "39"
+  }},
+{"21J41": {
+  "shell_size": "21",
+  "plating": "J",
+  "insert": "41"
+  }},
+{"21M41": {
+  "shell_size": "21",
+  "plating": "M",
+  "insert": "41"
+  }},
+{"21X41": {
+  "shell_size": "21",
+  "plating": "X",
+  "insert": "41"
+  }},
+{"21J75": {
+  "shell_size": "21",
+  "plating": "J",
+  "insert": "75"
+  }},
+{"21M75": {
+  "shell_size": "21",
+  "plating": "M",
+  "insert": "75"
+  }},
+{"21X75": {
+  "shell_size": "21",
+  "plating": "X",
+  "insert": "75"
+  }},
+{"23J21": {
+  "shell_size": "23",
+  "plating": "J",
+  "insert": "21"
+  }},
+{"23M21": {
+  "shell_size": "23",
+  "plating": "M",
+  "insert": "21"
+  }},
+{"23X21": {
+  "shell_size": "23",
+  "plating": "X",
+  "insert": "21"
+  }},
+{"23J35": {
+  "shell_size": "23",
+  "plating": "J",
+  "insert": "35"
+  }},
+{"23M35": {
+  "shell_size": "23",
+  "plating": "M",
+  "insert": "35"
+  }},
+{"23X35": {
+  "shell_size": "23",
+  "plating": "X",
+  "insert": "35"
+  }},
+{"23J53": {
+  "shell_size": "23",
+  "plating": "J",
+  "insert": "53"
+  }},
+{"23M53": {
+  "shell_size": "23",
+  "plating": "M",
+  "insert": "53"
+  }},
+{"23X53": {
+  "shell_size": "23",
+  "plating": "X",
+  "insert": "53"
+  }},
+{"23J55": {
+  "shell_size": "23",
+  "plating": "J",
+  "insert": "55"
+  }},
+{"23M55": {
+  "shell_size": "23",
+  "plating": "M",
+  "insert": "55"
+  }},
+{"23X55": {
+  "shell_size": "23",
+  "plating": "X",
+  "insert": "55"
+  }},
+{"25J04": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "04"
+  }},
+{"25M04": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "04"
+  }},
+{"25X04": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "04"
+  }},
+{"25J07": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "07"
+  }},
+{"25M07": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "07"
+  }},
+{"25X07": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "07"
+  }},
+{"25J08": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "08"
+  }},
+{"25M08": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "08"
+  }},
+{"25X08": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "08"
+  }},
+{"25J11": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "11"
+  }},
+{"25M11": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "11"
+  }},
+{"25X11": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "11"
+  }},
+{"25J19": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "19"
+  }},
+{"25M19": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "19"
+  }},
+{"25X19": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "19"
+  }},
+{"25J24": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "24"
+  }},
+{"25M24": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "24"
+  }},
+{"25X24": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "24"
+  }},
+{"25J29": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "29"
+  }},
+{"25M29": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "29"
+  }},
+{"25X29": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "29"
+  }},
+{"25J35": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "35"
+  }},
+{"25M35": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "35"
+  }},
+{"25X35": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "35"
+  }},
+{"25J37": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "37"
+  }},
+{"25M37": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "37"
+  }},
+{"25X37": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "37"
+  }},
+{"25J43": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "43"
+  }},
+{"25M43": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "43"
+  }},
+{"25X43": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "43"
+  }},
+{"25J46": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "46"
+  }},
+{"25M46": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "46"
+  }},
+{"25X46": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "46"
+  }},
+{"25J61": {
+  "shell_size": "25",
+  "plating": "J",
+  "insert": "61"
+  }},
+{"25M61": {
+  "shell_size": "25",
+  "plating": "M",
+  "insert": "61"
+  }},
+{"25X61": {
+  "shell_size": "25",
+  "plating": "X",
+  "insert": "61"
+  }}
+    ],
+    "description": {
+      "dependency": "plating"
+    },
+    "label": "Insert Arrangement"
+  },
+  "contact_type": {
+    "data": [
+"A",
+"B",
+"H",
+"J",
+"P",
+"S"
+    ],
+    "description": [
+"Connector Supplied less Pin Contact or with Specific Contacts (Connector Marking: A + Orientation)",
+"Connector Supplied Less Socket Contact or with Specific Contacts (Connector Marking: B + Orientation)",
+"Pin (1500 Mating/Unmating)",
+"Socket (1500 Mating/Unmating)",
+"Pin",
+"Socket"
+    ],
+    "label": "Contact Style"
+  },
+  "orientation": {
+    "data": [
+"N",
+"A",
+"B",
+"C",
+"D",
+"E"
+    ],
+    "description": [
+"Normal",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position"
+    ],
+    "label": "Orientation  / Clocking"
+  },
+  "specification": {
+    "data": [
+"[blank]",
+"022",
+"046",
+"251",
+"L"
+    ],
+    "description": [
+"Connector with Contacts",
+"Fuel Tank",
+"Tinned Straight PC Tail",
+"Connector Provided with Power Contacts (Layouts with Contact #8)",
+"For P or S Contact Type only, Connectors Delivered without Contacts, Connectors Marking P or S Plus Orientation"
+    ],
+    "label": "Specification"
+  },
+  "special_custom": {
+    "data": [
+      "[blank]",
+      "M"
+    ],
+    "description": [
+"Standard Plastic Cap",
+"Antistatic Plastic Cap"
+    ],
+    "label": "Special Custom"
+  }
+}

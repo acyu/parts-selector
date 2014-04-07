@@ -1,0 +1,167 @@
+[
+  {
+    "manufacturer": "Amphenol Aerospace",
+    "series": "M83723",
+    "description": "MIL-DTL-83723 Series III"
+  },
+  {
+    "manufacturer": "Amphenol Aerospace",
+    "series": "MS345",
+    "description": "MIL-DTL-5015"
+  },
+  {
+    "manufacturer": "Amphenol Aerospace",
+    "series": "MS347",
+    "description": "MIL-DTL-26482 Series II"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "BACC45FM_FS",
+    "description": "BACC45FM & FS"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "BACC45FN_FT",
+    "description": "BACC45FN & FT"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "BACC63BN",
+    "description": "BACC63BN"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "BACC63BP",
+    "description": "BACC63BP"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "BACC63BV",
+    "description": "BACC63BV"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "BACC63CB",
+    "description": "BACC63CB"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "C48",
+    "description": "C48's"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "C0909A",
+    "description": "C0909A"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "CN0915",
+    "description": "CN0915"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "CN0942",
+    "description": "CN0942"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "CN0944",
+    "description": "CN0944"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "CN0966",
+    "description": "CN0966"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "CN0967",
+    "description": "CN0967"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "CN1020",
+    "description": "CN1020"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "CN1021",
+    "description": "CN1021"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "MS2426",
+    "description": "MS2426's"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "8D_Aluminum",
+    "description": "8D Aluminum"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "8D_Composite",
+    "description": "8D Composite"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "8D_Stainless_Steel",
+    "description": "8D Stainless Steel"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "8525",
+    "description": "8525 Sealed Aluminum"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "8533",
+    "description": "8533"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "BACC63CU_CT",
+    "description": "BACC63CU & CT"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "BACC63DC_DB",
+    "description": "BACC63DC & DB"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "D38999_Aluminum",
+    "description": "D38999 Aluminum"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "D38999_Composite",
+    "description": "D38999 Composite"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "D38999_Stainless_Steel",
+    "description": "D38999 Stainless Steel"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "EN2997",
+    "description": "EN2997"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "EN3645",
+    "description": "EN3645"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "EN3646",
+    "description": "EN3646"
+  },
+  {
+    "manufacturer": "Souriau",
+    "series": "ESC10",
+    "description": "ESC10"
+  }
+]

@@ -1,0 +1,419 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "CN1021"
+    ],
+    "label": "Series Designation"
+  },
+  "series_modification": {
+    "data": [
+"A",
+"C"
+    ],
+    "description": [
+"Standard Plug",
+"Square Flange with Clinch Nuts"
+    ],
+    "label": "Series Modification"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "environmental_class": {
+    "data": [
+"A",
+"G"
+    ],
+    "description": [
+"Anodized Aluminum",
+"Cadmium/Nickel Plated Aluminum"
+    ],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Environmental Class"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"8A02": {
+  "shell_size": "8",
+  "environmental_class": "A",
+  "insert": "02"
+  }},
+{"8G02": {
+  "shell_size": "8",
+  "environmental_class": "G",
+  "insert": "02"
+  }},
+{"8A03": {
+  "shell_size": "8",
+  "environmental_class": "A",
+  "insert": "03"
+  }},
+{"8G03": {
+  "shell_size": "8",
+  "environmental_class": "G",
+  "insert": "03"
+  }},
+{"10A02": {
+  "shell_size": "10",
+  "environmental_class": "A",
+  "insert": "02"
+  }},
+{"10G02": {
+  "shell_size": "10",
+  "environmental_class": "G",
+  "insert": "02"
+  }},
+{"10A05": {
+  "shell_size": "10",
+  "environmental_class": "A",
+  "insert": "05"
+  }},
+{"10G05": {
+  "shell_size": "10",
+  "environmental_class": "G",
+  "insert": "05"
+  }},
+{"10A20": {
+  "shell_size": "10",
+  "environmental_class": "A",
+  "insert": "20"
+  }},
+{"10G20": {
+  "shell_size": "10",
+  "environmental_class": "G",
+  "insert": "20"
+  }},
+{"12A03": {
+  "shell_size": "12",
+  "environmental_class": "A",
+  "insert": "03"
+  }},
+{"12G03": {
+  "shell_size": "12",
+  "environmental_class": "G",
+  "insert": "03"
+  }},
+{"12A12": {
+  "shell_size": "12",
+  "environmental_class": "A",
+  "insert": "12"
+  }},
+{"12G12": {
+  "shell_size": "12",
+  "environmental_class": "G",
+  "insert": "12"
+  }},
+{"14A03": {
+  "shell_size": "14",
+  "environmental_class": "A",
+  "insert": "03"
+  }},
+{"14G03": {
+  "shell_size": "14",
+  "environmental_class": "G",
+  "insert": "03"
+  }},
+{"14A04": {
+  "shell_size": "14",
+  "environmental_class": "A",
+  "insert": "04"
+  }},
+{"14G04": {
+  "shell_size": "14",
+  "environmental_class": "G",
+  "insert": "04"
+  }},
+{"14A07": {
+  "shell_size": "14",
+  "environmental_class": "A",
+  "insert": "07"
+  }},
+{"14G07": {
+  "shell_size": "14",
+  "environmental_class": "G",
+  "insert": "07"
+  }},
+{"14A12": {
+  "shell_size": "14",
+  "environmental_class": "A",
+  "insert": "12"
+  }},
+{"14G12": {
+  "shell_size": "14",
+  "environmental_class": "G",
+  "insert": "12"
+  }},
+{"14A15": {
+  "shell_size": "14",
+  "environmental_class": "A",
+  "insert": "15"
+  }},
+{"14G15": {
+  "shell_size": "14",
+  "environmental_class": "G",
+  "insert": "15"
+  }},
+{"16A10": {
+  "shell_size": "16",
+  "environmental_class": "A",
+  "insert": "10"
+  }},
+{"16G10": {
+  "shell_size": "16",
+  "environmental_class": "G",
+  "insert": "10"
+  }},
+{"16A24": {
+  "shell_size": "16",
+  "environmental_class": "A",
+  "insert": "24"
+  }},
+{"16G24": {
+  "shell_size": "16",
+  "environmental_class": "G",
+  "insert": "24"
+  }},
+{"18A08": {
+  "shell_size": "18",
+  "environmental_class": "A",
+  "insert": "08"
+  }},
+{"18G08": {
+  "shell_size": "18",
+  "environmental_class": "G",
+  "insert": "08"
+  }},
+{"18A11": {
+  "shell_size": "18",
+  "environmental_class": "A",
+  "insert": "11"
+  }},
+{"18G11": {
+  "shell_size": "18",
+  "environmental_class": "G",
+  "insert": "11"
+  }},
+{"18A14": {
+  "shell_size": "18",
+  "environmental_class": "A",
+  "insert": "14"
+  }},
+{"18G14": {
+  "shell_size": "18",
+  "environmental_class": "G",
+  "insert": "14"
+  }},
+{"18A31": {
+  "shell_size": "18",
+  "environmental_class": "A",
+  "insert": "31"
+  }},
+{"18G31": {
+  "shell_size": "18",
+  "environmental_class": "G",
+  "insert": "31"
+  }},
+{"20A16": {
+  "shell_size": "20",
+  "environmental_class": "A",
+  "insert": "16"
+  }},
+{"20G16": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "16"
+  }},
+{"20A25": {
+  "shell_size": "20",
+  "environmental_class": "A",
+  "insert": "25"
+  }},
+{"20G25": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "25"
+  }},
+{"20A28": {
+  "shell_size": "20",
+  "environmental_class": "A",
+  "insert": "28"
+  }},
+{"20G28": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "28"
+  }},
+{"20A39": {
+  "shell_size": "20",
+  "environmental_class": "A",
+  "insert": "39"
+  }},
+{"20G39": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "39"
+  }},
+{"20A41": {
+  "shell_size": "20",
+  "environmental_class": "A",
+  "insert": "41"
+  }},
+{"20G41": {
+  "shell_size": "20",
+  "environmental_class": "G",
+  "insert": "41"
+  }},
+{"22A12": {
+  "shell_size": "22",
+  "environmental_class": "A",
+  "insert": "12"
+  }},
+{"22G12": {
+  "shell_size": "22",
+  "environmental_class": "G",
+  "insert": "12"
+  }},
+{"22A19": {
+  "shell_size": "22",
+  "environmental_class": "A",
+  "insert": "19"
+  }},
+{"22G19": {
+  "shell_size": "22",
+  "environmental_class": "G",
+  "insert": "19"
+  }},
+{"22A32": {
+  "shell_size": "22",
+  "environmental_class": "A",
+  "insert": "32"
+  }},
+{"22G32": {
+  "shell_size": "22",
+  "environmental_class": "G",
+  "insert": "32"
+  }},
+{"22A55": {
+  "shell_size": "22",
+  "environmental_class": "A",
+  "insert": "55"
+  }},
+{"22G55": {
+  "shell_size": "22",
+  "environmental_class": "G",
+  "insert": "55"
+  }},
+{"24A29": {
+  "shell_size": "24",
+  "environmental_class": "A",
+  "insert": "29"
+  }},
+{"24G29": {
+  "shell_size": "24",
+  "environmental_class": "G",
+  "insert": "29"
+  }},
+{"24A30": {
+  "shell_size": "24",
+  "environmental_class": "A",
+  "insert": "30"
+  }},
+{"24G30": {
+  "shell_size": "24",
+  "environmental_class": "G",
+  "insert": "30"
+  }},
+{"24A43": {
+  "shell_size": "24",
+  "environmental_class": "A",
+  "insert": "43"
+  }},
+{"24G43": {
+  "shell_size": "24",
+  "environmental_class": "G",
+  "insert": "43"
+  }},
+{"24A57": {
+  "shell_size": "24",
+  "environmental_class": "A",
+  "insert": "57"
+  }},
+{"24G57": {
+  "shell_size": "24",
+  "environmental_class": "G",
+  "insert": "57"
+  }},
+{"24A61": {
+  "shell_size": "24",
+  "environmental_class": "A",
+  "insert": "61"
+  }},
+{"24G61": {
+  "shell_size": "24",
+  "environmental_class": "G",
+  "insert": "61"
+  }},
+{"28A42": {
+  "shell_size": "28",
+  "environmental_class": "A",
+  "insert": "42"
+  }},
+{"28G42": {
+  "shell_size": "28",
+  "environmental_class": "G",
+  "insert": "42"
+  }}
+    ],
+    "description": {
+      "dependency": "environmental_class"
+    },
+    "label": "Insert Arrangement"
+  },
+  "contact_style": {
+    "data": [
+"P",
+"S"
+    ],
+    "description": [
+      "Pin",
+      "Socket"
+    ],
+    "label": "Contact Style"
+  },
+  "shell_position": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"10"
+    ],
+    "label": "Shell Position"
+  },
+  "order_code": {
+    "data": [
+      "000",
+      "100",
+      "200"
+    ],
+    "description": [
+      "Less Contacts",
+      "Rhodium Plated Contacts",
+      "With Gold Plated Contacts"
+    ],
+    "label": "Order Code (Deviations)"
+  }
+}

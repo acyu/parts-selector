@@ -1,0 +1,419 @@
+{
+  "base":
+  {
+    "data":
+    [
+"MS24264",
+"MS24265",
+"MS24266"
+    ],
+    "description": [
+"Square Flange Receptacle",
+"Single Hole Mounting Receptacle",
+"Straight Plug"
+    ],
+    "label": "Military Designation"
+  },
+  "environmental_class": {
+    "data": [
+      "R"
+    ],
+    "description": [
+      "Meets MIL-C-26500 (USAF)"
+    ],
+    "label": "Environmental Class"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "coupling_style": {
+    "data": [
+"T",
+"B"
+    ],
+    "description": [
+"Threaded",
+"Bayonet"
+    ],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Coupling Style"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"8B2": {
+  "shell_size":"8",
+  "coupling_style":"B",
+  "insert":"2"
+  }},
+{"8T2": {
+  "shell_size":"8",
+  "coupling_style":"T",
+  "insert":"2"
+  }},
+{"8B3": {
+  "shell_size":"8",
+  "coupling_style":"B",
+  "insert":"3"
+  }},
+{"8T3": {
+  "shell_size":"8",
+  "coupling_style":"T",
+  "insert":"3"
+  }},
+{"10B2": {
+  "shell_size":"10",
+  "coupling_style":"B",
+  "insert":"2"
+  }},
+{"10T2": {
+  "shell_size":"10",
+  "coupling_style":"T",
+  "insert":"2"
+  }},
+{"10B5": {
+  "shell_size":"10",
+  "coupling_style":"B",
+  "insert":"5"
+  }},
+{"10T5": {
+  "shell_size":"10",
+  "coupling_style":"T",
+  "insert":"5"
+  }},
+{"10B20": {
+  "shell_size":"10",
+  "coupling_style":"B",
+  "insert":"20"
+  }},
+{"10T20": {
+  "shell_size":"10",
+  "coupling_style":"T",
+  "insert":"20"
+  }},
+{"12B3": {
+  "shell_size":"12",
+  "coupling_style":"B",
+  "insert":"3"
+  }},
+{"12T3": {
+  "shell_size":"12",
+  "coupling_style":"T",
+  "insert":"3"
+  }},
+{"12B12": {
+  "shell_size":"12",
+  "coupling_style":"B",
+  "insert":"12"
+  }},
+{"12T12": {
+  "shell_size":"12",
+  "coupling_style":"T",
+  "insert":"12"
+  }},
+{"14B3": {
+  "shell_size":"14",
+  "coupling_style":"B",
+  "insert":"3"
+  }},
+{"14T3": {
+  "shell_size":"14",
+  "coupling_style":"T",
+  "insert":"3"
+  }},
+{"14B4": {
+  "shell_size":"14",
+  "coupling_style":"B",
+  "insert":"4"
+  }},
+{"14T4": {
+  "shell_size":"14",
+  "coupling_style":"T",
+  "insert":"4"
+  }},
+{"14B7": {
+  "shell_size":"14",
+  "coupling_style":"B",
+  "insert":"7"
+  }},
+{"14T7": {
+  "shell_size":"14",
+  "coupling_style":"T",
+  "insert":"7"
+  }},
+{"14B12": {
+  "shell_size":"14",
+  "coupling_style":"B",
+  "insert":"12"
+  }},
+{"14T12": {
+  "shell_size":"14",
+  "coupling_style":"T",
+  "insert":"12"
+  }},
+{"14B15": {
+  "shell_size":"14",
+  "coupling_style":"B",
+  "insert":"15"
+  }},
+{"14T15": {
+  "shell_size":"14",
+  "coupling_style":"T",
+  "insert":"15"
+  }},
+{"16B10": {
+  "shell_size":"16",
+  "coupling_style":"B",
+  "insert":"10"
+  }},
+{"16T10": {
+  "shell_size":"16",
+  "coupling_style":"T",
+  "insert":"10"
+  }},
+{"16B24": {
+  "shell_size":"16",
+  "coupling_style":"B",
+  "insert":"24"
+  }},
+{"16T24": {
+  "shell_size":"16",
+  "coupling_style":"T",
+  "insert":"24"
+  }},
+{"18B8": {
+  "shell_size":"18",
+  "coupling_style":"B",
+  "insert":"8"
+  }},
+{"18T8": {
+  "shell_size":"18",
+  "coupling_style":"T",
+  "insert":"8"
+  }},
+{"18B11": {
+  "shell_size":"18",
+  "coupling_style":"B",
+  "insert":"11"
+  }},
+{"18T11": {
+  "shell_size":"18",
+  "coupling_style":"T",
+  "insert":"11"
+  }},
+{"18B14": {
+  "shell_size":"18",
+  "coupling_style":"B",
+  "insert":"14"
+  }},
+{"18T14": {
+  "shell_size":"18",
+  "coupling_style":"T",
+  "insert":"14"
+  }},
+{"18B31": {
+  "shell_size":"18",
+  "coupling_style":"B",
+  "insert":"31"
+  }},
+{"18T31": {
+  "shell_size":"18",
+  "coupling_style":"T",
+  "insert":"31"
+  }},
+{"20B16": {
+  "shell_size":"20",
+  "coupling_style":"B",
+  "insert":"16"
+  }},
+{"20T16": {
+  "shell_size":"20",
+  "coupling_style":"T",
+  "insert":"16"
+  }},
+{"20B25": {
+  "shell_size":"20",
+  "coupling_style":"B",
+  "insert":"25"
+  }},
+{"20T25": {
+  "shell_size":"20",
+  "coupling_style":"T",
+  "insert":"25"
+  }},
+{"20B28": {
+  "shell_size":"20",
+  "coupling_style":"B",
+  "insert":"28"
+  }},
+{"20T28": {
+  "shell_size":"20",
+  "coupling_style":"T",
+  "insert":"28"
+  }},
+{"20B29": {
+  "shell_size":"20",
+  "coupling_style":"B",
+  "insert":"29"
+  }},
+{"20T29": {
+  "shell_size":"20",
+  "coupling_style":"T",
+  "insert":"29"
+  }},
+{"20B41": {
+  "shell_size":"20",
+  "coupling_style":"B",
+  "insert":"41"
+  }},
+{"20T41": {
+  "shell_size":"20",
+  "coupling_style":"T",
+  "insert":"41"
+  }},
+{"22B12": {
+  "shell_size":"22",
+  "coupling_style":"B",
+  "insert":"12"
+  }},
+{"22T12": {
+  "shell_size":"22",
+  "coupling_style":"T",
+  "insert":"12"
+  }},
+{"22B19": {
+  "shell_size":"22",
+  "coupling_style":"B",
+  "insert":"19"
+  }},
+{"22T19": {
+  "shell_size":"22",
+  "coupling_style":"T",
+  "insert":"19"
+  }},
+{"22B32": {
+  "shell_size":"22",
+  "coupling_style":"B",
+  "insert":"32"
+  }},
+{"22T32": {
+  "shell_size":"22",
+  "coupling_style":"T",
+  "insert":"32"
+  }},
+{"22B55": {
+  "shell_size":"22",
+  "coupling_style":"B",
+  "insert":"55"
+  }},
+{"22T55": {
+  "shell_size":"22",
+  "coupling_style":"T",
+  "insert":"55"
+  }},
+{"24B29": {
+  "shell_size":"24",
+  "coupling_style":"B",
+  "insert":"29"
+  }},
+{"24T29": {
+  "shell_size":"24",
+  "coupling_style":"T",
+  "insert":"29"
+  }},
+{"24B30": {
+  "shell_size":"24",
+  "coupling_style":"B",
+  "insert":"30"
+  }},
+{"24T30": {
+  "shell_size":"24",
+  "coupling_style":"T",
+  "insert":"30"
+  }},
+{"24B43": {
+  "shell_size":"24",
+  "coupling_style":"B",
+  "insert":"43"
+  }},
+{"24T43": {
+  "shell_size":"24",
+  "coupling_style":"T",
+  "insert":"43"
+  }},
+{"24B57": {
+  "shell_size":"24",
+  "coupling_style":"B",
+  "insert":"57"
+  }},
+{"24T57": {
+  "shell_size":"24",
+  "coupling_style":"T",
+  "insert":"57"
+  }},
+{"24B61": {
+  "shell_size":"24",
+  "coupling_style":"B",
+  "insert":"61"
+  }},
+{"24T61": {
+  "shell_size":"24",
+  "coupling_style":"T",
+  "insert":"61"
+  }}
+    ],
+    "description": {
+      "dependency": "coupling_style"
+    },
+    "label": "Insert Pattern"
+  },
+  "contact_style": {
+    "data": [
+      "P",
+      "S"
+    ],
+    "description": [
+      "Pin",
+      "Socket"
+    ],
+    "label": "Contact Style"
+  },
+  "shell_position": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"Y"
+    ],
+    "exception": {
+      "fields": [
+        "insert_arrangement"
+      ],
+      "actions": [
+        {
+          "remove": [
+            "Y"
+          ]
+        }
+      ],
+      "triggers": [
+"8B2",
+"8T2",
+"8B3",
+"8T3"
+      ]
+    },
+    "label": "Shell Position"
+  }
+}

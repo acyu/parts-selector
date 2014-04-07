@@ -1,0 +1,250 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "EN2997-"
+    ],
+    "label": "Basic Series"
+  },
+  "shell_type": {
+    "data": [
+"W6",
+"R6",
+"K6",
+"KE6",
+"WS6",
+"RS6",
+"S6",
+"SE6",
+"WS0",
+"RS0",
+"S0",
+"SE0",
+"WS7",
+"RS7",
+"S7",
+"SE7"
+    ],
+    "description": [
+"175° C Alumium Olive-Green Cadmium Plating, Conductive Finish",
+"200° C Aluminum Nickel, Conductive Plating",
+"200° C Stainless Steel",
+"260° C Stainless Steel",
+"175° C Alumium Olive-Green Cadmium Plating, Conductive Finish",
+"200° C Aluminum Nickel, Conductive Plating",
+"200° C Stainless Steel",
+"260° C Stainless Steel",
+"175° C Alumium Olive-Green Cadmium Plating, Conductive Finish",
+"200° C Aluminum Nickel, Conductive Plating",
+"200° C Stainless Steel",
+"260° C Stainless Steel",
+"175° C Alumium Olive-Green Cadmium Plating, Conductive Finish",
+"200° C Aluminum Nickel, Conductive Plating",
+"200° C Stainless Steel",
+"260° C Stainless Steel"
+    ],
+    "label": "Shell Type"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"08-03": {
+  "shell_size": "08",
+  "separator": "-",
+  "insert": "03"
+  }},
+{"08-98": {
+  "shell_size": "08",
+  "separator": "-",
+  "insert": "98"
+  }},
+{"10-05": {
+  "shell_size": "10",
+  "separator": "-",
+  "insert": "05"
+  }},
+{"10-06": {
+  "shell_size": "10",
+  "separator": "-",
+  "insert": "06"
+  }},
+{"12-03": {
+  "shell_size": "12",
+  "separator": "-",
+  "insert": "03"
+  }},
+{"12-12": {
+  "shell_size": "12",
+  "separator": "-",
+  "insert": "12"
+  }},
+{"14-04": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "04"
+  }},
+{"14-07": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "07"
+  }},
+{"14-12": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "12"
+  }},
+{"14-15": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "15"
+  }},
+{"16-10": {
+  "shell_size": "16",
+  "separator": "-",
+  "insert": "10"
+  }},
+{"16-24": {
+  "shell_size": "16",
+  "separator": "-",
+  "insert": "24"
+  }},
+{"18-08": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "08"
+  }},
+{"18-14": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "14"
+  }},
+{"18-31": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "31"
+  }},
+{"20-16": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "16"
+  }},
+{"20-25": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "25"
+  }},
+{"20-28": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "28"
+  }},
+{"20-39": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "39"
+  }},
+{"20-41": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "41"
+  }},
+{"22-12": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "12"
+  }},
+{"22-19": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "19"
+  }},
+{"22-32": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "32"
+  }},
+{"22-39": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "39"
+  }},
+{"22-55": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "55"
+  }},
+{"24-30": {
+  "shell_size": "24",
+  "separator": "-",
+  "insert": "30"
+  }},
+{"24-61": {
+  "shell_size": "24",
+  "separator": "-",
+  "insert": "61"
+  }},
+{"28-42": {
+  "shell_size": "28",
+  "separator": "-",
+  "insert": "42"
+  }}
+    ],
+    "label": "Insert Arrangement"
+  },
+  "contact_type": {
+    "data": [
+"M",
+"A",
+"C",
+"F",
+"B",
+"D"
+    ],
+    "description": [
+"Male Contact",
+"Connector Delivered without Male Contact",
+"Connector Delivered with Male Contact #20 Large Barrel",
+"Female Contact",
+"Connector Delivered without Female Contacts",
+"Connector Delivered with Female Contact #20 Large Barrel"
+    ],
+    "label": "Contact Type"
+  },
+  "orientation": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"Y"
+    ],
+    "exception": {
+      "fields": [
+        "insert_arrangement"
+      ],
+      "actions": {
+        "remove": [
+          "Y"
+        ]
+      },
+      "triggers": [
+"08-03",
+"08-98"
+      ]
+    },
+    "label": "Orientation"
+  }
+}

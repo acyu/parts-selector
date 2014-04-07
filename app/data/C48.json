@@ -1,0 +1,265 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "C48-"
+    ],
+    "label": "Series Designation"
+  },
+  "coupling_style": {
+    "data": [
+      "0",
+      "1"
+    ],
+    "description": [
+      "Threaded",
+      "Bayonet"
+    ],
+    "label": "Coupling Style"
+  },
+  "shell_style": {
+    "data": [
+      "0",
+      "3",
+      "6"
+    ],
+    "description": [
+      "Square Flange Receptacle",
+      "Single Hole Mounting Receptacle",
+      "Straight Plug"
+    ],
+    "label": "Shell Style"
+  },
+  "environment_class": {
+    "data": [
+      "R"
+    ],
+    "description": [
+      "Meets MIL-C-26500 (USAF)"
+    ],
+    "label": "Environmental Class"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"8-2": {
+  "shell_size": "8",
+  "separator": "-",
+  "insert": "2"
+  }},
+{"8-3": {
+  "shell_size": "8",
+  "separator": "-",
+  "insert": "3"
+  }},
+{"10-2": {
+  "shell_size": "10",
+  "separator": "-",
+  "insert": "2"
+  }},
+{"10-5": {
+  "shell_size": "10",
+  "separator": "-",
+  "insert": "5"
+  }},
+{"10-20": {
+  "shell_size": "10",
+  "separator": "-",
+  "insert": "20"
+  }},
+{"12-3": {
+  "shell_size": "12",
+  "separator": "-",
+  "insert": "3"
+  }},
+{"12-12": {
+  "shell_size": "12",
+  "separator": "-",
+  "insert": "12"
+  }},
+{"14-3": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "3"
+  }},
+{"14-4": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "4"
+  }},
+{"14-7": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "7"
+  }},
+{"14-12": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "12"
+  }},
+{"14-16": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "16"
+  }},
+{"16-10": {
+  "shell_size": "16",
+  "separator": "-",
+  "insert": "10"
+  }},
+{"16-24": {
+  "shell_size": "16",
+  "separator": "-",
+  "insert": "24"
+  }},
+{"18-8": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "8"
+  }},
+{"18-11": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "11"
+  }},
+{"18-14": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "14"
+  }},
+{"18-31": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "31"
+  }},
+{"20-16": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "16"
+  }},
+{"20-25": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "25"
+  }},
+{"20-28": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "28"
+  }},
+{"20-39": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "39"
+  }},
+{"20-41": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "41"
+  }},
+{"22-12": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "12"
+  }},
+{"22-19": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "19"
+  }},
+{"22-32": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "32"
+  }},
+{"22-55": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "55"
+  }},
+{"24-29": {
+  "shell_size": "24",
+  "separator": "-",
+  "insert": "29"
+  }},
+{"24-30": {
+  "shell_size": "24",
+  "separator": "-",
+  "insert": "30"
+  }},
+{"24-43": {
+  "shell_size": "24",
+  "separator": "-",
+  "insert": "43"
+  }},
+{"24-57": {
+  "shell_size": "24",
+  "separator": "-",
+  "insert": "57"
+  }},
+{"24-61": {
+  "shell_size": "24",
+  "separator": "-",
+  "insert": "61"
+  }}
+    ],
+    "label": "Insert Pattern"
+  },
+  "contact_style": {
+    "data": [
+      "P",
+      "S"
+    ],
+    "description": [
+      "Pin",
+      "Socket"
+    ],
+    "label": "Contact Style"
+  },
+  "keyway_position": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"10"
+    ],
+    "description": [
+      "Normal",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying"
+    ],
+    "label": "Keyway Position"
+  },
+  "order_code": {
+    "data": [
+      "100",
+      "102",
+      "105",
+      "106"
+    ],
+    "description": [
+      "Connector with Contacts & Cable Clamps",
+      "Connector Less Cable Supports With Contacts",
+      "Connector Less Contacts With Cable Support",
+      "Connector Less Contacts & Cable Support"
+    ],
+    "label": "Order Code (Deviations)"
+  }
+}

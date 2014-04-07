@@ -1,0 +1,1175 @@
+{
+  "base": {
+    "data": [
+      "BACC63CU",
+      "BACC63CT"
+    ],
+    "description": [
+"Composite Plug",
+"Composite Square Flange Receptacle"
+    ],
+    "label": "Basic Series"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "shell_finish": {
+    "data": [
+"C",
+"G",
+"D",
+"-"
+    ],
+    "description": [
+"Cadmium Plated, Grounded",
+"Cadmium Plated, Ungrounded",
+"Nickel Plated, Grounded",
+"Nickel Plated, Ungrounded"
+    ],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Finish"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"09C35": {
+  "shell_size": "09",
+  "shell_finish": "C",
+  "insert": "35"
+  }},
+{"09G35": {
+  "shell_size": "09",
+  "shell_finish": "G",
+  "insert": "35"
+  }},
+{"09D35": {
+  "shell_size": "09",
+  "shell_finish": "D",
+  "insert": "35"
+  }},
+{"09-35": {
+  "shell_size": "09",
+  "shell_finish": "-",
+  "insert": "35"
+  }},
+{"09C98": {
+  "shell_size": "09",
+  "shell_finish": "C",
+  "insert": "98"
+  }},
+{"09G98": {
+  "shell_size": "09",
+  "shell_finish": "G",
+  "insert": "98"
+  }},
+{"09D98": {
+  "shell_size": "09",
+  "shell_finish": "D",
+  "insert": "98"
+  }},
+{"09-98": {
+  "shell_size": "09",
+  "shell_finish": "-",
+  "insert": "98"
+  }},
+{"11C02": {
+  "shell_size": "11",
+  "shell_finish": "C",
+  "insert": "02"
+  }},
+{"11G02": {
+  "shell_size": "11",
+  "shell_finish": "G",
+  "insert": "02"
+  }},
+{"11D02": {
+  "shell_size": "11",
+  "shell_finish": "D",
+  "insert": "02"
+  }},
+{"11-02": {
+  "shell_size": "11",
+  "shell_finish": "-",
+  "insert": "02"
+  }},
+{"11C04": {
+  "shell_size": "11",
+  "shell_finish": "C",
+  "insert": "04"
+  }},
+{"11G04": {
+  "shell_size": "11",
+  "shell_finish": "G",
+  "insert": "04"
+  }},
+{"11D04": {
+  "shell_size": "11",
+  "shell_finish": "D",
+  "insert": "04"
+  }},
+{"11-04": {
+  "shell_size": "11",
+  "shell_finish": "-",
+  "insert": "04"
+  }},
+{"11C05": {
+  "shell_size": "11",
+  "shell_finish": "C",
+  "insert": "05"
+  }},
+{"11G05": {
+  "shell_size": "11",
+  "shell_finish": "G",
+  "insert": "05"
+  }},
+{"11D05": {
+  "shell_size": "11",
+  "shell_finish": "D",
+  "insert": "05"
+  }},
+{"11-05": {
+  "shell_size": "11",
+  "shell_finish": "-",
+  "insert": "05"
+  }},
+{"11C35": {
+  "shell_size": "11",
+  "shell_finish": "C",
+  "insert": "35"
+  }},
+{"11G35": {
+  "shell_size": "11",
+  "shell_finish": "G",
+  "insert": "35"
+  }},
+{"11D35": {
+  "shell_size": "11",
+  "shell_finish": "D",
+  "insert": "35"
+  }},
+{"11-35": {
+  "shell_size": "11",
+  "shell_finish": "-",
+  "insert": "35"
+  }},
+{"11C98": {
+  "shell_size": "11",
+  "shell_finish": "C",
+  "insert": "98"
+  }},
+{"11G98": {
+  "shell_size": "11",
+  "shell_finish": "G",
+  "insert": "98"
+  }},
+{"11D98": {
+  "shell_size": "11",
+  "shell_finish": "D",
+  "insert": "98"
+  }},
+{"11-98": {
+  "shell_size": "11",
+  "shell_finish": "-",
+  "insert": "98"
+  }},
+{"11C99": {
+  "shell_size": "11",
+  "shell_finish": "C",
+  "insert": "99"
+  }},
+{"11G99": {
+  "shell_size": "11",
+  "shell_finish": "G",
+  "insert": "99"
+  }},
+{"11D99": {
+  "shell_size": "11",
+  "shell_finish": "D",
+  "insert": "99"
+  }},
+{"11-99": {
+  "shell_size": "11",
+  "shell_finish": "-",
+  "insert": "99"
+  }},
+{"13C04": {
+  "shell_size": "13",
+  "shell_finish": "C",
+  "insert": "04"
+  }},
+{"13G04": {
+  "shell_size": "13",
+  "shell_finish": "G",
+  "insert": "04"
+  }},
+{"13D04": {
+  "shell_size": "13",
+  "shell_finish": "D",
+  "insert": "04"
+  }},
+{"13-04": {
+  "shell_size": "13",
+  "shell_finish": "-",
+  "insert": "04"
+  }},
+{"13C08": {
+  "shell_size": "13",
+  "shell_finish": "C",
+  "insert": "08"
+  }},
+{"13G08": {
+  "shell_size": "13",
+  "shell_finish": "G",
+  "insert": "08"
+  }},
+{"13D08": {
+  "shell_size": "13",
+  "shell_finish": "D",
+  "insert": "08"
+  }},
+{"13-08": {
+  "shell_size": "13",
+  "shell_finish": "-",
+  "insert": "08"
+  }},
+{"13C35": {
+  "shell_size": "13",
+  "shell_finish": "C",
+  "insert": "35"
+  }},
+{"13G35": {
+  "shell_size": "13",
+  "shell_finish": "G",
+  "insert": "35"
+  }},
+{"13D35": {
+  "shell_size": "13",
+  "shell_finish": "D",
+  "insert": "35"
+  }},
+{"13-35": {
+  "shell_size": "13",
+  "shell_finish": "-",
+  "insert": "35"
+  }},
+{"13C98": {
+  "shell_size": "13",
+  "shell_finish": "C",
+  "insert": "98"
+  }},
+{"13G98": {
+  "shell_size": "13",
+  "shell_finish": "G",
+  "insert": "98"
+  }},
+{"13D98": {
+  "shell_size": "13",
+  "shell_finish": "D",
+  "insert": "98"
+  }},
+{"13-98": {
+  "shell_size": "13",
+  "shell_finish": "-",
+  "insert": "98"
+  }},
+{"15C05": {
+  "shell_size": "15",
+  "shell_finish": "C",
+  "insert": "05"
+  }},
+{"15G05": {
+  "shell_size": "15",
+  "shell_finish": "G",
+  "insert": "05"
+  }},
+{"15D05": {
+  "shell_size": "15",
+  "shell_finish": "D",
+  "insert": "05"
+  }},
+{"15-05": {
+  "shell_size": "15",
+  "shell_finish": "-",
+  "insert": "05"
+  }},
+{"15C15": {
+  "shell_size": "15",
+  "shell_finish": "C",
+  "insert": "15"
+  }},
+{"15G15": {
+  "shell_size": "15",
+  "shell_finish": "G",
+  "insert": "15"
+  }},
+{"15D15": {
+  "shell_size": "15",
+  "shell_finish": "D",
+  "insert": "15"
+  }},
+{"15-15": {
+  "shell_size": "15",
+  "shell_finish": "-",
+  "insert": "15"
+  }},
+{"15C18": {
+  "shell_size": "15",
+  "shell_finish": "C",
+  "insert": "18"
+  }},
+{"15G18": {
+  "shell_size": "15",
+  "shell_finish": "G",
+  "insert": "18"
+  }},
+{"15D18": {
+  "shell_size": "15",
+  "shell_finish": "D",
+  "insert": "18"
+  }},
+{"15-18": {
+  "shell_size": "15",
+  "shell_finish": "-",
+  "insert": "18"
+  }},
+{"15C19": {
+  "shell_size": "15",
+  "shell_finish": "C",
+  "insert": "19"
+  }},
+{"15G19": {
+  "shell_size": "15",
+  "shell_finish": "G",
+  "insert": "19"
+  }},
+{"15D19": {
+  "shell_size": "15",
+  "shell_finish": "D",
+  "insert": "19"
+  }},
+{"15-19": {
+  "shell_size": "15",
+  "shell_finish": "-",
+  "insert": "19"
+  }},
+{"15C35": {
+  "shell_size": "15",
+  "shell_finish": "C",
+  "insert": "35"
+  }},
+{"15G35": {
+  "shell_size": "15",
+  "shell_finish": "G",
+  "insert": "35"
+  }},
+{"15D35": {
+  "shell_size": "15",
+  "shell_finish": "D",
+  "insert": "35"
+  }},
+{"15-35": {
+  "shell_size": "15",
+  "shell_finish": "-",
+  "insert": "35"
+  }},
+{"15C97": {
+  "shell_size": "15",
+  "shell_finish": "C",
+  "insert": "97"
+  }},
+{"15G97": {
+  "shell_size": "15",
+  "shell_finish": "G",
+  "insert": "97"
+  }},
+{"15D97": {
+  "shell_size": "15",
+  "shell_finish": "D",
+  "insert": "97"
+  }},
+{"15-97": {
+  "shell_size": "15",
+  "shell_finish": "-",
+  "insert": "97"
+  }},
+{"17C02": {
+  "shell_size": "17",
+  "shell_finish": "C",
+  "insert": "02"
+  }},
+{"17G02": {
+  "shell_size": "17",
+  "shell_finish": "G",
+  "insert": "02"
+  }},
+{"17D02": {
+  "shell_size": "17",
+  "shell_finish": "D",
+  "insert": "02"
+  }},
+{"17-02": {
+  "shell_size": "17",
+  "shell_finish": "-",
+  "insert": "02"
+  }},
+{"17C06": {
+  "shell_size": "17",
+  "shell_finish": "C",
+  "insert": "06"
+  }},
+{"17G06": {
+  "shell_size": "17",
+  "shell_finish": "G",
+  "insert": "06"
+  }},
+{"17D06": {
+  "shell_size": "17",
+  "shell_finish": "D",
+  "insert": "06"
+  }},
+{"17-06": {
+  "shell_size": "17",
+  "shell_finish": "-",
+  "insert": "06"
+  }},
+{"17C08": {
+  "shell_size": "17",
+  "shell_finish": "C",
+  "insert": "08"
+  }},
+{"17G08": {
+  "shell_size": "17",
+  "shell_finish": "G",
+  "insert": "08"
+  }},
+{"17D08": {
+  "shell_size": "17",
+  "shell_finish": "D",
+  "insert": "08"
+  }},
+{"17-08": {
+  "shell_size": "17",
+  "shell_finish": "-",
+  "insert": "08"
+  }},
+{"17C26": {
+  "shell_size": "17",
+  "shell_finish": "C",
+  "insert": "26"
+  }},
+{"17G26": {
+  "shell_size": "17",
+  "shell_finish": "G",
+  "insert": "26"
+  }},
+{"17D26": {
+  "shell_size": "17",
+  "shell_finish": "D",
+  "insert": "26"
+  }},
+{"17-26": {
+  "shell_size": "17",
+  "shell_finish": "-",
+  "insert": "26"
+  }},
+{"17C35": {
+  "shell_size": "17",
+  "shell_finish": "C",
+  "insert": "35"
+  }},
+{"17G35": {
+  "shell_size": "17",
+  "shell_finish": "G",
+  "insert": "35"
+  }},
+{"17D35": {
+  "shell_size": "17",
+  "shell_finish": "D",
+  "insert": "35"
+  }},
+{"17-35": {
+  "shell_size": "17",
+  "shell_finish": "-",
+  "insert": "35"
+  }},
+{"17C82": {
+  "shell_size": "17",
+  "shell_finish": "C",
+  "insert": "82"
+  }},
+{"17G82": {
+  "shell_size": "17",
+  "shell_finish": "G",
+  "insert": "82"
+  }},
+{"17D82": {
+  "shell_size": "17",
+  "shell_finish": "D",
+  "insert": "82"
+  }},
+{"17-82": {
+  "shell_size": "17",
+  "shell_finish": "-",
+  "insert": "82"
+  }},
+{"17C99": {
+  "shell_size": "17",
+  "shell_finish": "C",
+  "insert": "99"
+  }},
+{"17G99": {
+  "shell_size": "17",
+  "shell_finish": "G",
+  "insert": "99"
+  }},
+{"17D99": {
+  "shell_size": "17",
+  "shell_finish": "D",
+  "insert": "99"
+  }},
+{"17-99": {
+  "shell_size": "17",
+  "shell_finish": "-",
+  "insert": "99"
+  }},
+{"19C11": {
+  "shell_size": "19",
+  "shell_finish": "C",
+  "insert": "11"
+  }},
+{"19G11": {
+  "shell_size": "19",
+  "shell_finish": "G",
+  "insert": "11"
+  }},
+{"19D11": {
+  "shell_size": "19",
+  "shell_finish": "D",
+  "insert": "11"
+  }},
+{"19-11": {
+  "shell_size": "19",
+  "shell_finish": "-",
+  "insert": "11"
+  }},
+{"19C18": {
+  "shell_size": "19",
+  "shell_finish": "C",
+  "insert": "18"
+  }},
+{"19G18": {
+  "shell_size": "19",
+  "shell_finish": "G",
+  "insert": "18"
+  }},
+{"19D18": {
+  "shell_size": "19",
+  "shell_finish": "D",
+  "insert": "18"
+  }},
+{"19-18": {
+  "shell_size": "19",
+  "shell_finish": "-",
+  "insert": "18"
+  }},
+{"19C28": {
+  "shell_size": "19",
+  "shell_finish": "C",
+  "insert": "28"
+  }},
+{"19G28": {
+  "shell_size": "19",
+  "shell_finish": "G",
+  "insert": "28"
+  }},
+{"19D28": {
+  "shell_size": "19",
+  "shell_finish": "D",
+  "insert": "28"
+  }},
+{"19-28": {
+  "shell_size": "19",
+  "shell_finish": "-",
+  "insert": "28"
+  }},
+{"19C32": {
+  "shell_size": "19",
+  "shell_finish": "C",
+  "insert": "32"
+  }},
+{"19G32": {
+  "shell_size": "19",
+  "shell_finish": "G",
+  "insert": "32"
+  }},
+{"19D32": {
+  "shell_size": "19",
+  "shell_finish": "D",
+  "insert": "32"
+  }},
+{"19-32": {
+  "shell_size": "19",
+  "shell_finish": "-",
+  "insert": "32"
+  }},
+{"19C35": {
+  "shell_size": "19",
+  "shell_finish": "C",
+  "insert": "35"
+  }},
+{"19G35": {
+  "shell_size": "19",
+  "shell_finish": "G",
+  "insert": "35"
+  }},
+{"19D35": {
+  "shell_size": "19",
+  "shell_finish": "D",
+  "insert": "35"
+  }},
+{"19-35": {
+  "shell_size": "19",
+  "shell_finish": "-",
+  "insert": "35"
+  }},
+{"21C11": {
+  "shell_size": "21",
+  "shell_finish": "C",
+  "insert": "11"
+  }},
+{"21G11": {
+  "shell_size": "21",
+  "shell_finish": "G",
+  "insert": "11"
+  }},
+{"21D11": {
+  "shell_size": "21",
+  "shell_finish": "D",
+  "insert": "11"
+  }},
+{"21-11": {
+  "shell_size": "21",
+  "shell_finish": "-",
+  "insert": "11"
+  }},
+{"21C16": {
+  "shell_size": "21",
+  "shell_finish": "C",
+  "insert": "16"
+  }},
+{"21G16": {
+  "shell_size": "21",
+  "shell_finish": "G",
+  "insert": "16"
+  }},
+{"21D16": {
+  "shell_size": "21",
+  "shell_finish": "D",
+  "insert": "16"
+  }},
+{"21-16": {
+  "shell_size": "21",
+  "shell_finish": "-",
+  "insert": "16"
+  }},
+{"21C35": {
+  "shell_size": "21",
+  "shell_finish": "C",
+  "insert": "35"
+  }},
+{"21G35": {
+  "shell_size": "21",
+  "shell_finish": "G",
+  "insert": "35"
+  }},
+{"21D35": {
+  "shell_size": "21",
+  "shell_finish": "D",
+  "insert": "35"
+  }},
+{"21-35": {
+  "shell_size": "21",
+  "shell_finish": "-",
+  "insert": "35"
+  }},
+{"21C39": {
+  "shell_size": "21",
+  "shell_finish": "C",
+  "insert": "39"
+  }},
+{"21G39": {
+  "shell_size": "21",
+  "shell_finish": "G",
+  "insert": "39"
+  }},
+{"21D39": {
+  "shell_size": "21",
+  "shell_finish": "D",
+  "insert": "39"
+  }},
+{"21-39": {
+  "shell_size": "21",
+  "shell_finish": "-",
+  "insert": "39"
+  }},
+{"21C41": {
+  "shell_size": "21",
+  "shell_finish": "C",
+  "insert": "41"
+  }},
+{"21G41": {
+  "shell_size": "21",
+  "shell_finish": "G",
+  "insert": "41"
+  }},
+{"21D41": {
+  "shell_size": "21",
+  "shell_finish": "D",
+  "insert": "41"
+  }},
+{"21-41": {
+  "shell_size": "21",
+  "shell_finish": "-",
+  "insert": "41"
+  }},
+{"21C75": {
+  "shell_size": "21",
+  "shell_finish": "C",
+  "insert": "75"
+  }},
+{"21G75": {
+  "shell_size": "21",
+  "shell_finish": "G",
+  "insert": "75"
+  }},
+{"21D75": {
+  "shell_size": "21",
+  "shell_finish": "D",
+  "insert": "75"
+  }},
+{"21-75": {
+  "shell_size": "21",
+  "shell_finish": "-",
+  "insert": "75"
+  }},
+{"21C78": {
+  "shell_size": "21",
+  "shell_finish": "C",
+  "insert": "78"
+  }},
+{"21G78": {
+  "shell_size": "21",
+  "shell_finish": "G",
+  "insert": "78"
+  }},
+{"21D78": {
+  "shell_size": "21",
+  "shell_finish": "D",
+  "insert": "78"
+  }},
+{"21-78": {
+  "shell_size": "21",
+  "shell_finish": "-",
+  "insert": "78"
+  }},
+{"21C84": {
+  "shell_size": "21",
+  "shell_finish": "C",
+  "insert": "84"
+  }},
+{"21G84": {
+  "shell_size": "21",
+  "shell_finish": "G",
+  "insert": "84"
+  }},
+{"21D84": {
+  "shell_size": "21",
+  "shell_finish": "D",
+  "insert": "84"
+  }},
+{"21-84": {
+  "shell_size": "21",
+  "shell_finish": "-",
+  "insert": "84"
+  }},
+{"23C21": {
+  "shell_size": "23",
+  "shell_finish": "C",
+  "insert": "21"
+  }},
+{"23G21": {
+  "shell_size": "23",
+  "shell_finish": "G",
+  "insert": "21"
+  }},
+{"23D21": {
+  "shell_size": "23",
+  "shell_finish": "D",
+  "insert": "21"
+  }},
+{"23-21": {
+  "shell_size": "23",
+  "shell_finish": "-",
+  "insert": "21"
+  }},
+{"23C35": {
+  "shell_size": "23",
+  "shell_finish": "C",
+  "insert": "35"
+  }},
+{"23G35": {
+  "shell_size": "23",
+  "shell_finish": "G",
+  "insert": "35"
+  }},
+{"23D35": {
+  "shell_size": "23",
+  "shell_finish": "D",
+  "insert": "35"
+  }},
+{"23-35": {
+  "shell_size": "23",
+  "shell_finish": "-",
+  "insert": "35"
+  }},
+{"23C53": {
+  "shell_size": "23",
+  "shell_finish": "C",
+  "insert": "53"
+  }},
+{"23G53": {
+  "shell_size": "23",
+  "shell_finish": "G",
+  "insert": "53"
+  }},
+{"23D53": {
+  "shell_size": "23",
+  "shell_finish": "D",
+  "insert": "53"
+  }},
+{"23-53": {
+  "shell_size": "23",
+  "shell_finish": "-",
+  "insert": "53"
+  }},
+{"23C55": {
+  "shell_size": "23",
+  "shell_finish": "C",
+  "insert": "55"
+  }},
+{"23G55": {
+  "shell_size": "23",
+  "shell_finish": "G",
+  "insert": "55"
+  }},
+{"23D55": {
+  "shell_size": "23",
+  "shell_finish": "D",
+  "insert": "55"
+  }},
+{"23-55": {
+  "shell_size": "23",
+  "shell_finish": "-",
+  "insert": "55"
+  }},
+{"25C04": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "04"
+  }},
+{"25G04": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "04"
+  }},
+{"25D04": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "04"
+  }},
+{"25-04": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "04"
+  }},
+{"25C07": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "07"
+  }},
+{"25G07": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "07"
+  }},
+{"25D07": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "07"
+  }},
+{"25-07": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "07"
+  }},
+{"25C08": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "08"
+  }},
+{"25G08": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "08"
+  }},
+{"25D08": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "08"
+  }},
+{"25-08": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "08"
+  }},
+{"25C11": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "11"
+  }},
+{"25G11": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "11"
+  }},
+{"25D11": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "11"
+  }},
+{"25-11": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "11"
+  }},
+{"25C19": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "19"
+  }},
+{"25G19": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "19"
+  }},
+{"25D19": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "19"
+  }},
+{"25-19": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "19"
+  }},
+{"25C24": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "24"
+  }},
+{"25G24": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "24"
+  }},
+{"25D24": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "24"
+  }},
+{"25-24": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "24"
+  }},
+{"25C29": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "29"
+  }},
+{"25G29": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "29"
+  }},
+{"25D29": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "29"
+  }},
+{"25-29": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "29"
+  }},
+{"25C35": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "35"
+  }},
+{"25G35": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "35"
+  }},
+{"25D35": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "35"
+  }},
+{"25-35": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "35"
+  }},
+{"25C37": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "37"
+  }},
+{"25G37": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "37"
+  }},
+{"25D37": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "37"
+  }},
+{"25-37": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "37"
+  }},
+{"25C43": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "43"
+  }},
+{"25G43": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "43"
+  }},
+{"25D43": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "43"
+  }},
+{"25-43": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "43"
+  }},
+{"25C46": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "46"
+  }},
+{"25G46": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "46"
+  }},
+{"25D46": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "46"
+  }},
+{"25-46": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "46"
+  }},
+{"25C61": {
+  "shell_size": "25",
+  "shell_finish": "C",
+  "insert": "61"
+  }},
+{"25G61": {
+  "shell_size": "25",
+  "shell_finish": "G",
+  "insert": "61"
+  }},
+{"25D61": {
+  "shell_size": "25",
+  "shell_finish": "D",
+  "insert": "61"
+  }},
+{"25-61": {
+  "shell_size": "25",
+  "shell_finish": "-",
+  "insert": "61"
+  }}
+    ],
+    "description": {
+      "dependency": "shell_finish"
+    },
+    "label": "Insert Arrangement"
+  },
+  "contact_type": {
+    "data": [
+"A",
+"B",
+"P",
+"S"
+    ],
+    "description": [
+"Connector Supplied less Pin Contact or with Specific Contacts (Connector Marking: A + Orientation)",
+"Connector Supplied Less Socket Contact or with Specific Contacts (Connector Marking: B + Orientation)",
+"Pin",
+"Socket"
+    ],
+    "label": "Contact Type"
+  },
+  "keyway_position": {
+    "data": [
+"N",
+"A",
+"B",
+"C",
+"D",
+"E"
+    ],
+    "description": [
+"Normal",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position",
+"Alternate Position"
+    ],
+    "label": "Keyway Position"
+  },
+  "ordering_code": {
+    "data": [
+      "[blank]",
+      "H"
+    ],
+    "description": [
+      "With Contacts",
+      "Without Contacts & Seal Plugs"
+    ],
+    "label": "Ordering Code"
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "BACC63BN"
+    ],
+    "label": "Basic Part Number"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "clamp": {
+    "data": [
+"-",
+"B",
+"C"
+    ],
+    "description": [
+"W/O Cable Clamp",
+"MS27559 Right Angle Saddle Clamps",
+"MS27291 Straight Saddle Clamp"
+    ],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Clamp"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"8-2": {
+  "shell_size": "8",
+  "clamp": "-",
+  "insert": "2"
+  }},
+{"8B2": {
+  "shell_size": "8",
+  "clamp": "B",
+  "insert": "2"
+  }},
+{"8C2": {
+  "shell_size": "8",
+  "clamp": "C",
+  "insert": "2"
+  }},
+{"8-3": {
+  "shell_size": "8",
+  "clamp": "-",
+  "insert": "3"
+  }},
+{"8B3": {
+  "shell_size": "8",
+  "clamp": "B",
+  "insert": "3"
+  }},
+{"8C3": {
+  "shell_size": "8",
+  "clamp": "C",
+  "insert": "3"
+  }},
+{"10-2": {
+  "shell_size": "10",
+  "clamp": "-",
+  "insert": "2"
+  }},
+{"10B2": {
+  "shell_size": "10",
+  "clamp": "B",
+  "insert": "2"
+  }},
+{"10C2": {
+  "shell_size": "10",
+  "clamp": "C",
+  "insert": "2"
+  }},
+{"10-5": {
+  "shell_size": "10",
+  "clamp": "-",
+  "insert": "5"
+  }},
+{"10B5": {
+  "shell_size": "10",
+  "clamp": "B",
+  "insert": "5"
+  }},
+{"10C5": {
+  "shell_size": "10",
+  "clamp": "C",
+  "insert": "5"
+  }},
+{"10-20": {
+  "shell_size": "10",
+  "clamp": "-",
+  "insert": "20"
+  }},
+{"10B20": {
+  "shell_size": "10",
+  "clamp": "B",
+  "insert": "20"
+  }},
+{"10C20": {
+  "shell_size": "10",
+  "clamp": "C",
+  "insert": "20"
+  }},
+{"12-3": {
+  "shell_size": "12",
+  "clamp": "-",
+  "insert": "3"
+  }},
+{"12B3": {
+  "shell_size": "12",
+  "clamp": "B",
+  "insert": "3"
+  }},
+{"12C3": {
+  "shell_size": "12",
+  "clamp": "C",
+  "insert": "3"
+  }},
+{"12-12": {
+  "shell_size": "12",
+  "clamp": "-",
+  "insert": "12"
+  }},
+{"12B12": {
+  "shell_size": "12",
+  "clamp": "B",
+  "insert": "12"
+  }},
+{"12C12": {
+  "shell_size": "12",
+  "clamp": "C",
+  "insert": "12"
+  }},
+{"14-4": {
+  "shell_size": "14",
+  "clamp": "-",
+  "insert": "4"
+  }},
+{"14B4": {
+  "shell_size": "14",
+  "clamp": "B",
+  "insert": "4"
+  }},
+{"14C4": {
+  "shell_size": "14",
+  "clamp": "C",
+  "insert": "4"
+  }},
+{"14-7": {
+  "shell_size": "14",
+  "clamp": "-",
+  "insert": "7"
+  }},
+{"14B7": {
+  "shell_size": "14",
+  "clamp": "B",
+  "insert": "7"
+  }},
+{"14C7": {
+  "shell_size": "14",
+  "clamp": "C",
+  "insert": "7"
+  }},
+{"14-12": {
+  "shell_size": "14",
+  "clamp": "-",
+  "insert": "12"
+  }},
+{"14B12": {
+  "shell_size": "14",
+  "clamp": "B",
+  "insert": "12"
+  }},
+{"14C12": {
+  "shell_size": "14",
+  "clamp": "C",
+  "insert": "12"
+  }},
+{"14-15": {
+  "shell_size": "14",
+  "clamp": "-",
+  "insert": "15"
+  }},
+{"14B15": {
+  "shell_size": "14",
+  "clamp": "B",
+  "insert": "15"
+  }},
+{"14C15": {
+  "shell_size": "14",
+  "clamp": "C",
+  "insert": "15"
+  }},
+{"16-10": {
+  "shell_size": "16",
+  "clamp": "-",
+  "insert": "10"
+  }},
+{"16B10": {
+  "shell_size": "16",
+  "clamp": "B",
+  "insert": "10"
+  }},
+{"16C10": {
+  "shell_size": "16",
+  "clamp": "C",
+  "insert": "10"
+  }},
+{"16-24": {
+  "shell_size": "16",
+  "clamp": "-",
+  "insert": "24"
+  }},
+{"16B24": {
+  "shell_size": "16",
+  "clamp": "B",
+  "insert": "24"
+  }},
+{"16C24": {
+  "shell_size": "16",
+  "clamp": "C",
+  "insert": "24"
+  }},
+{"18-8": {
+  "shell_size": "18",
+  "clamp": "-",
+  "insert": "8"
+  }},
+{"18B8": {
+  "shell_size": "18",
+  "clamp": "B",
+  "insert": "8"
+  }},
+{"18C8": {
+  "shell_size": "18",
+  "clamp": "C",
+  "insert": "8"
+  }},
+{"18-14": {
+  "shell_size": "18",
+  "clamp": "-",
+  "insert": "14"
+  }},
+{"18B14": {
+  "shell_size": "18",
+  "clamp": "B",
+  "insert": "14"
+  }},
+{"18C14": {
+  "shell_size": "18",
+  "clamp": "C",
+  "insert": "14"
+  }},
+{"18-31": {
+  "shell_size": "18",
+  "clamp": "-",
+  "insert": "31"
+  }},
+{"18B31": {
+  "shell_size": "18",
+  "clamp": "B",
+  "insert": "31"
+  }},
+{"18C31": {
+  "shell_size": "18",
+  "clamp": "C",
+  "insert": "31"
+  }},
+{"20-16": {
+  "shell_size": "20",
+  "clamp": "-",
+  "insert": "16"
+  }},
+{"20B18": {
+  "shell_size": "20",
+  "clamp": "B",
+  "insert": "18"
+  }},
+{"20C18": {
+  "shell_size": "20",
+  "clamp": "C",
+  "insert": "18"
+  }},
+{"20-25": {
+  "shell_size": "20",
+  "clamp": "-",
+  "insert": "25"
+  }},
+{"20B25": {
+  "shell_size": "20",
+  "clamp": "B",
+  "insert": "25"
+  }},
+{"20C25": {
+  "shell_size": "20",
+  "clamp": "C",
+  "insert": "25"
+  }},
+{"20-28": {
+  "shell_size": "20",
+  "clamp": "-",
+  "insert": "28"
+  }},
+{"20B28": {
+  "shell_size": "20",
+  "clamp": "B",
+  "insert": "28"
+  }},
+{"20C28": {
+  "shell_size": "20",
+  "clamp": "C",
+  "insert": "28"
+  }},
+{"20-39": {
+  "shell_size": "20",
+  "clamp": "-",
+  "insert": "39"
+  }},
+{"20B39": {
+  "shell_size": "20",
+  "clamp": "B",
+  "insert": "39"
+  }},
+{"20C39": {
+  "shell_size": "20",
+  "clamp": "C",
+  "insert": "39"
+  }},
+{"20-41": {
+  "shell_size": "20",
+  "clamp": "-",
+  "insert": "41"
+  }},
+{"20B41": {
+  "shell_size": "20",
+  "clamp": "B",
+  "insert": "41"
+  }},
+{"20C41": {
+  "shell_size": "20",
+  "clamp": "C",
+  "insert": "41"
+  }},
+{"22-12": {
+  "shell_size": "22",
+  "clamp": "-",
+  "insert": "12"
+  }},
+{"22B12": {
+  "shell_size": "22",
+  "clamp": "B",
+  "insert": "12"
+  }},
+{"22C12": {
+  "shell_size": "22",
+  "clamp": "C",
+  "insert": "12"
+  }},
+{"22-19": {
+  "shell_size": "22",
+  "clamp": "-",
+  "insert": "19"
+  }},
+{"22B19": {
+  "shell_size": "22",
+  "clamp": "B",
+  "insert": "19"
+  }},
+{"22C19": {
+  "shell_size": "22",
+  "clamp": "C",
+  "insert": "19"
+  }},
+{"22-32": {
+  "shell_size": "22",
+  "clamp": "-",
+  "insert": "32"
+  }},
+{"22B32": {
+  "shell_size": "22",
+  "clamp": "B",
+  "insert": "32"
+  }},
+{"22C32": {
+  "shell_size": "22",
+  "clamp": "C",
+  "insert": "32"
+  }},
+{"22-55": {
+  "shell_size": "22",
+  "clamp": "-",
+  "insert": "55"
+  }},
+{"22B55": {
+  "shell_size": "22",
+  "clamp": "B",
+  "insert": "55"
+  }},
+{"22C55": {
+  "shell_size": "22",
+  "clamp": "C",
+  "insert": "55"
+  }},
+{"24-43": {
+  "shell_size": "24",
+  "clamp": "-",
+  "insert": "43"
+  }},
+{"24B43": {
+  "shell_size": "24",
+  "clamp": "B",
+  "insert": "43"
+  }},
+{"24C43": {
+  "shell_size": "24",
+  "clamp": "C",
+  "insert": "43"
+  }},
+{"24-61": {
+  "shell_size": "24",
+  "clamp": "-",
+  "insert": "61"
+  }},
+{"24B61": {
+  "shell_size": "24",
+  "clamp": "B",
+  "insert": "43"
+  }},
+{"24C61": {
+  "shell_size": "24",
+  "clamp": "C",
+  "insert": "43"
+  }}
+    ],
+    "description": {
+      "dependency": "clamp"
+    },
+    "label": "Insert Pattern"
+  },
+  "contact_style": {
+    "data": [
+      "P",
+      "S"
+    ],
+    "description": [
+      "Pin Contacts",
+      "Socket Contacts"
+    ],
+    "label": "Contact Style"
+  },
+  "keyway_position": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"10"
+    ],
+    "description": [
+      "Normal",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying",
+      "Alternate Keying"
+    ],
+    "label": "Keyway Position"
+  },
+  "ordering_option": {
+    "data": [
+      "[blank]",
+      "H"
+    ],
+    "description": [
+      "With Contacts & Seal Plugs",
+      "Without Contacts & Seal Plugs"
+    ],
+    "label": "Ordering Option"
+  }
+}

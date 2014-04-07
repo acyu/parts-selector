@@ -1,0 +1,242 @@
+{
+  "base": {
+    "data": [
+      "MS"
+    ],
+    "label": "Connector Type"
+  },
+  "connector_style": {
+    "data": [
+      "3470",
+      "3471",
+      "3472",
+      "3474",
+      "3475",
+      "3476"
+    ],
+    "description": [
+      "Wall Mounting Receptacle with Narrow Flange",
+      "Cable Connecting Receptacle (Cable-to-Cable)",
+      "Wall Mounting Receptacle with Wide Flange",
+      "Jam Nut Receptacle",
+      "Straight Plug with RFI Grounding Fingers",
+      "Straight Plug"
+    ],
+    "label": "Military Connector Style"
+  },
+  "service_class": {
+    "data": [
+      "L",
+      "A",
+      "W"
+    ],
+    "description": [
+      "Aluminum Shell, Electroless Nickel Finish, Fluid Resistant Insert",
+      "Aluminum Shell, Black Anodized Finish, Non-Conductive Fluid Resistant Insert",
+      "Aluminum Shell, Olive Drab Cadmium Plated, Fluid Resistant Insert"
+    ],
+    "label": "Service Class"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"8-33": {
+  "shell_size": "8",
+  "separator": "-",
+  "insert": "33"
+  }},
+{"8-98": {
+  "shell_size": "8",
+  "separator": "-",
+  "insert": "98"
+  }},
+{"10-6": {
+  "shell_size": "10",
+  "separator": "-",
+  "insert": "6"
+  }},
+{"12-3": {
+  "shell_size": "12",
+  "separator": "-",
+  "insert": "3"
+  }},
+{"12-8": {
+  "shell_size": "12",
+  "separator": "-",
+  "insert": "8"
+  }},
+{"12-10": {
+  "shell_size": "12",
+  "separator": "-",
+  "insert": "10"
+  }},
+{"14-4": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "4"
+  }},
+{"14-5": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "5"
+  }},
+{"14-9": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "9"
+  }},
+{"14-12": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "12"
+  }},
+{"14-15": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "15"
+  }},
+{"14-18": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "18"
+  }},
+{"14-19": {
+  "shell_size": "14",
+  "separator": "-",
+  "insert": "19"
+  }},
+{"16-8": {
+  "shell_size": "16",
+  "separator": "-",
+  "insert": "8"
+  }},
+{"16-23": {
+  "shell_size": "16",
+  "separator": "-",
+  "insert": "23"
+  }},
+{"16-26": {
+  "shell_size": "16",
+  "separator": "-",
+  "insert": "26"
+  }},
+{"18-8": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "8"
+  }},
+{"18-11": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "11"
+  }},
+{"18-30": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "30"
+  }},
+{"18-32": {
+  "shell_size": "18",
+  "separator": "-",
+  "insert": "32"
+  }},
+{"20-16": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "16"
+  }},
+{"20-24": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "24"
+  }},
+{"20-39": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "39"
+  }},
+{"20-41": {
+  "shell_size": "20",
+  "separator": "-",
+  "insert": "41"
+  }},
+{"22-12": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "12"
+  }},
+{"22-19": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "19"
+  }},
+{"22-21": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "21"
+  }},
+{"22-32": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "32"
+  }},
+{"22-41": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "41"
+  }},
+{"22-55": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "55"
+  }},
+{"22-95": {
+  "shell_size": "22",
+  "separator": "-",
+  "insert": "95"
+  }},
+{"24-19": {
+  "shell_size": "24",
+  "separator": "-",
+  "insert": "19"
+  }},
+{"24-31": {
+  "shell_size": "24",
+  "separator": "-",
+  "insert": "31"
+  }},
+{"24-61": {
+  "shell_size": "24",
+  "separator": "-",
+  "insert": "61"
+  }}
+    ],
+    "label": "Insert Pattern"
+  },
+  "contact_type": {
+    "data": [
+      "P",
+      "S",
+      "A",
+      "B"
+    ],
+    "description": [
+      "Pin Contacts",
+      "Socket Contacts",
+      "Less Pins",
+      "Less Sockets"
+    ],
+    "label": "Contact Type"
+  }
+}

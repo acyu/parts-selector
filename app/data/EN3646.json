@@ -1,0 +1,206 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "EN3646"
+    ],
+    "label": "Basic Series"
+  },
+  "connector_model": {
+    "data": [
+"A",
+"WS",
+"RS"
+    ],
+    "description": [
+"Sealed Plug and Receptacle with Housing (Shell) in Black Anodized Aluminum Alloy, Crimp Contacts, with Three Teeth at the Rear of Connector, Maxiumum Operating Temperature 200° C Continuous.",
+"Sealed Plug and Receptacle with Housing (Shell) in Olive-Green Cadmium Alloy, Conducting Finish. 500 h Resistance to Salt Mist, Crimp Contacts, Plug with Grounding-Spring-Systems Screening Ring with Teeth over the Entire Periphery at the Rear of the Connectors, Maximum Operating Temperature 175° C Continuous.",
+"Sealed Plug and Receptacle with Housing (Shell) in Nickel-Plated Aluminum Alloy, Crimp Contacts, Plug with Grounding-Spring-System Screening Ring, Three Teeth at the Rear of the Connector, Maximum Operating Temperature 200° C Continuous."
+    ],
+    "label": "Connector Model"
+  },
+  "shell_type": {
+    "data": [
+"0",
+"6",
+"7"
+    ],
+    "description": [
+"Receptacle, Square Flange Mounting",
+"Plug",
+"Receptacle, Jam Nut Mounting"
+    ],
+    "label": "Shell Type"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"083A": {
+  "shell_size": "08",
+  "insert": "3A"
+  }},
+{"0833": {
+  "shell_size": "08",
+  "insert": "33"
+  }},
+{"0898": {
+  "shell_size": "08",
+  "insert": "98"
+  }},
+{"1002": {
+  "shell_size": "10",
+  "insert": "02"
+  }},
+{"1006": {
+  "shell_size": "10",
+  "insert": "06"
+  }},
+{"1203": {
+  "shell_size": "12",
+  "insert": "03"
+  }},
+{"1208": {
+  "shell_size": "12",
+  "insert": "08"
+  }},
+{"1210": {
+  "shell_size": "12",
+  "insert": "10"
+  }},
+{"1404": {
+  "shell_size": "14",
+  "insert": "04"
+  }},
+{"1405": {
+  "shell_size": "14",
+  "insert": "05"
+  }},
+{"1412": {
+  "shell_size": "14",
+  "insert": "12"
+  }},
+{"1415": {
+  "shell_size": "14",
+  "insert": "15"
+  }},
+{"1419": {
+  "shell_size": "14",
+  "insert": "19"
+  }},
+{"1608": {
+  "shell_size": "16",
+  "insert": "08"
+  }},
+{"1621": {
+  "shell_size": "16",
+  "insert": "21"
+  }},
+{"1623": {
+  "shell_size": "16",
+  "insert": "23"
+  }},
+{"1626": {
+  "shell_size": "16",
+  "insert": "26"
+  }},
+{"1808": {
+  "shell_size": "18",
+  "insert": "08"
+  }},
+{"1811": {
+  "shell_size": "18",
+  "insert": "11"
+  }},
+{"1832": {
+  "shell_size": "18",
+  "insert": "32"
+  }},
+{"2016": {
+  "shell_size": "20",
+  "insert": "16"
+  }},
+{"2034": {
+  "shell_size": "20",
+  "insert": "34"
+  }},
+{"2039": {
+  "shell_size": "20",
+  "insert": "39"
+  }},
+{"2041": {
+  "shell_size": "20",
+  "insert": "41"
+  }},
+{"2212": {
+  "shell_size": "22",
+  "insert": "12"
+  }},
+{"2221": {
+  "shell_size": "22",
+  "insert": "21"
+  }},
+{"2241": {
+  "shell_size": "22",
+  "insert": "41"
+  }},
+{"2255": {
+  "shell_size": "22",
+  "insert": "55"
+  }},
+{"2419": {
+  "shell_size": "24",
+  "insert": "19"
+  }},
+{"2431": {
+  "shell_size": "24",
+  "insert": "31"
+  }},
+{"2461": {
+  "shell_size": "24",
+  "insert": "61"
+  }}
+    ],
+    "label": "Insert Arrangement"
+  },
+  "contact_type": {
+    "data": [
+"A",
+"B",
+"M",
+"F",
+"C",
+"D"
+    ],
+    "description": [
+"Male without Contacts",
+"Female without Contacts",
+"Male with Contacts",
+"Female with Contacts",
+"Male with Size 20 Contact with Large Barrel Contacts",
+"Female with Size 20 Contact with Large Barrel Contacts"
+    ],
+    "label": "Contact Type"
+  },
+  "polarization": {
+    "data": [
+"N",
+"W",
+"X",
+"Y",
+"Z"
+    ],
+    "label": "Polarization"
+  }
+}

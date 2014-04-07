@@ -1,0 +1,178 @@
+{
+  "base":
+  {
+    "data":
+    [
+      "ESC10"
+    ],
+    "label": "Basic Series"
+  },
+  "shell_type_1": {
+    "data": [
+"KE",
+"SE"
+    ],
+    "description": [
+"260° C Stainless Steel: Standard Receptacle: Plug without RFI Screening Ring",
+"260° C Stainless Steel: Standard Receptacle: Plug with RFI Screening Ring"
+    ],
+    "label": "Shell Type 1"
+  },
+  "shell_type_2": {
+    "data": [
+"0",
+"6"
+    ],
+    "description": [
+"Square Flange Receptacle",
+"Plug"
+    ],
+    "label": "Shell Type 2"
+  },
+  "shell_size": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Shell Size"
+  },
+  "insert": {
+    "data": [],
+    "dependency": "insert_arrangement",
+    "input_type": "static",
+    "label": "Insert"
+  },
+  "insert_arrangement": {
+    "data": [
+{"0803": {
+  "shell_size": "08",
+  "insert": "03"
+  }},
+{"0898": {
+  "shell_size": "08",
+  "insert": "98"
+  }},
+{"1005": {
+  "shell_size": "10",
+  "insert": "05"
+  }},
+{"1203": {
+  "shell_size": "12",
+  "insert": "03"
+  }},
+{"1212": {
+  "shell_size": "12",
+  "insert": "12"
+  }},
+{"1404": {
+  "shell_size": "14",
+  "insert": "04"
+  }},
+{"1407": {
+  "shell_size": "14",
+  "insert": "07"
+  }},
+{"1415": {
+  "shell_size": "14",
+  "insert": "15"
+  }},
+{"1610": {
+  "shell_size": "16",
+  "insert": "10"
+  }},
+{"1624": {
+  "shell_size": "16",
+  "insert": "24"
+  }},
+{"1808": {
+  "shell_size": "18",
+  "insert": "08"
+  }},
+{"1814": {
+  "shell_size": "18",
+  "insert": "14"
+  }},
+{"1831": {
+  "shell_size": "18",
+  "insert": "31"
+  }},
+{"2039": {
+  "shell_size": "20",
+  "insert": "39"
+  }},
+{"2041": {
+  "shell_size": "20",
+  "insert": "41"
+  }},
+{"2212": {
+  "shell_size": "22",
+  "insert": "12"
+  }},
+{"2219": {
+  "shell_size": "22",
+  "insert": "19"
+  }},
+{"2255": {
+  "shell_size": "22",
+  "insert": "55"
+  }},
+{"2430": {
+  "shell_size": "24",
+  "insert": "30"
+  }},
+{"2461": {
+  "shell_size": "24",
+  "insert": "61"
+  }},
+{"2842": {
+  "shell_size": "28",
+  "insert": "42"
+  }}
+    ],
+    "label": "Insert Arrangement"
+  },
+  "contact_type": {
+    "data": [
+"P",
+"S"
+    ],
+    "description": [
+"Pin",
+"Socket"
+    ],
+    "label": "Contact Type"
+  },
+  "orientation": {
+    "data": [
+"N",
+"6",
+"7",
+"8",
+"9",
+"Y"
+    ],
+    "exception": {
+      "fields": [
+        "insert_arrangement"
+      ],
+      "actions": {
+        "remove": [
+          "Y"
+        ]
+      },
+      "triggers": [
+"0803",
+"0898"
+      ]
+    },
+    "label": "Orientation"
+  },
+  "variant_identifier": {
+    "data": [
+    "0"
+    ],
+    "description": [
+    "Connector Delivered without Contacts"
+    ],
+    "label": "Variant Identifier"
+  }
+}
