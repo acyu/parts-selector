@@ -11,8 +11,8 @@ register_deactivation_hook(__FILE__,'parts_selector_plugin_remove');
 function parts_selector_plugin_install() {
   global $wpdb;
 
-  $page_title = 'Aeroflite Parts Selector';
-  $page_name = 'aeroflite-parts-selector';
+  $page_title = 'Parts Builder';
+  $page_name = 'parts-builder';
 
   // the menu entry...
   delete_option("parts_selector_page_title");
@@ -145,8 +145,6 @@ function parts_selector_parse_request( &$wp )
 {
     global $wpdb;
     if( array_key_exists( 'get_part_number_id', $wp->query_vars ) ) {
-        //include 'my-api.php';
-      //print_r($wp->query_vars['get_part_number_id']);
       $part_number = $wp->query_vars['get_part_number_id'];
       $result = $wpdb->get_results(
         "select product_id from wp_aeroflite_products where number = '$part_number'"

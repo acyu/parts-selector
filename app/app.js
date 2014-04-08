@@ -353,7 +353,8 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
       }
       });
 
-      return output;
+      //return output;
+      return '';
     }
 
     $scope.fn.editInsertPattern = function() {
