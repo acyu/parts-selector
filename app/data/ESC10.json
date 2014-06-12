@@ -30,15 +30,124 @@
     "label": "Shell Type 2"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"08",
+"10",
+"12",
+"14",
+"16",
+"18",
+"20",
+"22",
+"24",
+"28"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "insert": {
-    "data": [],
+    "data": [
+"03", "04", "05", "07", "08", "10", "12", "14", "15", "19", "24", "30", "31", "39", "41", "42", "55", "61", "98"
+    ],
+    "exception": {
+      "fields": [
+        "shell_size"
+      ],
+      "actions": [
+        {
+          "keep": [
+"03",
+"98"
+          ],
+          "triggers": [
+            "08"
+          ]
+        },
+        {
+          "keep": [
+"05"
+          ],
+          "triggers": [
+            "10"
+          ]
+        },
+        {
+          "keep": [
+"03",
+"12"
+          ],
+          "triggers": [
+            "12"
+          ]
+        },
+        {
+          "keep": [
+"04",
+"07",
+"15"
+          ],
+          "triggers": [
+            "14"
+          ]
+        },
+        {
+          "keep": [
+"10",
+"24"
+          ],
+          "triggers": [
+            "16"
+          ]
+        },
+        {
+          "keep": [
+"08",
+"14",
+"31"
+          ],
+          "triggers": [
+            "18"
+          ]
+        },
+        {
+          "keep": [
+"39",
+"41"
+          ],
+          "triggers": [
+            "20"
+          ]
+        },
+        {
+          "keep": [
+"12",
+"19",
+"55"
+          ],
+          "triggers": [
+            "22"
+          ]
+        },
+        {
+          "keep": [
+"30",
+"61"
+          ],
+          "triggers": [
+            "24"
+          ]
+        },
+        {
+          "keep": [
+"42"
+          ],
+          "triggers": [
+            "28"
+          ]
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -128,6 +237,7 @@
   "insert": "42"
   }}
     ],
+    "ignore":true,
     "label": "Insert Arrangement"
   },
   "contact_type": {
@@ -154,21 +264,22 @@
       "fields": [
         "insert_arrangement"
       ],
-      "actions": {
-        "remove": [
-          "Y"
-        ]
-      },
-      "triggers": [
-"0803",
-"0898"
+      "actions": [
+        {
+          "remove": [
+            "Y"
+          ],
+          "triggers": [
+            "08"
+          ]
+        }
       ]
     },
     "label": "Orientation"
   },
   "variant_identifier": {
     "data": [
-    "0"
+    "O"
     ],
     "description": [
     "Connector Delivered without Contacts"

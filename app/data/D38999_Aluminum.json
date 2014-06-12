@@ -32,15 +32,126 @@
     "label": "Plating"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"A",
+"B",
+"C",
+"D",
+"E",
+"F",
+"G",
+"H",
+"J"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "insert": {
-    "data": [],
+    "data": [
+"02", "04", "05", "06", "07", "08", "11", "15", "16", "18", "19", "20", "21", "24", "26", "28", "29", "32", "35", "39", "41", "44", "46", "53", "55", "59", "97", "98", "99"
+    ],
+    "exception": {
+      "fields": [
+        "shell_size"
+      ],
+      "actions": [
+        {
+          "keep": [
+"35",
+"98"
+          ],
+          "triggers": ["A"]
+        },
+        {
+          "keep": [
+"02",
+"04",
+"05",
+"35",
+"98",
+"99"
+          ],
+          "triggers": ["B"]
+        },
+        {
+          "keep": [
+"04",
+"08",
+"35",
+"98"
+          ],
+          "triggers": ["C"]
+        },
+        {
+          "keep": [
+"05",
+"15",
+"18",
+"19",
+"35",
+"97"
+          ],
+          "triggers": ["D"]
+        },
+        {
+          "keep": [
+"02",
+"06",
+"08",
+"26",
+"35",
+"99"
+          ],
+          "triggers": ["E"]
+        },
+        {
+          "keep": [
+"11",
+"28",
+"32",
+"35"
+          ],
+          "triggers": ["F"]
+        },
+        {
+          "keep": [
+"11",
+"16",
+"35",
+"39",
+"41",
+"59"
+          ],
+          "triggers": ["G"]
+        },
+        {
+          "keep": [
+"21",
+"35",
+"53",
+"55"
+          ],
+          "triggers": ["H"]
+        },
+        {
+          "keep": [
+"04",
+"07",
+"08",
+"11",
+"19",
+"20",
+"24",
+"29",
+"41",
+"44",
+"46"
+          ],
+          "triggers": ["J"]
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -242,6 +353,7 @@
   "insert": "46"
   }}
     ],
+    "ignore": true,
     "label": "Insert Arrangement"
   },
   "contact_type": {
@@ -280,9 +392,33 @@
   },
   "without_contacts": {
     "data": [
+"[blank]",
 "L"
     ],
+    "exception": {
+      "fields": [
+        "contact_type"
+      ],
+      "actions": [
+        {
+          "keep": [
+"L"
+          ],
+          "triggers": ["P","S"]
+        },
+        {
+          "keep": [
+"[blank]"
+          ],
+          "triggers": [
+"A",
+"B"
+          ]
+        }
+      ]
+    },
     "description": [
+"",
 "For P or S Contact Type Only, Connector Delivered Without Contacts, Connector Marking P or S (Without L)"
     ],
     "label": "Widthout Contacts"

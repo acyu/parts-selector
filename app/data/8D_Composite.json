@@ -5,7 +5,7 @@
     [
       "8D"
     ],
-    "label": "Series Designation"
+    "label": "Basic Series"
   },
   "shell_style": {
     "data": [
@@ -40,9 +40,18 @@
     "label":"Type"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"09",
+"11",
+"13",
+"15",
+"17",
+"19",
+"21",
+"23",
+"25"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "plating": {
@@ -57,13 +66,54 @@
 "Without Plating"
     ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Plating"
   },
   "insert": {
-    "data": [],
+    "data": [
+"02", "04", "05", "06", "07", "08", "11", "15", "16", "18", "19", "21", "24", "26", "28", "29", "32", "35", "37", "39", "41", "43", "46", "53", "55", "61", "75", "97", "98", "99"
+    ],
+    "exception": {
+      "fields":["shell_size"],
+      "actions":[
+        {
+          "keep":["35","98"],
+          "triggers":["09"]
+        },
+        {
+          "keep":["02","04","05","35","98","99"],
+          "triggers":["11"]
+        },
+        {
+          "keep":["04","08","35","98"],
+          "triggers":["13"]
+        },
+        {
+          "keep":["05","15","18","19","35","97"],
+          "triggers":["15"]
+        },
+        {
+          "keep":["02","06","26","35","99"],
+          "triggers":["17"]
+        },
+        {
+          "keep":["11","18","28","32","35"],
+          "triggers":["19"]
+        },
+        {
+          "keep":["11","16","35","39","41","75"],
+          "triggers":["21"]
+        },
+        {
+          "keep":["21","35","53","55"],
+          "triggers":["23"]
+        },
+        {
+          "keep":["04","07","08","11","19","20","24","29","35","37","43","46","61"],
+          "triggers":["25"]
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -822,6 +872,7 @@
     "description": {
       "dependency": "plating"
     },
+    "ignore":true,
     "label": "Insert Arrangement"
   },
   "contact_type": {

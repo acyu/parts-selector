@@ -7,9 +7,10 @@
     "label": "Basic Part Number"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+ "8", "10", "12", "14", "16", "18", "20", "22", "24"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "cable_clamp": {
@@ -30,13 +31,54 @@
 "BACC10JS Straight Single Leg Composite Clamp"
     ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Cable Clamp"
   },
   "insert": {
-    "data": [],
+    "data": [
+"2", "3", "4",  "5", "7", "8", "10", "11", "12", "14", "15", "16", "19", "20", "24", "25", "28", "2A", "31", "32", "39", "41", "43","55", "57", "61"
+    ],
+    "exception": {
+      "fields":["shell_size"],
+      "actions": [
+        {
+          "keep":["2","3"],
+          "triggers":["8"]
+        },
+        {
+          "keep":["2A","20","5"],
+          "triggers":["10"]
+        },
+        {
+          "keep":["3","12"],
+          "triggers":["12"]
+        },
+        {
+          "keep":["3","4","7","12","15"],
+          "triggers":["14"]
+        },
+        {
+          "keep":["10","24"],
+          "triggers":["16"]
+        },
+        {
+          "keep":["8","11","14","31"],
+          "triggers":["18"]
+        },
+        {
+          "keep":["16","25","28","39","41"],
+          "triggers":["20"]
+        },
+        {
+          "keep":["12","19","32","55"],
+          "triggers":["22"]
+        },
+        {
+          "keep":["43","57","61"],
+          "triggers":["24"]
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -945,6 +987,7 @@
     "description": {
       "dependency": "cable_clamp"
     },
+    "ignore":true,
     "label": "Insert Pattern"
   },
   "contact_style": {

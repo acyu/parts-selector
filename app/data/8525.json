@@ -93,6 +93,78 @@
 "Alternate Position",
 "Alternate Position"
     ],
+    "exception": {
+      "fields": [
+        "contact_layout"
+      ],
+      "actions": [
+        {
+          "remove": [
+"Y",
+"Z"
+          ],
+          "triggers": [
+"08B3A",
+"14B12"
+          ]
+        },
+        {
+          "remove": [
+"X",
+"Y",
+"Z"
+          ],
+          "triggers": [
+"08B33",
+"10B6",
+"14B4"
+          ]
+        },
+        {
+          "remove": [
+"Z"
+          ],
+          "triggers": [
+"12B3",
+"14B19",
+"20B41",
+"22B41",
+"24B31",
+"24B19"
+          ]
+        },
+        {
+          "remove": [
+"X"
+          ],
+          "triggers": [
+"16B26"
+          ]
+        },
+        {
+          "remove": [
+"X",
+"Z"
+          ],
+          "triggers": [
+"18B8"
+          ]
+        },
+        {
+          "remove": [
+"W",
+"X",
+"Y",
+"Z"
+          ],
+          "triggers": [
+"16B21",
+"20B34",
+"22B12"
+          ]
+        }
+      ]
+    },
     "label": "Orientation"
   },
   "obligatory_suffix": {

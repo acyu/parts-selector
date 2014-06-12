@@ -11,9 +11,18 @@
     "label": "Basic Series"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"09",
+"11",
+"13",
+"15",
+"17",
+"19",
+"21",
+"23",
+"25"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "shell_finish": {
@@ -30,13 +39,119 @@
 "Nickel Plated, Ungrounded"
     ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Finish"
   },
   "insert": {
-    "data": [],
+    "data": [
+"02", "04", "05", "06", "07", "08", "11", "15", "16", "18", "19", "21", "24", "26", "28", "29", "32", "35", "37", "39", "41", "43", "46", "53", "55", "61", "75", "78", "82", "84", "97", "98", "99"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
+    "exception": {
+      "fields": [
+        "shell_size"
+      ],
+      "actions": [
+        {
+          "keep": [
+"35",
+"98"
+          ],
+          "triggers": [
+"09"
+          ]
+        },
+        {
+          "keep": [
+"02",
+"04",
+"05",
+"35",
+"98"
+          ],
+          "triggers": ["11"]
+        },
+        {
+          "keep": [
+"04",
+"08",
+"35",
+"98"
+          ],
+          "triggers": ["13"]
+        },
+        {
+          "keep": [
+"05",
+"15",
+"18",
+"19",
+"35",
+"97"
+          ],
+          "triggers": ["15"]
+        },
+        {
+          "keep": [
+"02",
+"06",
+"08",
+"26",
+"35",
+"82",
+"99"
+          ],
+          "triggers": ["17"]
+        },
+        {
+          "keep": [
+"11",
+"18",
+"28",
+"32",
+"35"
+          ],
+          "triggers": ["19"]
+        },
+        {
+          "keep": [
+"11",
+"16",
+"35",
+"39",
+"41",
+"75",
+"78",
+"84"
+          ],
+          "triggers": ["21"]
+        },
+        {
+          "keep": [
+"21",
+"35",
+"53",
+"55"
+          ],
+          "triggers": ["23"]
+        },
+        {
+          "keep": [
+"04",
+"07",
+"11",
+"19",
+"24",
+"29",
+"35",
+"37",
+"43",
+"46",
+"61"
+          ],
+          "triggers": ["25"]
+        }
+      ]
+    },
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -1125,6 +1240,7 @@
     "description": {
       "dependency": "shell_finish"
     },
+    "ignore": true,
     "label": "Insert Arrangement"
   },
   "contact_type": {

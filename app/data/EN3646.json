@@ -34,15 +34,126 @@
     "label": "Shell Type"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"8",
+"10",
+"12",
+"14",
+"16",
+"18",
+"20",
+"22",
+"24"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "insert": {
-    "data": [],
+    "data": [
+"02", "03", "04", "05", "06", "08", "10", "11", "12", "15", "16", "19", "21", "23", "26", "3A", "31", "32", "33", "34", "39", "41", "55", "61", "98"
+    ],
+    "exception": {
+      "fields": [
+        "shell_size"
+      ],
+      "actions": [
+        {
+          "keep": [
+"3A",
+"33",
+"98"
+          ],
+          "triggers": [
+            "08"
+          ]
+        },
+        {
+          "keep": [
+"02",
+"06"
+          ],
+          "triggers": [
+            "10"
+          ]
+        },
+        {
+          "keep": [
+"03",
+"08",
+"10"
+          ],
+          "triggers": [
+            "12"
+          ]
+        },
+        {
+          "keep": [
+"04",
+"05",
+"12",
+"15",
+"19"
+          ],
+          "triggers": [
+            "14"
+          ]
+        },
+        {
+          "keep": [
+"08",
+"21",
+"23",
+"26"
+          ],
+          "triggers": [
+            "16"
+          ]
+        },
+        {
+          "keep": [
+"08",
+"11",
+"32"
+          ],
+          "triggers": [
+            "18"
+          ]
+        },
+        {
+          "keep": [
+"16",
+"34",
+"39",
+"41"
+          ],
+          "triggers": [
+            "20"
+          ]
+        },
+        {
+          "keep": [
+"12",
+"21",
+"41",
+"55"
+          ],
+          "triggers": [
+            "22"
+          ]
+        },
+        {
+          "keep": [
+"19",
+"31",
+"61"
+          ],
+          "triggers": [
+            "24"
+          ]
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -172,6 +283,7 @@
   "insert": "61"
   }}
     ],
+    "ignore":true,
     "label": "Insert Arrangement"
   },
   "contact_type": {

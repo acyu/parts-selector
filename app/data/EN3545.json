@@ -1,0 +1,155 @@
+{
+  "base": {
+    "data":
+    [
+      "EN3545"
+    ],
+    "label": "Basic Series"
+  },
+  "sealing_code": {
+    "data":[
+"E",
+"D"
+    ],
+    "description": [
+"With Gromet Sealed",
+"With Gromet Unsealed"
+    ],
+    "exception": {
+      "fields": [
+        "arrangement"
+      ],
+      "actions": [
+        {
+          "remove": [
+            "D"
+          ],
+          "triggers": [
+"08",
+"07"
+          ]
+        }
+      ]
+    },
+    "label": "Sealing Code"
+  },
+  "arrangement": {
+    "data":[
+"01",
+"02",
+"03",
+"04",
+"05",
+"06",
+"07",
+"08",
+"09",
+"12",
+"13",
+"16"
+    ],
+    "description": [
+"50 Contacts #20",
+"78 Contacts #22",
+"39 Contacts #22 + 10 Contacts #16",
+"21 Contacts #16",
+"13 Contacts #12",
+"7 Contacts #10",
+"5 Contacts #8",
+"18 Contacts #20 + 3 Contacts #8",
+"12 Contacts #16 + 25 Contacts #20",
+"78 Contacts #22 Aluminum Cable",
+"39 Contacts #22 + 10 Contacts #16 Aluminum Cable",
+"7 Contacts #10 Aluminum or Copper Cable"
+    ],
+    "label": "Arrangement"
+  },
+  "contact_gender": {
+    "data": [
+"M",
+"F"
+    ],
+    "description":[
+"Pin Contact (Pin Connector)",
+"Socket Contact (Socket Connector)"
+    ],
+    "label": "Contact Gender"
+  },
+  "contact_type": {
+    "data": [
+"X"
+    ],
+    "description": [
+"Crimping Contacts"
+    ],
+    "label": "Contact Type"
+  },
+  "equipment_code": {
+    "data": [
+"A",
+"B"
+    ],
+    "description": [
+"Housing Fitted with F Socket Polarizers",
+"Housing Fitted with M Pin Polarizers"
+    ],
+    "label": "Equipment Code"
+  },
+  "polarizing_code": {
+    "data": [
+"00",
+"11",
+"12",
+"13",
+"14",
+"15",
+"16",
+"21",
+"22",
+"23",
+"24",
+"25",
+"26",
+"31",
+"32",
+"33",
+"34",
+"35",
+"36",
+"41",
+"42",
+"43",
+"44",
+"45",
+"46",
+"51",
+"52",
+"53",
+"54",
+"55",
+"56",
+"61",
+"62",
+"63",
+"64",
+"65",
+"66"
+    ],
+    "label": "Polarizing Code"
+  },
+  "supply_code": {
+    "data": [
+"A",
+"B",
+"D",
+"[blank]"
+    ],
+    "description":[
+"Connectors Supplied with Polarizers, without Contacts",
+"Connectors Supplied without Polarizers and Contacts",
+"Connectors Supplied with Polarizers and MIL Contacts",
+"Connectors Supplied without Polarizers, with Contacts"
+    ],
+    "label": "Supply Code"
+  }
+}

@@ -41,15 +41,74 @@
     "label": "Environmental Class"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"8", "10", "12", "14", "16", "18", "20", "22", "24"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
-  "insert": {
-    "data": [],
+  "separator": {
+    "data": ["-"],
     "dependency": "insert_arrangement",
-    "input_type": "static",
+    "label": "Separator"
+  },
+  "insert": {
+    "data": [
+"2", "3" , "4" , "5" , "7", "8", "10", "11", "12", "14", "15", "16", "19", "20", "24", "25", "28", "29", "30", "31", "32", "39", "41", "43", "55", "57", "61"
+    ],
+    "exception":{
+      "fields":["shell_size"],
+      "actions":[
+        {
+          "keep":["2","3"],
+          "triggers":["8"]
+        },
+        {
+          "keep":["2","5","20"],
+          "triggers":["10"]
+        },
+        {
+          "keep":["3","12"],
+          "triggers":["12"]
+        },
+        {
+          "keep":["3","4","7","12","15"],
+          "triggers":["14"]
+        },
+        {
+          "keep":["10","24"],
+          "triggers":["16"]
+        },
+        {
+          "keep":["8","11","14","31"],
+          "triggers":["18"]
+        },
+        {
+          "keep":["16","25","28","39","41"],
+          "triggers":["20"]
+        },
+        {
+          "keep":[
+"12",
+"19",
+"32",
+"55"
+          ],
+          "triggers":["22"]
+        },
+        {
+          "keep":[
+"29",
+"30",
+"43",
+"57",
+"61"
+          ],
+          "triggers":["24"]
+        }
+      ]
+    },
+    "dependency": "insert_arrangement",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -215,6 +274,7 @@
   "insert": "61"
   }}
     ],
+    "ignore":true,
     "label": "Insert Pattern"
   },
   "contact_style": {

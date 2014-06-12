@@ -44,9 +44,18 @@
     "label":"Type"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"09",
+"11",
+"13",
+"15",
+"17",
+"19",
+"21",
+"23",
+"25"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "plating": {
@@ -63,13 +72,54 @@
 "Green Zinc Cobalt"
     ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Plating"
   },
   "insert": {
-    "data": [],
+    "data": [
+"02", "04", "05", "06", "07", "08", "11", "15", "16", "18", "19", "20", "21", "24", "26", "28", "29", "32", "35", "37", "39", "41", "43", "46", "53", "55", "61", "75", "97", "98", "99"
+    ],
+    "exception": {
+      "fields":["shell_size"],
+      "actions":[
+        {
+          "keep":["35","98"],
+          "triggers":["09"]
+        },
+        {
+          "keep":["02","04","05","35","98","99"],
+          "triggers":["11"]
+        },
+        {
+          "keep":["04","08","35","98"],
+          "triggers":["13"]
+        },
+        {
+          "keep":["05","15","18","19","35","97"],
+          "triggers":["15"]
+        },
+        {
+          "keep":["02","06","26","35","99"],
+          "triggers":["17"]
+        },
+        {
+          "keep":["11","18","28","32","35"],
+          "triggers":["19"]
+        },
+        {
+          "keep":["11","16","35","39","41","75"],
+          "triggers":["21"]
+        },
+        {
+          "keep":["21","35","53","55"],
+          "triggers":["23"]
+        },
+        {
+          "keep":["04","07","08","11","19","20","24","29","35","37","43","46","61"],
+          "triggers":["25"]
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -114,203 +164,203 @@
   "plating": "ZC",
   "insert": "98"
   }},
-{"09F02": {
-  "shell_size": "09",
+{"011F02": {
+  "shell_size": "11",
   "plating": "F",
   "insert": "02"
   }},
-{"09W02": {
-  "shell_size": "09",
+{"11W02": {
+  "shell_size": "11",
   "plating": "W",
   "insert": "02"
   }},
-{"09Z02": {
-  "shell_size": "09",
+{"01102": {
+  "shell_size": "11",
   "plating": "Z",
   "insert": "02"
   }},
-{"09ZC02": {
-  "shell_size": "09",
+{"11ZC02": {
+  "shell_size": "11",
   "plating": "ZC",
   "insert": "02"
   }},
-{"09F04": {
-  "shell_size": "09",
+{"11F04": {
+  "shell_size": "11",
   "plating": "F",
   "insert": "04"
   }},
-{"09W04": {
-  "shell_size": "09",
+{"11W04": {
+  "shell_size": "11",
   "plating": "W",
   "insert": "04"
   }},
-{"09Z04": {
-  "shell_size": "09",
+{"11Z04": {
+  "shell_size": "11",
   "plating": "Z",
   "insert": "04"
   }},
-{"09ZC04": {
-  "shell_size": "09",
+{"11ZC04": {
+  "shell_size": "11",
   "plating": "ZC",
   "insert": "04"
   }},
-{"09F05": {
-  "shell_size": "09",
+{"11F05": {
+  "shell_size": "11",
   "plating": "F",
   "insert": "05"
   }},
-{"09W05": {
-  "shell_size": "09",
+{"11W05": {
+  "shell_size": "11",
   "plating": "W",
   "insert": "05"
   }},
-{"09Z05": {
-  "shell_size": "09",
+{"11Z05": {
+  "shell_size": "11",
   "plating": "Z",
   "insert": "05"
   }},
-{"09ZC05": {
-  "shell_size": "09",
+{"11ZC05": {
+  "shell_size": "11",
   "plating": "ZC",
   "insert": "05"
   }},
-{"09F35": {
-  "shell_size": "09",
+{"11F35": {
+  "shell_size": "11",
   "plating": "F",
   "insert": "35"
   }},
-{"09W35": {
-  "shell_size": "09",
+{"11W35": {
+  "shell_size": "11",
   "plating": "W",
   "insert": "35"
   }},
-{"09Z35": {
-  "shell_size": "09",
+{"11Z35": {
+  "shell_size": "11",
   "plating": "Z",
   "insert": "35"
   }},
-{"09ZC35": {
-  "shell_size": "09",
+{"11ZC35": {
+  "shell_size": "11",
   "plating": "ZC",
   "insert": "35"
   }},
-{"09F98": {
-  "shell_size": "09",
+{"11F98": {
+  "shell_size": "11",
   "plating": "F",
   "insert": "98"
   }},
-{"09W98": {
-  "shell_size": "09",
+{"11W98": {
+  "shell_size": "11",
   "plating": "W",
   "insert": "98"
   }},
-{"09Z98": {
-  "shell_size": "09",
+{"11Z98": {
+  "shell_size": "11",
   "plating": "Z",
   "insert": "98"
   }},
-{"09ZC98": {
-  "shell_size": "09",
+{"11ZC98": {
+  "shell_size": "11",
   "plating": "ZC",
   "insert": "98"
   }},
-{"09F99": {
-  "shell_size": "09",
+{"11F99": {
+  "shell_size": "11",
   "plating": "F",
   "insert": "99"
   }},
-{"09W99": {
-  "shell_size": "09",
+{"11W99": {
+  "shell_size": "11",
   "plating": "W",
   "insert": "99"
   }},
-{"09Z99": {
-  "shell_size": "09",
+{"11Z99": {
+  "shell_size": "11",
   "plating": "Z",
   "insert": "99"
   }},
-{"09ZC99": {
-  "shell_size": "09",
+{"11ZC99": {
+  "shell_size": "11",
   "plating": "ZC",
   "insert": "99"
   }},
-{"09F04": {
-  "shell_size": "09",
+{"13F04": {
+  "shell_size": "13",
   "plating": "F",
   "insert": "04"
   }},
-{"09W04": {
-  "shell_size": "09",
+{"13W04": {
+  "shell_size": "13",
   "plating": "W",
   "insert": "04"
   }},
-{"09Z04": {
-  "shell_size": "09",
+{"13Z04": {
+  "shell_size": "13",
   "plating": "Z",
   "insert": "04"
   }},
-{"09ZC04": {
-  "shell_size": "09",
+{"13ZC04": {
+  "shell_size": "13",
   "plating": "ZC",
   "insert": "04"
   }},
-{"09F08": {
-  "shell_size": "09",
+{"13F08": {
+  "shell_size": "13",
   "plating": "F",
   "insert": "08"
   }},
-{"09W08": {
-  "shell_size": "09",
+{"13W08": {
+  "shell_size": "13",
   "plating": "W",
   "insert": "08"
   }},
-{"09Z08": {
-  "shell_size": "09",
+{"13Z08": {
+  "shell_size": "13",
   "plating": "Z",
   "insert": "08"
   }},
-{"09ZC08": {
-  "shell_size": "09",
+{"13ZC08": {
+  "shell_size": "13",
   "plating": "ZC",
   "insert": "08"
   }},
-{"09F35": {
-  "shell_size": "09",
+{"13F35": {
+  "shell_size": "13",
   "plating": "F",
   "insert": "35"
   }},
-{"09W35": {
-  "shell_size": "09",
+{"13W35": {
+  "shell_size": "13",
   "plating": "W",
   "insert": "35"
   }},
-{"09Z35": {
-  "shell_size": "09",
+{"13Z35": {
+  "shell_size": "13",
   "plating": "Z",
   "insert": "35"
   }},
-{"09ZC35": {
-  "shell_size": "09",
+{"13ZC35": {
+  "shell_size": "13",
   "plating": "ZC",
   "insert": "35"
   }},
-{"09F98": {
-  "shell_size": "09",
+{"13F98": {
+  "shell_size": "13",
   "plating": "F",
   "insert": "98"
   }},
-{"09W98": {
-  "shell_size": "09",
+{"13W98": {
+  "shell_size": "13",
   "plating": "W",
   "insert": "98"
   }},
-{"09Z98": {
-  "shell_size": "09",
+{"13Z98": {
+  "shell_size": "13",
   "plating": "Z",
   "insert": "98"
   }},
-{"09ZC98": {
-  "shell_size": "09",
+{"13ZC98": {
+  "shell_size": "13",
   "plating": "ZC",
   "insert": "98"
   }},
@@ -635,469 +685,470 @@
   "insert": "35"
   }},
 {"21F11": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "F",
+  "insert": "11"
   }},
 {"21W11": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "W",
+  "insert": "11"
   }},
 {"21Z11": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "Z",
+  "insert": "11"
   }},
 {"21ZC11": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "ZC",
+  "insert": "11"
   }},
 {"21F16": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "F",
+  "insert": "16"
   }},
 {"21W16": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "W",
+  "insert": "16"
   }},
 {"21Z16": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "Z",
+  "insert": "16"
   }},
 {"21ZC16": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "ZC",
+  "insert": "16"
   }},
 {"21F35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "F",
+  "insert": "35"
   }},
 {"21W35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "W",
+  "insert": "35"
   }},
 {"21Z35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "Z",
+  "insert": "35"
   }},
 {"21ZC35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "ZC",
+  "insert": "35"
   }},
 {"21F39": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "F",
+  "insert": "39"
   }},
 {"21W39": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "W",
+  "insert": "39"
   }},
 {"21Z39": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "Z",
+  "insert": "39"
   }},
 {"21ZC39": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "ZC",
+  "insert": "39"
   }},
 {"21F41": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "F",
+  "insert": "41"
   }},
 {"21W41": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "W",
+  "insert": "41"
   }},
 {"21Z41": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "Z",
+  "insert": "41"
   }},
 {"21ZC41": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "ZC",
+  "insert": "41"
   }},
 {"21F75": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "F",
+  "insert": "75"
   }},
 {"21W75": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "W",
+  "insert": "75"
   }},
 {"21Z75": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "Z",
+  "insert": "75"
   }},
 {"21ZC75": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "21",
+  "plating": "ZC",
+  "insert": "75"
   }},
 {"23F21": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "F",
+  "insert": "21"
   }},
 {"23W21": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "W",
+  "insert": "21"
   }},
 {"23Z21": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "Z",
+  "insert": "21"
   }},
 {"23ZC21": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "ZC",
+  "insert": "21"
   }},
 {"23F35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "F",
+  "insert": "35"
   }},
 {"23W35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "W",
+  "insert": "35"
   }},
 {"23Z35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "Z",
+  "insert": "35"
   }},
 {"23ZC35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "Z",
+  "insert": "35"
   }},
 {"23F53": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "F",
+  "insert": "53"
   }},
 {"23W53": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "53",
+  "plating": "W",
+  "insert": "53"
   }},
 {"23Z53": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "Z",
+  "insert": "53"
   }},
 {"23ZC53": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "ZC",
+  "insert": "53"
   }},
 {"23F55": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "F",
+  "insert": "55"
   }},
 {"23W55": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "W",
+  "insert": "55"
   }},
 {"23Z55": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "Z",
+  "insert": "55"
   }},
 {"23ZC55": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "23",
+  "plating": "ZC",
+  "insert": "55"
   }},
 {"25F04": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "04"
   }},
 {"25W04": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "04"
   }},
 {"25Z04": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "04"
   }},
 {"25ZC04": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "04"
   }},
 {"25F07": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "07"
   }},
 {"25W07": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "07"
   }},
 {"25Z07": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "07"
   }},
 {"25ZC07": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "07"
   }},
 {"25F08": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "08"
   }},
 {"25W08": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "08"
   }},
 {"25Z08": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "08"
   }},
 {"25ZC08": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "08"
   }},
 {"25F11": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "11"
   }},
 {"25W11": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "11"
   }},
 {"25Z11": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "11"
   }},
 {"25ZC11": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "11"
   }},
 {"25F19": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "19"
   }},
 {"25W19": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "19"
   }},
 {"25Z19": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "19"
   }},
 {"25ZC19": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "19"
   }},
 {"25F20": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "20"
   }},
 {"25W20": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "20"
   }},
 {"25Z20": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "20"
   }},
 {"25ZC20": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "20"
   }},
 {"25F24": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "24"
   }},
 {"25W24": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "24"
   }},
 {"25Z24": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "24"
   }},
 {"25ZC24": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "24"
   }},
 {"25F29": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "29"
   }},
 {"25W29": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "29"
   }},
 {"25Z29": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "29"
   }},
 {"25ZC29": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "29"
   }},
 {"25F35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "35"
   }},
 {"25W35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "35"
   }},
 {"25Z35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "35"
   }},
 {"25ZC35": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "35"
   }},
 {"25F37": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "37"
   }},
 {"25W37": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "37"
   }},
 {"25Z37": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "37"
   }},
 {"25ZC37": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "37"
   }},
 {"25F43": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "43"
   }},
-{"25W43": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+{"25W043": {
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "43"
   }},
 {"25Z43": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "43"
   }},
 {"25ZC43": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "43"
   }},
 {"25F46": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "46"
   }},
 {"25W46": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "46"
   }},
 {"25Z46": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "46"
   }},
 {"25ZC46": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "46"
   }},
 {"25F61": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "F",
+  "insert": "61"
   }},
 {"25W61": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "W",
+  "insert": "61"
   }},
 {"25Z61": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "Z",
+  "insert": "61"
   }},
 {"25ZC61": {
-  "shell_size": "",
-  "plating": "",
-  "insert": ""
+  "shell_size": "25",
+  "plating": "ZC",
+  "insert": "61"
   }}
     ],
     "description": {
       "dependency": "plating"
     },
+    "ignore":true,
     "label": "Insert Arrangement"
   },
   "contact_type": {
@@ -1113,7 +1164,7 @@
 "Pin",
 "Socket"
     ],
-    "label": "Contact Style"
+    "label": "Contact Type"
   },
   "orientation": {
     "data": [

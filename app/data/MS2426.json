@@ -24,9 +24,18 @@
     "label": "Environmental Class"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"08",
+"10",
+"12",
+"14",
+"16",
+"18",
+"20",
+"22",
+"24"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "coupling_style": {
@@ -39,56 +48,97 @@
 "Bayonet"
     ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Coupling Style"
   },
   "insert": {
-    "data": [],
+    "data": [
+   "02", "03", "04", "05", "07", "08", "10", "11", "12", "14", "15", "16", "19", "20", "24", "25", "28", "29", "30", "31", "32", "41", "43", "55", "57", "61"
+    ],
+    "exception":{
+      "fields":["shell_size"],
+      "actions":[
+        {
+          "keep":["02","03"],
+          "triggers":["08"]
+        },
+        {
+          "keep":["02","05","20"],
+          "triggers":["10"]
+        },
+        {
+          "keep":["03","12"],
+          "triggers":["12"]
+        },
+        {
+          "keep":["03","04","07","12","15"],
+          "triggers":["14"]
+        },
+        {
+          "keep":["10","24"],
+          "triggers":["16"]
+        },
+        {
+          "keep":["08","11","14","31"],
+          "triggers":["18"]
+        },
+        {
+          "keep":["16","25","28","39","41"],
+          "triggers":["20"]
+        },
+        {
+          "keep":["12","19","32","55"],
+          "triggers":["22"]
+        },
+        {
+          "keep":["29","30","43","57","61"],
+          "triggers":["24"]
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
     "data": [
-{"8B2": {
-  "shell_size":"8",
+{"08B02": {
+  "shell_size":"08",
   "coupling_style":"B",
-  "insert":"2"
+  "insert":"02"
   }},
-{"8T2": {
-  "shell_size":"8",
+{"08T02": {
+  "shell_size":"08",
   "coupling_style":"T",
-  "insert":"2"
+  "insert":"02"
   }},
-{"8B3": {
-  "shell_size":"8",
+{"08B03": {
+  "shell_size":"08",
   "coupling_style":"B",
-  "insert":"3"
+  "insert":"03"
   }},
-{"8T3": {
-  "shell_size":"8",
+{"08T03": {
+  "shell_size":"08",
   "coupling_style":"T",
-  "insert":"3"
+  "insert":"03"
   }},
-{"10B2": {
+{"10B02": {
   "shell_size":"10",
   "coupling_style":"B",
-  "insert":"2"
+  "insert":"02"
   }},
-{"10T2": {
+{"10T02": {
   "shell_size":"10",
   "coupling_style":"T",
-  "insert":"2"
+  "insert":"02"
   }},
-{"10B5": {
+{"10B05": {
   "shell_size":"10",
   "coupling_style":"B",
-  "insert":"5"
+  "insert":"05"
   }},
-{"10T5": {
+{"10T05": {
   "shell_size":"10",
   "coupling_style":"T",
-  "insert":"5"
+  "insert":"05"
   }},
 {"10B20": {
   "shell_size":"10",
@@ -100,15 +150,15 @@
   "coupling_style":"T",
   "insert":"20"
   }},
-{"12B3": {
+{"12B03": {
   "shell_size":"12",
   "coupling_style":"B",
-  "insert":"3"
+  "insert":"03"
   }},
-{"12T3": {
+{"12T03": {
   "shell_size":"12",
   "coupling_style":"T",
-  "insert":"3"
+  "insert":"03"
   }},
 {"12B12": {
   "shell_size":"12",
@@ -120,35 +170,35 @@
   "coupling_style":"T",
   "insert":"12"
   }},
-{"14B3": {
+{"14B03": {
   "shell_size":"14",
   "coupling_style":"B",
-  "insert":"3"
+  "insert":"03"
   }},
-{"14T3": {
+{"14T03": {
   "shell_size":"14",
   "coupling_style":"T",
-  "insert":"3"
+  "insert":"03"
   }},
-{"14B4": {
+{"14B04": {
   "shell_size":"14",
   "coupling_style":"B",
-  "insert":"4"
+  "insert":"04"
   }},
-{"14T4": {
+{"14T04": {
   "shell_size":"14",
   "coupling_style":"T",
-  "insert":"4"
+  "insert":"04"
   }},
-{"14B7": {
+{"14B07": {
   "shell_size":"14",
   "coupling_style":"B",
-  "insert":"7"
+  "insert":"07"
   }},
-{"14T7": {
+{"14T07": {
   "shell_size":"14",
   "coupling_style":"T",
-  "insert":"7"
+  "insert":"07"
   }},
 {"14B12": {
   "shell_size":"14",
@@ -190,15 +240,15 @@
   "coupling_style":"T",
   "insert":"24"
   }},
-{"18B8": {
+{"18B08": {
   "shell_size":"18",
   "coupling_style":"B",
-  "insert":"8"
+  "insert":"08"
   }},
-{"18T8": {
+{"18T08": {
   "shell_size":"18",
   "coupling_style":"T",
-  "insert":"8"
+  "insert":"08"
   }},
 {"18B11": {
   "shell_size":"18",
@@ -374,6 +424,7 @@
     "description": {
       "dependency": "coupling_style"
     },
+    "ignore":true,
     "label": "Insert Pattern"
   },
   "contact_style": {
@@ -398,7 +449,7 @@
     ],
     "exception": {
       "fields": [
-        "insert_arrangement"
+        "shell_size"
       ],
       "actions": [
         {
@@ -406,14 +457,8 @@
             "Y"
           ]
         }
-      ],
-      "triggers": [
-"8B2",
-"8T2",
-"8B3",
-"8T3"
       ]
     },
-    "label": "Shell Position"
+    "label": "Alternate Shell Position"
   }
 }

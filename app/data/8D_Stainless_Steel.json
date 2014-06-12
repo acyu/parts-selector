@@ -27,7 +27,6 @@
 "-",
 "C",
 "L",
-"P",
 "S",
 "T",
 "W"
@@ -36,7 +35,6 @@
 "Connectors with Standard Crimp Contacts",
 "Receptacle with Short PC Tail (Male and Female #22D, #20)",
 "Receptacle with Long PC Tail (Male and Female #22D, #20, #16)",
-"Receptacle with Solder Cup (Male and Female #22D; Male #16 and #12; Female #16 and #12 and Female #20)",
 "Receptacle with Specific PC Tail (Male an Female #22D)",
 "Receptacle with Male Contacts #20 for Wire Wrap (2 Wraps)",
 "Receptacle with Male Contacts #22D for Wire Wrap (3 Wraps)"
@@ -44,9 +42,18 @@
     "label":"Type"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"09",
+"11",
+"13",
+"15",
+"17",
+"19",
+"21",
+"23",
+"25"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "plating": {
@@ -59,13 +66,54 @@
 "Nickel"
     ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Plating"
   },
   "insert": {
-    "data": [],
+    "data": [
+"02", "04", "05", "06", "07", "08", "11", "15", "16", "18", "19", "20", "21", "24", "26", "28", "29", "32", "35", "37", "39", "41", "43", "46", "53", "55", "61", "75", "97", "98", "99"
+    ],
+    "exception": {
+      "fields":["shell_size"],
+      "actions":[
+        {
+          "keep":["35","98"],
+          "triggers":["09"]
+        },
+        {
+          "keep":["02","04","05","35","98","99"],
+          "triggers":["11"]
+        },
+        {
+          "keep":["04","08","35","98"],
+          "triggers":["13"]
+        },
+        {
+          "keep":["05","15","18","19","35","97"],
+          "triggers":["15"]
+        },
+        {
+          "keep":["02","06","08","26","35","99"],
+          "triggers":["17"]
+        },
+        {
+          "keep":["11","18","28","32","35"],
+          "triggers":["19"]
+        },
+        {
+          "keep":["11","16","35","39","41","75"],
+          "triggers":["21"]
+        },
+        {
+          "keep":["21","35","53","55"],
+          "triggers":["23"]
+        },
+        {
+          "keep":["04","07","08","11","19","20","24","29","35","37","43","46","61"],
+          "triggers":["25"]
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -269,6 +317,16 @@
   "shell_size": "17",
   "plating": "S",
   "insert": "06"
+  }},
+  {"17K08": {
+  "shell_size": "17",
+  "plating": "K",
+  "insert": "08"
+  }},
+{"17S08": {
+  "shell_size": "17",
+  "plating": "S",
+  "insert": "08"
   }},
 {"17K26": {
   "shell_size": "17",
@@ -584,6 +642,7 @@
     "description": {
       "dependency": "plating"
     },
+    "ignore":true,
     "label": "Insert Arrangement"
   },
   "contact_type": {

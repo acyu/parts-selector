@@ -47,15 +47,118 @@
     "label": "Shell Type"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"08",
+"10",
+"12",
+"14",
+"16",
+"18",
+"20",
+"22",
+"24",
+"28"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
-  "insert": {
-    "data": [],
+  "separator": {
+    "data": ["-"],
     "dependency": "insert_arrangement",
-    "input_type": "static",
+    "label": "Separator"
+  },
+  "insert": {
+    "data": [
+"03", "04", "05", "06", "07", "08", "10", "12", "14", "15", "16", "19", "24", "25", "28", "30", "31", "32", "39", "41", "42", "55", "61", "98"
+    ],
+    "exception": {
+      "fields": [
+        "shell_size"
+      ],
+      "actions": [
+        {
+          "keep": [
+"03",
+"98"
+          ],
+          "triggers": [
+"08"
+          ]
+        },
+        {
+          "keep": [
+"05",
+"06"
+          ],
+          "triggers": ["10"]
+        },
+        {
+          "keep": [
+"03",
+"12"
+          ],
+          "triggers": ["12"]
+        },
+        {
+          "keep": [
+"04",
+"07",
+"12",
+"15"
+          ],
+          "triggers": ["14"]
+        },
+        {
+          "keep": [
+"10",
+"24"
+          ],
+          "triggers": ["16"]
+        },
+        {
+          "keep": [
+"08",
+"14",
+"31"
+          ],
+          "triggers": ["18"]
+        },
+        {
+          "keep": [
+"16",
+"25",
+"28",
+"39",
+"41"
+          ],
+          "triggers": ["20"]
+        },
+        {
+          "keep": [
+"12",
+"19",
+"32",
+"39",
+"55"
+          ],
+          "triggers": ["22"]
+        },
+        {
+          "keep": [
+"30",
+"61"
+          ],
+          "triggers": ["24"]
+        },
+        {
+          "keep": [
+"42"
+          ],
+          "triggers": ["28"]
+        }
+      ]
+    },
+    "dependency": "insert_arrangement",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -201,6 +304,7 @@
   "insert": "42"
   }}
     ],
+    "ignore": true,
     "label": "Insert Arrangement"
   },
   "contact_type": {
@@ -233,16 +337,17 @@
     ],
     "exception": {
       "fields": [
-        "insert_arrangement"
+        "shell_size"
       ],
-      "actions": {
-        "remove": [
-          "Y"
-        ]
-      },
-      "triggers": [
-"08-03",
-"08-98"
+      "actions": [
+        {
+          "remove": [
+            "Y"
+          ],
+          "triggers": [
+            "08"
+          ]
+        }
       ]
     },
     "label": "Orientation"

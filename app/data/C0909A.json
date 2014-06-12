@@ -8,9 +8,10 @@
     "label": "Series Designation"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"08", "10", "12", "14", "16", "18", "20", "22", "24"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "environmental_class": {
@@ -25,13 +26,54 @@
 "Nickel Plated Aluminum"
     ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Environmental Class"
   },
   "insert": {
-    "data": [],
+    "data": [
+"02", "03", "04", "05", "07", "08", "10", "11", "12", "14", "15", "16", "19", "20", "24", "25", "28", "29", "30", "31", "32", "39", "41", "43", "55", "57", "61"
+    ],
+    "exception": {
+      "fields":"shell_size",
+      "actions":[
+        {
+          "keep":["02","03"],
+          "triggers":["08"]
+        },
+        {
+          "keep":["02","05","20"],
+          "triggers":["10"]
+        },
+        {
+          "keep":["03","12"],
+          "triggers":["12"]
+        },
+        {
+          "keep":["03","04","07","12","15"],
+          "triggers":["14"]
+        },
+        {
+          "keep":["10","24"],
+          "triggers":["16"]
+        },
+        {
+          "keep":["08","11","14","31"],
+          "triggers":["18"]
+        },
+        {
+          "keep":["16","25","28","39","41"],
+          "triggers":["20"]
+        },
+        {
+          "keep":["12","19","32","55"],
+          "triggers":["22"]
+        },
+        {
+          "keep":["29","30","43","57","61"],
+          "triggers":["24"]
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -276,6 +318,36 @@
   "environmental_class": "N",
   "insert": "11"
   }},
+  {"18-14": {
+  "shell_size": "18",
+  "environmental_class": "-",
+  "insert": "14"
+  }},
+{"18E14": {
+  "shell_size": "18",
+  "environmental_class": "E",
+  "insert": "14"
+  }},
+{"18N14": {
+  "shell_size": "18",
+  "environmental_class": "N",
+  "insert": "14"
+  }},
+  {"18-31": {
+  "shell_size": "18",
+  "environmental_class": "-",
+  "insert": "31"
+  }},
+{"18E31": {
+  "shell_size": "18",
+  "environmental_class": "E",
+  "insert": "31"
+  }},
+{"18N31": {
+  "shell_size": "18",
+  "environmental_class": "N",
+  "insert": "31"
+  }},
 {"20-16": {
   "shell_size": "20",
   "environmental_class": "-",
@@ -306,20 +378,20 @@
   "environmental_class": "N",
   "insert": "25"
   }},
-{"20-28": {
+{"20-39": {
   "shell_size": "20",
   "environmental_class": "-",
-  "insert": "28"
+  "insert": "39"
   }},
-{"20E28": {
+{"20E39": {
   "shell_size": "20",
   "environmental_class": "E",
-  "insert": "28"
+  "insert": "39"
   }},
-{"20N28": {
+{"20N39": {
   "shell_size": "20",
   "environmental_class": "N",
-  "insert": "28"
+  "insert": "39"
   }},
 {"20-41": {
   "shell_size": "20",
@@ -475,6 +547,7 @@
     "description": {
       "dependency": "environmental_class"
     },
+    "ignore":true,
     "label": "Insert Arrangement"
   },
   "contact_style": {
@@ -495,8 +568,17 @@
 "7",
 "8",
 "9",
-"10"
+"Y"
     ],
+    "exception": {
+      "fields":["shell_size"],
+      "actions": [
+        {
+          "remove":["Y"],
+          "triggers":["08"]
+        }
+      ]
+    },
     "label": "Shell Position"
   },
   "order_code": {

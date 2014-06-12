@@ -22,12 +22,6 @@
     ],
     "label": "Shell Type"
   },
-  "with_360_teeth": {
-    "data": [
-"S"
-    ],
-    "label":"With 360° Teeth"
-  },
   "class": {
     "data": [
 "W",
@@ -45,186 +39,301 @@
     ],
     "label":"Class"
   },
+  "with_360_teeth": {
+    "data": [
+"S"
+    ],
+    "label":"With 360° Teeth"
+  },
   "shell_size": {
-    "data": [],
+    "data": [
+"08",
+"10",
+"12",
+"14",
+"16",
+"18",
+"20",
+"22",
+"24",
+"28"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
-  "contact_layout": {
-    "data": [],
+  "separator": {
+    "data": ["-"],
     "dependency": "insert_arrangement",
-    "input_type": "static",
-    "label": "Contact Layout"
+    "label": "Separator"
+  },
+  "insert": {
+    "data": [
+"01", "02", "03", "04", "05", "06", "07", "08", "10", "12", "14", "15", "16", "19", "24", "25", "28", "30", "31", "32", "39", "41", "42", "55", "61", "98"
+    ],
+    "exception": {
+      "fields": [
+        "shell_size"
+      ],
+      "actions": [
+        {
+          "keep": [
+"01",
+"03",
+"98"
+          ],
+          "triggers": [
+"08"
+          ]
+        },
+        {
+          "keep": [
+"05",
+"06"
+          ],
+          "triggers": ["10"]
+        },
+        {
+          "keep": [
+"03",
+"12"
+          ],
+          "triggers": ["12"]
+        },
+        {
+          "keep": [
+"04",
+"07",
+"12",
+"15"
+          ],
+          "triggers": ["14"]
+        },
+        {
+          "keep": [
+"10",
+"24"
+          ],
+          "triggers": ["16"]
+        },
+        {
+          "keep": [
+"02",
+"08",
+"14",
+"31"
+          ],
+          "triggers": ["18"]
+        },
+        {
+          "keep": [
+"04",
+"16",
+"25",
+"28",
+"39",
+"41"
+          ],
+          "triggers": ["20"]
+        },
+        {
+          "keep": [
+"12",
+"19",
+"32",
+"39",
+"55"
+          ],
+          "triggers": ["22"]
+        },
+        {
+          "keep": [
+"04",
+"30",
+"61"
+          ],
+          "triggers": ["24"]
+        },
+        {
+          "keep": [
+"06",
+"42"
+          ],
+          "triggers": ["28"]
+        }
+      ]
+    },
+    "dependency": "insert_arrangement",
+    "label": "Insert"
   },
   "insert_arrangement": {
     "data": [
 {"08-01":{
   "shell_size": "08",
   "separator": "-",
-  "contact_layout": "01"
+  "insert": "01"
   }},
 {"08-03":{
   "shell_size": "08",
   "separator": "-",
-  "contact_layout": "03"
+  "insert": "03"
   }},
 {"08-98":{
   "shell_size": "08",
   "separator": "-",
-  "contact_layout": "98"
+  "insert": "98"
   }},
 {"10-05":{
   "shell_size": "10",
   "separator": "-",
-  "contact_layout": "05"
+  "insert": "05"
   }},
 {"10-06":{
   "shell_size": "10",
   "separator": "-",
-  "contact_layout": "06"
+  "insert": "06"
   }},
 {"12-03":{
   "shell_size": "12",
   "separator": "-",
-  "contact_layout": "03"
+  "insert": "03"
   }},
 {"12-12":{
   "shell_size": "12",
   "separator": "-",
-  "contact_layout": "12"
+  "insert": "12"
   }},
 {"14-04":{
   "shell_size": "14",
   "separator": "-",
-  "contact_layout": "14"
+  "insert": "14"
   }},
 {"14-07":{
   "shell_size": "14",
   "separator": "-",
-  "contact_layout": "07"
+  "insert": "07"
   }},
 {"14-12":{
   "shell_size": "14",
   "separator": "-",
-  "contact_layout": "12"
+  "insert": "12"
   }},
 {"14-15":{
   "shell_size": "14",
   "separator": "-",
-  "contact_layout": "15"
+  "insert": "15"
   }},
 {"16-10":{
   "shell_size": "16",
   "separator": "-",
-  "contact_layout": "10"
+  "insert": "10"
   }},
 {"16-24":{
   "shell_size": "16",
   "separator": "-",
-  "contact_layout": "24"
+  "insert": "24"
   }},
 {"18-02":{
   "shell_size": "18",
   "separator": "-",
-  "contact_layout": "02"
+  "insert": "02"
   }},
 {"18-08":{
   "shell_size": "18",
   "separator": "-",
-  "contact_layout": "08"
+  "insert": "08"
   }},
 {"18-14":{
   "shell_size": "18",
   "separator": "-",
-  "contact_layout": "14"
+  "insert": "14"
   }},
 {"18-31":{
   "shell_size": "18",
   "separator": "-",
-  "contact_layout": "31"
+  "insert": "31"
   }},
 {"20-04":{
   "shell_size": "20",
   "separator": "-",
-  "contact_layout": "04"
+  "insert": "04"
   }},
 {"20-16":{
   "shell_size": "20",
   "separator": "-",
-  "contact_layout": "16"
+  "insert": "16"
   }},
 {"20-25":{
   "shell_size": "20",
   "separator": "-",
-  "contact_layout": "25"
+  "insert": "25"
   }},
 {"20-28":{
   "shell_size": "20",
   "separator": "-",
-  "contact_layout": "28"
+  "insert": "28"
   }},
 {"20-39":{
   "shell_size": "20",
   "separator": "-",
-  "contact_layout": "39"
+  "insert": "39"
   }},
 {"20-41":{
   "shell_size": "20",
   "separator": "-",
-  "contact_layout": "41"
+  "insert": "41"
   }},
 {"22-12":{
   "shell_size": "22",
   "separator": "-",
-  "contact_layout": "12"
+  "insert": "12"
   }},
 {"22-19":{
   "shell_size": "22",
   "separator": "-",
-  "contact_layout": "19"
+  "insert": "19"
   }},
 {"22-32":{
   "shell_size": "22",
   "separator": "-",
-  "contact_layout": "32"
+  "insert": "32"
   }},
 {"22-39":{
   "shell_size": "22",
   "separator": "-",
-  "contact_layout": "39"
+  "insert": "39"
   }},
 {"22-55":{
   "shell_size": "22",
   "separator": "-",
-  "contact_layout": "55"
+  "insert": "55"
   }},
 {"24-04":{
   "shell_size": "24",
   "separator": "-",
-  "contact_layout": "04"
+  "insert": "04"
   }},
 {"24-30":{
   "shell_size": "24",
   "separator": "-",
-  "contact_layout": "30"
+  "insert": "30"
   }},
 {"24-61":{
   "shell_size": "24",
   "separator": "-",
-  "contact_layout": "61"
+  "insert": "61"
   }},
 {"28-06":{
   "shell_size": "28",
   "separator": "-",
-  "contact_layout": "06"
+  "insert": "06"
   }},
 {"28-42":{
   "shell_size": "28",
   "separator": "-",
-  "contact_layout": "42"
+  "insert": "42"
   }}
     ],
+    "ignore": true,
     "label": "Insert Arrangement"
   },
   "contact_type": {
@@ -236,7 +345,7 @@
 "Pin",
 "Socket"
     ],
-    "label": "Contact Style"
+    "label": "Contact Type"
   },
   "orientation": {
     "data": [
@@ -249,18 +358,19 @@
     ],
     "exception": {
       "fields": [
-        "insert_arrangement"
+        "shell_size"
       ],
-      "actions": {
-        "remove": [
-          "Y"
-        ]
-      },
-      "triggers": [
-"08-01",
-"08-03",
-"08-98"
+      "actions": [
+        {
+          "remove": [
+            "Y"
+          ],
+          "triggers": [
+            "08"
+          ]
+        }
       ]
+
     },
     "label": "Orientation  / Clocking"
   },

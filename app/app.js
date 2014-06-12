@@ -26,8 +26,8 @@ app.config(['$routeProvider',
 
 var partsSelectorCtrls = angular.module('partsSelectorCtrls', ['ui.utils']);
 
-partsSelectorCtrls.controller('ListPartsNumberCtrl', ['$scope','$http', '$parse',
-  function($scope, $http, $parse) {
+partsSelectorCtrls.controller('ListPartsNumberCtrl', ['$scope','$http', '$parse', '$q',
+  function($scope, $http, $parse, $q) {
     $scope.fn = {};
     $scope.data = {};
     $scope.data.accordions = {};
@@ -64,11 +64,13 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
     $scope.data.status_message = '';
     $scope.table = {},
     $scope.fn = {};
+    $scope.data.original = {};
     $scope.data.breadcrumbs = [];
     $scope.data.part_number = {};
     $scope.data.final_part_number = '';
     $scope.data.static_part_field = {};
     $scope.data.descriptive_template = '';
+    $scope.data.ignore = {};
     $scope.table.show_form = false;
     $scope.table.show_error = false;
     $scope.quote = {};
@@ -99,21 +101,41 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
       $scope.data.database = data;
       $scope.table.columns = [];
       angular.forEach($scope.data.database, function(obj, key) {
+        //exclude: has dropdown select option but for display only
+        //ignore: don't have dropdown select option but use to compute part number
+        if(!obj.hasOwnProperty('ignore')) {
+        $scope.data.original[key] = angular.copy(obj);
         obj.key = key;
         obj.visible = true;
-        if(!obj.dependency) $scope.data.part_number[key] = '';
-        if(obj.dependency) {
+        //if(obj.key == 'insert') {
+          //obj.data = _.uniq(_.sortBy(obj.data, function(val) { return val; }));
+          //console.log(obj.data);
+        //}
+        $scope.data.part_number[key] = '';
+        //if(typeof obj.dependency === 'undefined') $scope.data.part_number[key] = '';
+        /*if(obj.dependency && obj.dependency != '') {
           $scope.data.static_part_field[key] = {};
           $scope.data.static_part_field[key].data = 'Select with Insert Pattern';
           $scope.data.static_part_field[key].showedit = false;
-        }
-        if(key == 'base' && obj.data.length == 1) $scope.data.part_number[key] = obj.data[0];
+        }*/
+        //if(key == 'base' && obj.data.length == 1) $scope.data.part_number[key] = obj.data[0];
+        if(obj.data.length == 1) $scope.data.part_number[key] = obj.data[0];
+        obj.skip = false;
+        if(obj.data.length == 1) obj.skip = true;
         if(obj.label) {
           obj.label = $sce.trustAsHtml(obj.label);
         }
-        obj.disabled = true;
+
+        if($scope.table.columns.length == 0)
+          obj.disabled = false; //allow first option
+        else
+          obj.disabled = true;
 
         $scope.table.columns.push(obj);
+
+        } else { //check ignore
+          $scope.data.ignore[key] = obj;
+        }
       });
     }).then(function(data) {
       var stop = false;
@@ -122,12 +144,12 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
           var current_column = _.find($scope.table.columns, function (column) { return key === column.key; });
           current_column.disabled = false;
           if(obj == '') {
-            $http.get(base_path + 'wp-content/plugins/parts-selector/app/data/descriptive_templates/' + $routeParams.base_part + '_' + key + '.html').success(function(data) {
+            /*$http.get(base_path + 'wp-content/plugins/parts-selector/app/data/descriptive_templates/' + $routeParams.base_part + '_' + key + '.html').success(function(data) {
               $scope.data.descriptive_template = $sce.trustAsHtml(data);
-            }).error(function(data, status, headers, config) {
+            }).error(function(data, status, headers, config) {*/
               var output = '<div class="clearfix">' + $scope.fn.build_meta_data(key) + '</div>';
               $scope.data.descriptive_template = $sce.trustAsHtml(output);
-            });
+            //});
             stop = true;
           }
         }
@@ -140,13 +162,26 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
 
     $scope.fn.select_update = function(key) {
       var form_ready = true, loopindex = 0, stop = false, product_id = '';
-      $scope.table.show_error = false; //reset showing error
-      $scope.data.status_message = ''; //clear status message
+      $scope.table.show_error = false;
+      $scope.data.status_message = '';
 
+      //reset value of fields that follows the current field
       var found_key = false;
+      var found_skip = false;
       angular.forEach($scope.data.part_number, function(value, part_number_key) {
+        var column = _.find($scope.table.columns, function (column) { return part_number_key === column.key; });
         if(part_number_key == key) found_key = true;
-        if(found_key && part_number_key != key) $scope.data.part_number[part_number_key] = '';
+        if(found_key && part_number_key != key && !column.skip && !column.hidden) {
+          $scope.data.part_number[part_number_key] = '';
+          column.disabled = true;
+          if(part_number_key == 'insert_arrangement') {
+            angular.forEach($scope.data.static_part_field, function(static_field, field_key) {
+              static_field.data = 'Select with Insert Pattern';
+              static_field.showedit = false;
+            });
+            column.visible = true;
+          }
+        }
       });
 
       //build part number
@@ -155,32 +190,38 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
         if(!stop) {
           if(!value) { stop = true; }
           else {
-            //basically test for insert arrangement
-            if(part_number_key == 'insert_arrangement') {
-              $scope.data.final_part_number += Object.keys(JSON.parse(value))[0];
-            } else {
-              if(value == '[blank]') value = '';
-              $scope.data.final_part_number += value;
+            var part_number_column = _.find($scope.table.columns, function (column) { return part_number_key === column.key; });
+            if(typeof part_number_column.exclude === 'undefined') {
+              //basically test for insert arrangement
+              if(part_number_key == 'insert_arrangement') {
+                $scope.data.final_part_number += Object.keys(JSON.parse(value))[0];
+              } else {
+                if(value == '[blank]') value = '';
+                $scope.data.final_part_number += value;
+              }
             }
           }
         }
       });
+      //console.log($scope.data.final_part_number);
 
+      //validate product number per field
       $http.get(base_path  + '?check_product_parts=' + $scope.data.final_part_number).success(function(response) {
         if(response == true) {
           stop = false;
-          angular.forEach($scope.data.part_number, function(part, part_number_key) {
+          angular.forEach($scope.data.part_number, function(part_number, part_number_key) {
             if(!stop) {
               var column = _.find($scope.table.columns, function (column) { return part_number_key === column.key; });
               column.disabled = false;
-              if(part == '')  {
-                $http.get(base_path + 'wp-content/plugins/parts-selector/app/data/descriptive_templates/' + $routeParams.base_part + '_' + part_number_key + '.html').success(function(data) {
+              if(column.data.length == 1) $scope.data.part_number[part_number_key] = part_number = column.data[0];
+              if(part_number == '')  {
+                /*$http.get(base_path + 'wp-content/plugins/parts-selector/app/data/descriptive_templates/' + $routeParams.base_part + '_' + part_number_key + '.html').success(function(data) {
                   $scope.data.descriptive_template = $sce.trustAsHtml(data);
-                }).error(function(data, status, headers, config) {
+                }).error(function(data, status, headers, config) {*/
                   //$scope.fn.build_meta_data(part_number_key);
                   var output = '<div class="clearfix">' + $scope.fn.build_meta_data(part_number_key) + '</div>';
                   $scope.data.descriptive_template = $sce.trustAsHtml(output);
-                });
+                //});
                 stop = true;
               }
             }
@@ -192,9 +233,9 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
       });
 
       //check if all part variable has been filled, if not set form ready var to false
-      angular.forEach($scope.data.part_number, function(part, index) {
+      angular.forEach($scope.data.part_number, function(part_number, index) {
         if(form_ready) {
-          if(part == '') {
+          if(part_number == '') {
             $scope.table.show_form = false;
             form_ready = false;
           }
@@ -208,9 +249,11 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
           if(response != '' && typeof parseInt(response) === 'number' && parseInt(response) != NaN) {
             $scope.quote.product_id = response; //$scope.data.final_part_number;
             $scope.table.show_form = true;
+            $scope.data.descriptive_template = '';
           } else {
-            //$scope.table.show_error = true;
             $scope.table.show_form = false;
+            var column = $scope.table.columns[$scope.table.columns.length-1];
+            $scope.data.status_message = 'The combination you selected does not exist, please modify your ' + column.label + ' selection and try again.';
           }
         });
       }
@@ -218,11 +261,7 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
       //if change is insert_arrangment field, parse the main object value and display the subset value
       if(key == 'insert_arrangement') {
         if($scope.data.part_number[key]) {
-          // var insert_arrangements = _.find($scope.table.columns, function (column) { return key === column.key; })
           var insert_arrangement = JSON.parse($scope.data.part_number[key]);
-          /*var insert_arrangement = _.find(insert_arrangements.data, function(arrangement) {
-            return Object.keys(arrangement)[0] === $scope.data.part_number[key];
-          });*/
           for(var topkey in insert_arrangement) {
             for(var subkey in insert_arrangement[topkey]) {
               $scope.data.static_part_field[subkey] = {};
@@ -241,61 +280,136 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
         }
       }
 
-      //show current waiting to be edited field related meta description
-/*      var stop = false;
-      angular.forEach($scope.data.part_number, function(obj, key) {
-        if(!stop) {
-          if(obj == '') {
-            var inner_loop_stop = false;
-            angular.forEach($scope.table.columns, function(column, column_key) {
-              if(!inner_loop_stop) {
-                if(column.key == key) {
-                  $scope.data.current_column = column;
-                  $http.get(base_path + 'wp-content/plugins/parts-selector/app/data/descriptive_templates/' + $routeParams.base_part + '_' + key + '.html').success(function(data) {
-                    $scope.data.descriptive_template = $sce.trustAsHtml(data);
-                  }).error(function(data, status, headers, config) {
-                    $scope.fn.build_meta_data(key);
-                  });
-                  inner_loop_stop = true;
-                }
-              }
-            });
-            stop = true;
-          }
-        }
-      });*/
-
       /**
        * deal with field value exception
        */
+       //console.log('show form');
+       //console.log($scope.table.show_form);
+       //console.log(form_ready);
+      if(!form_ready) {
       angular.forEach($scope.table.columns, function(column, index) {
         if(typeof column.exception != 'undefined') {
           angular.forEach(column.exception.fields, function(field, keyId) {
             if(key == field) {
-              angular.forEach(column.exception.actions, function(action, actionId) {
-                var actionkey = Object.keys(action)[0];
-                var selectedData = $scope.data.part_number[key];
-                if(key == 'insert_arrangement') {
-                  selectedData = Object.keys(JSON.parse(selectedData))[0];
-                }
-                if(column.exception.triggers.indexOf(selectedData) > -1) {
-                  if(actionkey == 'remove') {
-                    var filtered_data = _.without.apply(_, [column.data].concat(action[actionkey]));
-                    column.data = filtered_data;
-                    //to make sure exception field behave correctly, let's reset the field value when exception triggers
+              var selectedData = $scope.data.part_number[key];
+              var exception = _(column.exception.actions).reject(function(action) {
+                return action.triggers.indexOf(selectedData) < 0;
+              });
+              if(exception.length > 0) {
+                $scope.fn.filter_exception(column, exception);
+              } else {
+                column.data = angular.copy($scope.data.original[column.key].data);
+                /*$http.get(base_path + 'wp-content/plugins/parts-selector/app/data/' + $routeParams.base_part + '.json').success(function(response) {
+                  column.data = response[column.key].data;
+                });*/
+              }
+              //to make sure exception field behave correctly, let's reset the field value when exception triggers
+
+              /*if(column.data.length == 1) {
+                $scope.data.part_number[column.key] = column.data[0];
+                $scope.fn.select_update(column.key);
+              } else {
+                $scope.data.part_number[column.key] = '';
+              }*/
+
+              /*var selectedData = $scope.data.part_number[key];
+              var exception = _(column.exception.actions).reject(function(action) {
+                return action.triggers.indexOf(selectedData) < 0;
+              });
+              if(exception.length > 0) {
+                $http.get(base_path + 'wp-content/plugins/parts-selector/app/data/' + $routeParams.base_part + '.json').success(function(response) {
+                  column.data = response[column.key].data;
+                  var filtered_data = [];
+                  if(exception[0].hasOwnProperty('remove')) {
+                    filtered_data = _.without.apply(_, [column.data].concat(exception[0]['remove']));
+                  } else if(exception[0].hasOwnProperty('keep')) {
+                    filtered_data = _.intersection(column.data,exception[0]['keep']);
+                  }
+
+                  column.data = filtered_data;
+                  //to make sure exception field behave correctly, let's reset the field value when exception triggers
+                  if(column.data.length == 1) {
+                    $scope.data.part_number[column.key] = column.data[0];
+                    $scope.fn.select_update(column.key);
+                  } else {
                     $scope.data.part_number[column.key] = '';
                   }
-                } else {
-                  $http.get(base_path + 'wp-content/plugins/parts-selector/app/data/' + $routeParams.base_part + '.json').success(function(response) {
-                    column.data = response[column.key].data;
-                  });
-                }
-              });
-            }
+                });*/
+              }/* else {
+                $http.get(base_path + 'wp-content/plugins/parts-selector/app/data/' + $routeParams.base_part + '.json').success(function(response) {
+                  console.log(column.key);
+                  column.data = response[column.key].data;
+                });
+              }*/
           });
         }
       });
+      } // check form is ready end
     };
+
+    //need to rewrite this with promise
+    $scope.fn.filter_exception = function(column, exception, filtered_data) {
+      if(exception.length > 0) {
+        if(typeof filtered_data === 'undefined') {
+          //$http.get(base_path + 'wp-content/plugins/parts-selector/app/data/' + $routeParams.base_part + '.json').success(function(response) {
+            //var original_data = response[column.key].data;
+            var original_data = angular.copy($scope.data.original[column.key].data);
+            filtered_data = [];
+            if(exception[0].hasOwnProperty('remove')) {
+              filtered_data = _.without.apply(_, [original_data].concat(exception[0]['remove']));
+            } else if(exception[0].hasOwnProperty('keep')) {
+              filtered_data = _.intersection(original_data,exception[0]['keep']);
+            } else {
+              filtered_data = original_data;
+            }
+
+            if(exception[0].hasOwnProperty('exception')) {
+              var exceptionSelectedData = $scope.data.part_number[exception[0]['exception']['fields'][0]];
+              var subException = _(exception[0]['exception']['actions']).reject(function(action) {
+                return action.triggers.indexOf(exceptionSelectedData) < 0;
+              });
+
+              if(subException.length > 0) {
+                $scope.fn.filter_exception(column, exception[0]['exception']['actions'], filtered_data);
+              } else {
+                column.data = filtered_data;
+                if(column.data.length == 1) {
+                  $scope.data.part_number[column.key] = column.data[0];
+                  $scope.fn.select_update(column.key);
+                } else {
+                  $scope.data.part_number[column.key] = '';
+                }
+              }
+            } else {
+              column.data = filtered_data;
+              if(column.data.length == 1) {
+                $scope.data.part_number[column.key] = column.data[0];
+                $scope.fn.select_update(column.key);
+              } else {
+                $scope.data.part_number[column.key] = '';
+              }
+            }
+          //});
+        } else {
+          if(exception[0].hasOwnProperty('remove')) {
+            column.data = _.without.apply(_, [filtered_data].concat(exception[0]['remove']));
+            if(column.data.length == 1) {
+              $scope.data.part_number[column.key] = column.data[0];
+              $scope.fn.select_update(column.key);
+            } else {
+              $scope.data.part_number[column.key] = '';
+            }
+          }
+        }
+      } else {
+        column.data = angular.copy($scope.data.original[column.key].data);
+        /*$http.get(base_path + 'wp-content/plugins/parts-selector/app/data/' + $routeParams.base_part + '.json').success(function(response) {
+          column.data = response[column.key].data;
+        });*/
+      }
+      //return filtered_data;
+    }
+
     /* should move to directive */
     $scope.fn.build_meta_data = function(key) {
       var found = false;
@@ -307,6 +421,7 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
             output = '<table style="float: left;"><tr><th>'+ column.label +'</th><th></th></tr>';
             angular.forEach(column.data, function(item, item_key) {
               output += '<tr>';
+              if(item == '[blank]') item = 'Blank value';
               output += '<td>' + item + '</td><td>';
               if(column.hasOwnProperty('description')) {
                 output += column.description[item_key];
@@ -353,8 +468,7 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
       }
       });
 
-      //return output;
-      return '';
+      return output;
     }
 
     $scope.fn.editInsertPattern = function() {
@@ -366,6 +480,7 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
             if(column.key == 'insert_arrangement') column.visible = true;
         });
       });
+      $scope.fn.select_update('insert_arrangement');
     }
 
     $scope.fn.redirect = function(path) {
@@ -374,30 +489,6 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
 }]);
 
 var partsSelectorDirective = angular.module('partsSelectorDirective', []);
-
-/*partsSelectorDirective.directive('selectOption', function($compile) {
-  return {
-    restrict: 'E',
-    replace: true,
-    scope: {
-      data: '='
-    },
-    link: function (scope, elem, attrs) {
-      var option_value = '', option_label = '';
-      if(angular.isObject(scope.data)) {
-        option_value = option_label = Object.keys(scope.data)[0];
-        if(Object.keys(scope.data)[0] == '[blank]') option_label = '';
-        //elem.html('<option value=' + option_value + '>' + option_label + '</option>');
-      } else {
-        option_value = option_label = scope.data;
-        if(scope.data == '[blank]') option_label = '';
-        //elem.html('<option value=' + option_value + '>' + option_label + '</option>');
-      }
-      elem.html('<option value=' + option_value + '>' + option_label + '</option>');
-      $compile(elem.contents())(scope);
-    }
-  }
-});*/
 
 partsSelectorDirective.directive('selectOption', function() {
   return {
@@ -443,21 +534,6 @@ partsSelectorDirective.directive('descriptionTemplate', function($compile) {
       } else {
         elem.html(scope.ngModel.description);
       }
-      /*if(scope.data.template != '') {
-        elem.html(scope.data.template);
-      } else {
-        console.log(scope.data);
-        var template = '<table><tr><th>{{scope.data.label}}</th><th><th></tr>';
-        angular.forEach(scope.data.data, function(data_data, key) {
-          template += '<tr><td>{{data_data}}</td><td>';
-          if(scope.data.hasOwnProperty('description')) {
-            template += '{{scope.data.description[key]}}';
-          }
-          template += '</td></tr>';
-        });
-        template += '</table>';
-        elem.html(template);
-      }*/
       $compile(elem.contents())(scope);
     }
   }

@@ -1,4 +1,15 @@
 {
+  "base_finish":
+  {
+    "data":
+    [
+      "Aluminum Series",
+      "Composite Series",
+      "Stainless Steel Series"
+    ],
+    "exclude": "true",
+    "label":"Finish"
+  },
   "base":
   {
     "data":
@@ -22,6 +33,44 @@
 "Composite Nickel",
 "Stainless Steel Passivated"
     ],
+    "exception": {
+      "fields": [
+        "base_finish"
+      ],
+      "actions": [
+        {
+          "remove": [
+            "J",
+            "M",
+            "K"
+          ],
+          "triggers": [
+            "Aluminum Series"
+          ]
+        },
+        {
+          "remove": [
+            "W",
+            "F",
+            "K"
+          ],
+          "triggers": [
+            "Composite Series"
+          ]
+        },
+        {
+          "remove": [
+            "W",
+            "F",
+            "J",
+            "M"
+          ],
+          "triggers": [
+            "Stainless Steel Series"
+          ]
+        }
+      ]
+    },
     "label": "Plating"
   },
   "shell_style": {
@@ -35,24 +84,179 @@
 "Plug",
 "Jam Nut Receptacle"
     ],
+    "exception": {
+      "fields": [
+        "base_finish"
+      ],
+      "actions": [
+        {
+          "remove": [
+            "7"
+          ],
+          "triggers": [
+            "Composite Series"
+          ]
+        }
+      ]
+    },
     "label": "Shell Style"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"A",
+"B",
+"C",
+"D",
+"E",
+"F",
+"G",
+"H",
+"J"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "grounding": {
-    "data": [],
+    "data": ["N"],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Grounding"
   },
   "insert": {
-    "data": [],
+    "data": [
+"02", "04", "05", "06", "07", "08", "11", "15", "16", "18", "19", "20", "21", "24", "26", "29", "32", "35", "37", "39", "41", "43", "46", "53", "55", "61", "75", "97", "98", "99"
+    ],
+    "exception": {
+      "fields": [
+        "shell_size"
+      ],
+      "actions": [
+        {
+          "keep": [
+"35",
+"98"
+          ],
+          "triggers": [
+            "A"
+          ]
+        },
+        {
+          "keep": [
+"02",
+"05",
+"35",
+"98",
+"99"
+          ],
+          "triggers": [
+            "B"
+          ]
+        },
+        {
+          "keep": [
+"04",
+"08",
+"26",
+"35",
+"98"
+          ],
+          "triggers": [
+            "C"
+          ]
+        },
+        {
+          "keep": [
+"05",
+"15",
+"18",
+"19",
+"35",
+"97"
+          ],
+          "triggers": [
+            "D"
+          ]
+        },
+        {
+          "keep": [
+"02",
+"06",
+"08",
+"26",
+"35",
+"99"
+          ],
+          "triggers": [
+            "E"
+          ]
+        },
+        {
+          "keep": [
+"11",
+"32",
+"35",
+"53"
+          ],
+          "triggers": [
+            "F"
+          ]
+        },
+        {
+          "keep": [
+"11",
+"16",
+"20",
+"35",
+"39",
+"41",
+"75"
+          ],
+          "triggers": [
+            "G"
+          ]
+        },
+        {
+          "keep": [
+"21",
+"35",
+"53",
+"55"
+          ],
+          "triggers": [
+            "H"
+          ]
+        },
+        {
+          "keep": [
+"04",
+"07",
+"08",
+"11",
+"19",
+"20",
+"24",
+"29",
+"35",
+"37",
+"43",
+"46",
+"61"
+          ],
+          "triggers": [
+            "J"
+          ],
+          "exception": {
+            "fields": ["base_finish"],
+            "actions": [
+              {
+                "remove": ["20"],
+                "triggers": ["Composite Series"]
+              }
+            ]
+          }
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -318,6 +522,22 @@
   "insert": "61"
   }}
     ],
+    "exception": {
+      "fields": [
+        "base_finish"
+      ],
+      "actions": [
+        {
+          "remove": [
+            "JN20"
+          ],
+          "triggers": [
+            "Composite Series"
+          ]
+        }
+      ]
+    },
+    "ignore": true,
     "label": "Insert Arrangement"
   },
   "contact_type": {

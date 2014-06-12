@@ -15,6 +15,16 @@
     "description": "MIL-DTL-26482 Series II"
   },
   {
+    "manufacturer": "Amphenol Air LB",
+    "series": "1900",
+    "description": "1900"
+  },
+  {
+    "manufacturer": "Amphenol Air LB",
+    "series": "EN3545",
+    "description": "EN3545"
+  },
+  {
     "manufacturer": "Cinch Connectors",
     "series": "BACC45FM_FS",
     "description": "BACC45FM & FS"
@@ -43,6 +53,11 @@
     "manufacturer": "Cinch Connectors",
     "series": "BACC63CB",
     "description": "BACC63CB"
+  },
+  {
+    "manufacturer": "Cinch Connectors",
+    "series": "BACC63CC",
+    "description": "BACC63CC"
   },
   {
     "manufacturer": "Cinch Connectors",

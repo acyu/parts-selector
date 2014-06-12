@@ -85,11 +85,11 @@ jQuery(document).ready(function () {
     <div ng-if="column.data.length > 1">
       <div ng-switch on="column.input_type">
         <div ng-switch-when="static">
-        <div>{{data.static_part_field[column.key].data}}</div>
+        <div style="text-align:center;">{{data.static_part_field[column.key].data}}</div>
         <div ng-show="data.static_part_field[column.key].showedit"><a ng-click="fn.editInsertPattern();" style="cursor:pointer;">Edit</a></div>
         </div>
         <div ng-switch-default>
-      <select name="{{column.key}}" ng-change="fn.select_update(column.key);" ng-disabled="column.disabled" ng-model="data.part_number[column.key]">
+      <select name="{{column.key}}" ng-change="fn.select_update(column.key);" ng-disabled="column.disabled" ng-model="data.part_number[column.key]" ng-class="[column.key]">
         <option value="" selected>Choose...</option>
         <option select-option ng-repeat="data in column.data" data="data">{{data}}</option>
         <!-- <option ng-repeat="data in column.data" value="{{data}}"><span option-label data="data"></span></option> -->
@@ -108,11 +108,11 @@ jQuery(document).ready(function () {
         </select>
       </div>
       <div ng-switch-when="static">
-        <div>{{data.static_part_field[column.key].data}}</div>
+        <div style="text-align:center;">{{data.static_part_field[column.key].data}}</div>
         <div ng-show="data.static_part_field[column.key].showedit"><a ng-click="fn.editInsertPattern();" style="cursor:pointer;">Edit</a></div>
       </div>
       <div ng-switch-default>
-        <div ng-repeat="data in column.data">{{data}}</div>
+        <div ng-repeat="data in column.data" style="text-align:center;">{{data}}</div>
       </div>
       </div>
     </div>

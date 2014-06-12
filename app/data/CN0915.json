@@ -19,9 +19,10 @@
     "label": "Series Modification"
   },
   "shell_size": {
-    "data": [],
+    "data": [
+"08", "10", "12", "14", "16", "18", "20", "22", "24"
+    ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Shell Size"
   },
   "environmental_class": {
@@ -36,13 +37,54 @@
 "Stainless Steel"
     ],
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Environmental Class"
   },
   "insert": {
-    "data": [],
+    "data": [
+"02", "03", "04", "05", "08", "10", "11", "12", "14", "15", "16", "19", "20", "24", "25", "28", "29", "30", "31", "32", "39", "41", "43", "55", "57", "61"
+    ],
+    "exception": {
+      "fields":["shell_size"],
+      "actions":[
+        {
+          "keep":["02","03"],
+          "triggers":["08"]
+        },
+        {
+          "keep":["02","05","20"],
+          "triggers":["10"]
+        },
+        {
+          "keep":["03","12"],
+          "triggers":["12"]
+        },
+        {
+          "keep":["03","4","07","12","15"],
+          "triggers":["14"]
+        },
+        {
+          "keep":["10","24"],
+          "triggers":["16"]
+        },
+        {
+          "keep":["08","11","14","31"],
+          "triggers":["18"]
+        },
+        {
+          "keep":["16","25","28","39","41"],
+          "triggers":["20"]
+        },
+        {
+          "keep":["12","19","32","55"],
+          "triggers":["22"]
+        },
+        {
+          "keep":["29","30","43","57","61"],
+          "triggers":["24"]
+        }
+      ]
+    },
     "dependency": "insert_arrangement",
-    "input_type": "static",
     "label": "Insert"
   },
   "insert_arrangement": {
@@ -167,20 +209,20 @@
   "environmental_class": "S",
   "insert": "03"
   }},
-{"14A04": {
+{"14A07": {
   "shell_size": "14",
   "environmental_class": "A",
-  "insert": "04"
+  "insert": "07"
   }},
-{"14N04": {
+{"14N07": {
   "shell_size": "14",
   "environmental_class": "N",
-  "insert": "04"
+  "insert": "07"
   }},
-{"14S04": {
+{"14S07": {
   "shell_size": "14",
   "environmental_class": "S",
-  "insert": "04"
+  "insert": "07"
   }},
 {"14A12": {
   "shell_size": "14",
@@ -507,7 +549,7 @@
   "environmental_class": "N",
   "insert": "61"
   }},
-{"24S03": {
+{"24S61": {
   "shell_size": "24",
   "environmental_class": "S",
   "insert": "61"
@@ -516,6 +558,7 @@
     "description": {
       "dependency": "environmental_class"
     },
+    "ignore":true,
     "label": "Insert Arrangement"
   },
   "contact_style": {
@@ -536,8 +579,17 @@
 "7",
 "8",
 "9",
-"10"
+"Y"
     ],
+    "exception": {
+      "fields":["shell_size"],
+      "actions": [
+        {
+          "remove":["Y"],
+          "triggers":["08"]
+        }
+      ]
+    },
     "label": "Shell Position"
   },
   "order_code": {

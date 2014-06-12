@@ -11,7 +11,7 @@ register_deactivation_hook(__FILE__,'parts_selector_plugin_remove');
 function parts_selector_plugin_install() {
   global $wpdb;
 
-  $page_title = 'Parts Builder';
+  $page_title = 'Parts-Builder';
   $page_name = 'parts-builder';
 
   // the menu entry...
@@ -96,7 +96,7 @@ function parts_selector_page_filter( $posts ) {
     add_frontend_scripts();
     load_angular_javascript();
 
-    $posts[0]->post_title = get_option( 'parts_selector_page_title' );
+    $posts[0]->post_title = 'PartsBuilder'; //get_option( 'parts_selector_page_title' );
     $posts[0]->post_content = '<div class="app-main" ng-app="app"><div ng-view></div></div>';
   }
 
