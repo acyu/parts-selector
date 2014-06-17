@@ -165,21 +165,29 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
       $scope.table.show_error = false;
       $scope.data.status_message = '';
 
-      //reset value of fields that follows the current field
+      /**
+       * reset value of fields that follows the current field
+       * Here we look through part_number array in sequence, when we find the column that matches the currently been updated column
+       * we set found_key variable to true, so we know all subsquent columns are after the current updated column
+       * we want to reset the value of the following column ONLY if the following column already has value
+       */
       var found_key = false;
       var found_skip = false;
+      var run_reset_loop = true;
       angular.forEach($scope.data.part_number, function(value, part_number_key) {
-        var column = _.find($scope.table.columns, function (column) { return part_number_key === column.key; });
-        if(part_number_key == key) found_key = true;
-        if(found_key && part_number_key != key && !column.skip && !column.hidden) {
-          $scope.data.part_number[part_number_key] = '';
-          column.disabled = true;
-          if(part_number_key == 'insert_arrangement') {
-            angular.forEach($scope.data.static_part_field, function(static_field, field_key) {
-              static_field.data = 'Select with Insert Pattern';
-              static_field.showedit = false;
-            });
-            column.visible = true;
+        if(run_reset_loop) {
+          var column = _.find($scope.table.columns, function (column) { return part_number_key === column.key; });
+          if(part_number_key == key) found_key = true;
+          if(found_key && part_number_key != key && !column.skip && !column.hidden && value != '' && column.data.length > 1) {
+            $scope.data.part_number[part_number_key] = '';
+            column.disabled = true;
+            if(part_number_key == 'insert_arrangement') {
+              angular.forEach($scope.data.static_part_field, function(static_field, field_key) {
+                static_field.data = 'Select with Insert Pattern';
+                static_field.showedit = false;
+              });
+              column.visible = true;
+            }
           }
         }
       });
@@ -196,8 +204,11 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
               if(part_number_key == 'insert_arrangement') {
                 $scope.data.final_part_number += Object.keys(JSON.parse(value))[0];
               } else {
-                if(value == '[blank]') value = '';
-                $scope.data.final_part_number += value;
+                if(value == '[blank]') {
+                  $scope.data.final_part_number += '';
+                } else {
+                  $scope.data.final_part_number += value;
+                }
               }
             }
           }
@@ -234,7 +245,11 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
 
       //check if all part variable has been filled, if not set form ready var to false
       angular.forEach($scope.data.part_number, function(part_number, index) {
+        //console.log(index);
+        //console.log($scope.data.part_number[index]);
         if(form_ready) {
+          /*console.log(index);
+          console.log(part_number);*/
           if(part_number == '') {
             $scope.table.show_form = false;
             form_ready = false;
@@ -242,7 +257,8 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
           loopindex += 1;
         }
       });
-
+//console.log(form_ready);
+//console.log($scope.data.part_number);
       //check if part number returns product id (should, we already validated before) show form when valid id is returned
       if(form_ready && (Object.keys($scope.data.part_number).length == loopindex)) {
         $http.get(base_path  + '?get_part_number_id=' + $scope.data.final_part_number).success(function(response) {
@@ -259,7 +275,7 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
       }
 
       //if change is insert_arrangment field, parse the main object value and display the subset value
-      if(key == 'insert_arrangement') {
+      /*if(key == 'insert_arrangement') {
         if($scope.data.part_number[key]) {
           var insert_arrangement = JSON.parse($scope.data.part_number[key]);
           for(var topkey in insert_arrangement) {
@@ -278,7 +294,7 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
             $scope.data.static_part_field[obj_key].showedit = false;
           });
         }
-      }
+      }*/
 
       /**
        * deal with field value exception
@@ -299,48 +315,8 @@ partsSelectorCtrls.controller('BuildShellTypeCtrl', ['$rootScope','$scope','$htt
                 $scope.fn.filter_exception(column, exception);
               } else {
                 column.data = angular.copy($scope.data.original[column.key].data);
-                /*$http.get(base_path + 'wp-content/plugins/parts-selector/app/data/' + $routeParams.base_part + '.json').success(function(response) {
-                  column.data = response[column.key].data;
-                });*/
               }
-              //to make sure exception field behave correctly, let's reset the field value when exception triggers
-
-              /*if(column.data.length == 1) {
-                $scope.data.part_number[column.key] = column.data[0];
-                $scope.fn.select_update(column.key);
-              } else {
-                $scope.data.part_number[column.key] = '';
-              }*/
-
-              /*var selectedData = $scope.data.part_number[key];
-              var exception = _(column.exception.actions).reject(function(action) {
-                return action.triggers.indexOf(selectedData) < 0;
-              });
-              if(exception.length > 0) {
-                $http.get(base_path + 'wp-content/plugins/parts-selector/app/data/' + $routeParams.base_part + '.json').success(function(response) {
-                  column.data = response[column.key].data;
-                  var filtered_data = [];
-                  if(exception[0].hasOwnProperty('remove')) {
-                    filtered_data = _.without.apply(_, [column.data].concat(exception[0]['remove']));
-                  } else if(exception[0].hasOwnProperty('keep')) {
-                    filtered_data = _.intersection(column.data,exception[0]['keep']);
-                  }
-
-                  column.data = filtered_data;
-                  //to make sure exception field behave correctly, let's reset the field value when exception triggers
-                  if(column.data.length == 1) {
-                    $scope.data.part_number[column.key] = column.data[0];
-                    $scope.fn.select_update(column.key);
-                  } else {
-                    $scope.data.part_number[column.key] = '';
-                  }
-                });*/
-              }/* else {
-                $http.get(base_path + 'wp-content/plugins/parts-selector/app/data/' + $routeParams.base_part + '.json').success(function(response) {
-                  console.log(column.key);
-                  column.data = response[column.key].data;
-                });
-              }*/
+            }
           });
         }
       });
